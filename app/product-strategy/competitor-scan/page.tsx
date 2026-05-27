@@ -1,3 +1,4 @@
+import { strategyPageThemes } from '@/app/config-layout/theme';
 import { SimpleHeader } from '@/shared/components';
 import {
   StrategyBreadcrumb,
@@ -133,6 +134,8 @@ const contentModels = [
 ];
 
 export default function CompetitorScanPage() {
+  const pageTheme = strategyPageThemes.competitorScan;
+
   return (
     <div className="min-h-screen transition-colors">
       <SimpleHeader />
@@ -140,12 +143,12 @@ export default function CompetitorScanPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <StrategyBreadcrumb
           current="Competitor Scan"
-          linkClassName="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          linkClassName={pageTheme.breadcrumbLinkClassName}
         />
 
         <StrategyPageIntro
           badge="Stage 1"
-          badgeClassName="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300"
+          badgeClassName={pageTheme.introBadgeClassName}
           title="Competitor Scan"
           description="50 global and 50 Indian learning platforms analysed across pricing, features, and content-creation models to identify where EasyLoops can lead."
           descriptionClassName="max-w-2xl"
@@ -153,31 +156,31 @@ export default function CompetitorScanPage() {
 
         {/* Global competitors */}
         <section className="mb-16">
-          <StrategySectionTitle title="Global Competitors" accentClassName="bg-blue-500" />
-          <div className="overflow-x-auto rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
+          <StrategySectionTitle title="Global Competitors" accentClassName="bg-primary" />
+          <div className="overflow-x-auto rounded-xl shadow-sm border border-border dark:border-border-dark">
             <table className="min-w-full text-sm">
               <thead>
-                <tr className="bg-indigo-50 dark:bg-indigo-950/40 text-left border-b border-indigo-100 dark:border-indigo-800/50">
-                  <th className="px-4 py-3 font-semibold text-indigo-700 dark:text-indigo-300 w-12">#</th>
-                  <th className="px-4 py-3 font-semibold text-indigo-700 dark:text-indigo-300">Platform</th>
-                  <th className="px-4 py-3 font-semibold text-indigo-700 dark:text-indigo-300">What It Provides</th>
-                  <th className="px-4 py-3 font-semibold text-indigo-700 dark:text-indigo-300">Pricing</th>
-                  <th className="px-4 py-3 font-semibold text-indigo-700 dark:text-indigo-300">Learning Resources & Features</th>
-                  <th className="px-4 py-3 font-semibold text-indigo-700 dark:text-indigo-300">Content Model</th>
+                <tr className="bg-primary-soft/40 dark:bg-primary/15 text-left border-b border-primary/15 dark:border-primary-dark/30">
+                  <th className="px-4 py-3 font-semibold text-primary dark:text-primary-dark w-12">#</th>
+                  <th className="px-4 py-3 font-semibold text-primary dark:text-primary-dark">Platform</th>
+                  <th className="px-4 py-3 font-semibold text-primary dark:text-primary-dark">What It Provides</th>
+                  <th className="px-4 py-3 font-semibold text-primary dark:text-primary-dark">Pricing</th>
+                  <th className="px-4 py-3 font-semibold text-primary dark:text-primary-dark">Learning Resources & Features</th>
+                  <th className="px-4 py-3 font-semibold text-primary dark:text-primary-dark">Content Model</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-700/50">
+              <tbody className="divide-y divide-border/50 dark:divide-border-dark/50">
                 {globalCompetitors.map((c) => (
                   <tr
                     key={c.rank}
-                    className="odd:bg-white even:bg-slate-50 dark:odd:bg-slate-900 dark:even:bg-slate-800/40 hover:bg-indigo-50 dark:hover:bg-indigo-950/20 transition-colors"
+                    className="odd:bg-white even:bg-surface-subtle/70 dark:odd:bg-surface-dark dark:even:bg-surface-dark-subtle/70 hover:bg-primary-soft/35 dark:hover:bg-primary/12 transition-colors"
                   >
-                    <td className="px-4 py-3 text-slate-400 dark:text-slate-500 font-mono text-xs">{c.rank}</td>
-                    <td className="px-4 py-3 font-semibold text-slate-900 dark:text-white whitespace-nowrap">{c.platform}</td>
-                    <td className="px-4 py-3 text-slate-600 dark:text-slate-300 max-w-[200px]">{c.provides}</td>
-                    <td className="px-4 py-3 text-slate-600 dark:text-slate-300 whitespace-nowrap">{c.pricing}</td>
-                    <td className="px-4 py-3 text-slate-600 dark:text-slate-300 max-w-[260px]">{c.features}</td>
-                    <td className="px-4 py-3 text-slate-600 dark:text-slate-300 max-w-[180px]">{c.model}</td>
+                    <td className="px-4 py-3 text-ink-muted/75 dark:text-ink-dark-muted/70 font-mono text-xs">{c.rank}</td>
+                    <td className="px-4 py-3 font-semibold text-ink dark:text-ink-dark whitespace-nowrap">{c.platform}</td>
+                    <td className="px-4 py-3 text-ink-muted dark:text-ink-dark-muted max-w-[200px]">{c.provides}</td>
+                    <td className="px-4 py-3 text-ink-muted dark:text-ink-dark-muted whitespace-nowrap">{c.pricing}</td>
+                    <td className="px-4 py-3 text-ink-muted dark:text-ink-dark-muted max-w-[260px]">{c.features}</td>
+                    <td className="px-4 py-3 text-ink-muted dark:text-ink-dark-muted max-w-[180px]">{c.model}</td>
                   </tr>
                 ))}
               </tbody>
@@ -187,33 +190,33 @@ export default function CompetitorScanPage() {
 
         {/* Indian competitors */}
         <section className="mb-16">
-          <StrategySectionTitle title="Indian Competitors" accentClassName="bg-orange-500" />
-          <div className="overflow-x-auto rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
+          <StrategySectionTitle title="Indian Competitors" accentClassName="bg-secondary" />
+          <div className="overflow-x-auto rounded-xl shadow-sm border border-border dark:border-border-dark">
             <table className="min-w-full text-sm">
               <thead>
-                <tr className="bg-orange-50 dark:bg-orange-950/30 text-left border-b border-orange-100 dark:border-orange-800/50">
-                  <th className="px-4 py-3 font-semibold text-orange-700 dark:text-orange-300 w-12">#</th>
-                  <th className="px-4 py-3 font-semibold text-orange-700 dark:text-orange-300">Platform</th>
-                  <th className="px-4 py-3 font-semibold text-orange-700 dark:text-orange-300">What It Provides</th>
-                  <th className="px-4 py-3 font-semibold text-orange-700 dark:text-orange-300">Pricing (2026)</th>
-                  <th className="px-4 py-3 font-semibold text-orange-700 dark:text-orange-300">Features</th>
-                  <th className="px-4 py-3 font-semibold text-orange-700 dark:text-orange-300">Content Model</th>
-                  <th className="px-4 py-3 font-semibold text-orange-700 dark:text-orange-300">Access Duration</th>
+                <tr className="bg-secondary-soft/40 dark:bg-secondary/15 text-left border-b border-secondary/15 dark:border-secondary-dark/30">
+                  <th className="px-4 py-3 font-semibold text-secondary dark:text-secondary-dark w-12">#</th>
+                  <th className="px-4 py-3 font-semibold text-secondary dark:text-secondary-dark">Platform</th>
+                  <th className="px-4 py-3 font-semibold text-secondary dark:text-secondary-dark">What It Provides</th>
+                  <th className="px-4 py-3 font-semibold text-secondary dark:text-secondary-dark">Pricing (2026)</th>
+                  <th className="px-4 py-3 font-semibold text-secondary dark:text-secondary-dark">Features</th>
+                  <th className="px-4 py-3 font-semibold text-secondary dark:text-secondary-dark">Content Model</th>
+                  <th className="px-4 py-3 font-semibold text-secondary dark:text-secondary-dark">Access Duration</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-700/50">
+              <tbody className="divide-y divide-border/50 dark:divide-border-dark/50">
                 {indianCompetitors.map((c) => (
                   <tr
                     key={c.rank}
-                    className="odd:bg-white even:bg-slate-50 dark:odd:bg-slate-900 dark:even:bg-slate-800/40 hover:bg-orange-50 dark:hover:bg-orange-950/20 transition-colors"
+                    className="odd:bg-white even:bg-surface-subtle/70 dark:odd:bg-surface-dark dark:even:bg-surface-dark-subtle/70 hover:bg-secondary-soft/35 dark:hover:bg-secondary/12 transition-colors"
                   >
-                    <td className="px-4 py-3 text-slate-400 dark:text-slate-500 font-mono text-xs">{c.rank}</td>
-                    <td className="px-4 py-3 font-semibold text-slate-900 dark:text-white whitespace-nowrap">{c.platform}</td>
-                    <td className="px-4 py-3 text-slate-600 dark:text-slate-300 max-w-[180px]">{c.provides}</td>
-                    <td className="px-4 py-3 text-slate-600 dark:text-slate-300 max-w-[180px]">{c.pricing}</td>
-                    <td className="px-4 py-3 text-slate-600 dark:text-slate-300 max-w-[220px]">{c.features}</td>
-                    <td className="px-4 py-3 text-slate-600 dark:text-slate-300 max-w-[160px]">{c.model}</td>
-                    <td className="px-4 py-3 text-slate-600 dark:text-slate-300 whitespace-nowrap">{c.duration}</td>
+                    <td className="px-4 py-3 text-ink-muted/75 dark:text-ink-dark-muted/70 font-mono text-xs">{c.rank}</td>
+                    <td className="px-4 py-3 font-semibold text-ink dark:text-ink-dark whitespace-nowrap">{c.platform}</td>
+                    <td className="px-4 py-3 text-ink-muted dark:text-ink-dark-muted max-w-[180px]">{c.provides}</td>
+                    <td className="px-4 py-3 text-ink-muted dark:text-ink-dark-muted max-w-[180px]">{c.pricing}</td>
+                    <td className="px-4 py-3 text-ink-muted dark:text-ink-dark-muted max-w-[220px]">{c.features}</td>
+                    <td className="px-4 py-3 text-ink-muted dark:text-ink-dark-muted max-w-[160px]">{c.model}</td>
+                    <td className="px-4 py-3 text-ink-muted dark:text-ink-dark-muted whitespace-nowrap">{c.duration}</td>
                   </tr>
                 ))}
               </tbody>
@@ -223,17 +226,17 @@ export default function CompetitorScanPage() {
 
         {/* Content model glossary */}
         <section className="mb-12">
-          <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-5">
+          <h2 className="font-display text-xl font-bold text-ink dark:text-ink-dark mb-5">
             Content Creation Model Glossary
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {contentModels.map((m) => (
               <div
                 key={m.name}
-                className="bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm"
+                className="bg-white/80 dark:bg-surface-dark/70 rounded-xl p-4 border border-border/40 dark:border-border-dark/40 shadow-sm"
               >
-                <p className="font-semibold text-gray-900 dark:text-white text-sm mb-1">{m.name}</p>
-                <p className="text-gray-500 dark:text-gray-400 text-sm">{m.desc}</p>
+                <p className="font-semibold text-ink dark:text-ink-dark text-sm mb-1">{m.name}</p>
+                <p className="text-ink-muted dark:text-ink-dark-muted text-sm">{m.desc}</p>
               </div>
             ))}
           </div>
@@ -242,7 +245,7 @@ export default function CompetitorScanPage() {
         <StrategyPageNav
           left={{ href: '/product-strategy', label: '← Back to Strategy Overview' }}
           right={{ href: '/product-strategy/positioning', label: 'Position · Promotion · Price →' }}
-          linkClassName="text-sm text-blue-600 dark:text-blue-400 hover:underline"
+          linkClassName={pageTheme.navLinkClassName}
         />
       </main>
 

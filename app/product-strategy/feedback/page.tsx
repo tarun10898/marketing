@@ -1,3 +1,4 @@
+import { strategyPageThemes } from '@/app/config-layout/theme';
 import { SimpleHeader } from '@/shared/components';
 import {
   ResourceLinkCard,
@@ -32,6 +33,8 @@ const feedbackLinks = [
 ];
 
 export default function FeedbackPage() {
+  const pageTheme = strategyPageThemes.feedback;
+
   return (
     <div className="min-h-screen transition-colors">
       <SimpleHeader />
@@ -39,12 +42,12 @@ export default function FeedbackPage() {
       <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <StrategyBreadcrumb
           current="Feedback Links"
-          linkClassName="hover:text-rose-600 dark:hover:text-rose-400 transition-colors"
+          linkClassName={pageTheme.breadcrumbLinkClassName}
         />
 
         <StrategyPageIntro
           badge="Stage 2"
-          badgeClassName="bg-rose-100 text-rose-700 dark:bg-rose-900 dark:text-rose-300"
+          badgeClassName={pageTheme.introBadgeClassName}
           title="Feedback Links"
           description="Feedback forms, surveys, and response sheets used to gather learner and interview insights."
         />
@@ -58,9 +61,9 @@ export default function FeedbackPage() {
               href={r.href}
               type={r.type}
               icon={r.icon}
-              titleClassName="group-hover:text-rose-600 dark:group-hover:text-rose-400"
-              urlClassName="text-rose-600 dark:text-rose-400"
-              iconClassName="group-hover:text-rose-500"
+              titleClassName={pageTheme.resourceTitleHoverClassName}
+              urlClassName={pageTheme.resourceUrlClassName}
+              iconClassName={pageTheme.resourceIconHoverClassName}
             />
           ))}
         </section>
@@ -68,7 +71,7 @@ export default function FeedbackPage() {
         <StrategyPageNav
           left={{ href: '/product-strategy/resources', label: '← Resources' }}
           right={{ href: '/product-strategy', label: 'Strategy Overview →' }}
-          linkClassName="text-sm text-rose-600 dark:text-rose-400 hover:underline"
+          linkClassName={pageTheme.navLinkClassName}
         />
       </main>
 

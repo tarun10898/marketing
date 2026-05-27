@@ -1,3 +1,4 @@
+import { strategyPageThemes } from '@/app/config-layout/theme';
 import { SimpleHeader } from '@/shared/components';
 import {
   ResourceLinkCard,
@@ -19,6 +20,8 @@ const resources = [
 ];
 
 export default function ResourcesPage() {
+  const pageTheme = strategyPageThemes.resources;
+
   return (
     <div className="min-h-screen transition-colors">
       <SimpleHeader />
@@ -26,12 +29,12 @@ export default function ResourcesPage() {
       <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <StrategyBreadcrumb
           current="Resources"
-          linkClassName="hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
+          linkClassName={pageTheme.breadcrumbLinkClassName}
         />
 
         <StrategyPageIntro
           badge="References"
-          badgeClassName="bg-amber-100 text-amber-700 dark:bg-amber-900 dark:text-amber-300"
+          badgeClassName={pageTheme.introBadgeClassName}
           title="Resources"
           description="Supporting documents and research material used to build this market placement strategy."
         />
@@ -45,9 +48,9 @@ export default function ResourcesPage() {
               href={r.href}
               type={r.type}
               icon={r.icon}
-              titleClassName="group-hover:text-amber-600 dark:group-hover:text-amber-400"
-              urlClassName="text-amber-600 dark:text-amber-400"
-              iconClassName="group-hover:text-amber-500"
+              titleClassName={pageTheme.resourceTitleHoverClassName}
+              urlClassName={pageTheme.resourceUrlClassName}
+              iconClassName={pageTheme.resourceIconHoverClassName}
             />
           ))}
         </section>
@@ -55,7 +58,7 @@ export default function ResourcesPage() {
         <StrategyPageNav
           left={{ href: '/product-strategy/positioning', label: '← Position · Promotion · Price' }}
           right={{ href: '/product-strategy/feedback', label: 'Feedback Links →' }}
-          linkClassName="text-sm text-amber-600 dark:text-amber-400 hover:underline"
+          linkClassName={pageTheme.navLinkClassName}
         />
       </main>
 

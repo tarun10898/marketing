@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import { tailwindThemeExtension } from './app/config-layout/theme';
 
 const config: Config = {
   content: [
@@ -10,6 +11,7 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      ...tailwindThemeExtension,
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
