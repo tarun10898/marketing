@@ -1,11 +1,7 @@
 import { strategyPageThemes } from '@/app/config-layout/theme';
-import { SimpleHeader } from '@/shared/components';
 import {
   FeatureCard,
-  StrategyBreadcrumb,
-  StrategyFooter,
-  StrategyPageIntro,
-  StrategyPageNav,
+  StrategyDetailPageShell,
   StrategySectionTitle,
 } from '@/shared/components/strategy-page';
 
@@ -109,26 +105,21 @@ export default function PositioningPage() {
   const pageTheme = strategyPageThemes.positioning;
 
   return (
-    <div className="min-h-screen transition-colors">
-      <SimpleHeader />
-
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <StrategyBreadcrumb
-          current="Position · Promotion · Price"
-          linkClassName={pageTheme.breadcrumbLinkClassName}
-        />
-
-        <StrategyPageIntro
-          badge="Stage 1"
-          badgeClassName={pageTheme.introBadgeClassName}
-          title="Position · Promotion · Price"
-          description="How EasyLoops is positioned in the market, how we will promote it, and our pricing strategy designed for global + regional affordability."
-          descriptionClassName="max-w-2xl"
-          className="mb-12"
-        />
-
-        {/* Positioning */}
-        <section className="mb-14">
+    <StrategyDetailPageShell
+      current="Position · Promotion · Price"
+      badge="Stage 1"
+      title="Position · Promotion · Price"
+      description="How EasyLoops is positioned in the market, how we will promote it, and our pricing strategy designed for global + regional affordability."
+      breadcrumbLinkClassName={pageTheme.breadcrumbLinkClassName}
+      introBadgeClassName={pageTheme.introBadgeClassName}
+      navLinkClassName={pageTheme.navLinkClassName}
+      leftNav={{ href: '/product-strategy/competitor-scan', label: '← Competitor Scan' }}
+      rightNav={{ href: '/product-strategy/resources', label: 'Resources →' }}
+      footerMessage="EasyLoops. Internal strategy document."
+      introDescriptionClassName="max-w-2xl"
+      introClassName="mb-12"
+    >
+      <section className="mb-14">
           <StrategySectionTitle title="Product Positioning" accentClassName="bg-primary" />
 
           <div className="bg-white dark:bg-surface-dark-subtle rounded-2xl p-8 border border-border/40 dark:border-border-dark/50 shadow-sm mb-6">
@@ -158,10 +149,9 @@ export default function PositioningPage() {
               </div>
             </div>
           </div>
-        </section>
+      </section>
 
-        {/* Promotion */}
-        <section className="mb-14">
+      <section className="mb-14">
           <StrategySectionTitle title="Promotion Plan" accentClassName="bg-secondary" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {promotionItems.map((item) => (
@@ -173,10 +163,9 @@ export default function PositioningPage() {
               />
             ))}
           </div>
-        </section>
+      </section>
 
-        {/* Pricing */}
-        <section className="mb-14">
+      <section className="mb-14">
           <StrategySectionTitle title="Pricing Strategy" accentClassName="bg-primary" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {pricingTiers.map((tier) => (
@@ -235,10 +224,9 @@ export default function PositioningPage() {
             Indian users. Global pricing adjusted to local affordability while maintaining brand
             premium.
           </p>
-        </section>
+      </section>
 
-        {/* Stage 2 – Customer Engagement */}
-        <section id="engagement" className="mb-14">
+      <section id="engagement" className="mb-14">
           <div className="mb-2">
             <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest bg-secondary-soft/80 text-secondary dark:bg-secondary/20 dark:text-secondary-dark mb-3">
               Stage 2
@@ -279,16 +267,7 @@ export default function PositioningPage() {
               </tbody>
             </table>
           </div>
-        </section>
-
-        <StrategyPageNav
-          left={{ href: '/product-strategy/competitor-scan', label: '← Competitor Scan' }}
-          right={{ href: '/product-strategy/resources', label: 'Resources →' }}
-          linkClassName={pageTheme.navLinkClassName}
-        />
-      </main>
-
-      <StrategyFooter message="EasyLoops. Internal strategy document." />
-    </div>
+      </section>
+    </StrategyDetailPageShell>
   );
 }

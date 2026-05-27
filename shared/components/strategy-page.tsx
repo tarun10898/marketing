@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
+import { SimpleHeader } from './index';
 
 function joinClasses(...classes: Array<string | undefined | false>) {
   return classes.filter(Boolean).join(' ');
@@ -139,6 +140,91 @@ export function StrategyPageNav({
       ) : (
         <span />
       )}
+    </div>
+  );
+}
+
+type StrategyDetailPageShellProps = {
+  current: ReactNode;
+  badge: ReactNode;
+  title: ReactNode;
+  description: ReactNode;
+  children: ReactNode;
+  breadcrumbLinkClassName: string;
+  introBadgeClassName: string;
+  navLinkClassName: string;
+  footerMessage: ReactNode;
+  leftNav?: StrategyPageNavItem;
+  rightNav?: StrategyPageNavItem;
+  breadcrumbHref?: string;
+  breadcrumbLabel?: ReactNode;
+  pageClassName?: string;
+  mainClassName?: string;
+  introClassName?: string;
+  introDescriptionClassName?: string;
+  introChildren?: ReactNode;
+  navClassName?: string;
+  footerClassName?: string;
+};
+
+export function StrategyDetailPageShell({
+  current,
+  badge,
+  title,
+  description,
+  children,
+  breadcrumbLinkClassName,
+  introBadgeClassName,
+  navLinkClassName,
+  footerMessage,
+  leftNav,
+  rightNav,
+  breadcrumbHref,
+  breadcrumbLabel,
+  pageClassName,
+  mainClassName,
+  introClassName,
+  introDescriptionClassName,
+  introChildren,
+  navClassName,
+  footerClassName,
+}: StrategyDetailPageShellProps) {
+  return (
+    <div className={joinClasses('min-h-screen transition-colors', pageClassName)}>
+      <SimpleHeader />
+
+      <main className={joinClasses('max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12', mainClassName)}>
+        <StrategyBreadcrumb
+          current={current}
+          linkClassName={breadcrumbLinkClassName}
+          href={breadcrumbHref}
+          label={breadcrumbLabel}
+        />
+
+        <StrategyPageIntro
+          badge={badge}
+          badgeClassName={introBadgeClassName}
+          title={title}
+          description={description}
+          className={introClassName}
+          descriptionClassName={introDescriptionClassName}
+        >
+          {introChildren}
+        </StrategyPageIntro>
+
+        {children}
+
+        {leftNav || rightNav ? (
+          <StrategyPageNav
+            left={leftNav}
+            right={rightNav}
+            linkClassName={navLinkClassName}
+            className={navClassName}
+          />
+        ) : null}
+      </main>
+
+      <StrategyFooter message={footerMessage} className={footerClassName} />
     </div>
   );
 }
