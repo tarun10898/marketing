@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { SimpleHeader } from '@/shared/components';
+import { FeatureCard, StrategyFooter } from '@/shared/components/strategy-page';
 
 const stages = [
   {
@@ -114,14 +115,13 @@ export default function ProductStrategyPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {audienceSegments.map((s) => (
-              <div
+              <FeatureCard
                 key={s.label}
-                className="bg-white/65 dark:bg-slate-800/55 backdrop-blur-md rounded-xl p-5 shadow-md border border-white/70 dark:border-slate-700/50 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
-              >
-                <div className="text-2xl mb-3">{s.icon}</div>
-                <p className="font-semibold text-slate-900 dark:text-white">{s.label}</p>
-                <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">{s.detail}</p>
-              </div>
+                icon={s.icon}
+                title={s.label}
+                description={s.detail}
+                descriptionClassName="mt-1"
+              />
             ))}
           </div>
         </section>
@@ -184,11 +184,11 @@ export default function ProductStrategyPage() {
         </section>
       </main>
 
-      <footer className="border-t border-slate-200 dark:border-slate-800/60 py-8 px-6 text-center mt-16">
-        <p className="text-sm text-slate-400 dark:text-slate-500">
-          © {new Date().getFullYear()} EasyLoops · Internal strategy document — not for public distribution.
-        </p>
-      </footer>
+      <StrategyFooter
+        message="EasyLoops · Internal strategy document — not for public distribution."
+        className="border-slate-200 dark:border-slate-800/60 py-8 mt-16"
+        textClassName="text-slate-400 dark:text-slate-500"
+      />
     </div>
   );
 }

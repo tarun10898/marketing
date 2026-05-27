@@ -1,8 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import { SimpleHeader } from '@/shared/components';
+import {
+  StrategyBreadcrumb,
+  StrategyFooter,
+  StrategyPageIntro,
+  StrategyPageNav,
+} from '@/shared/components/strategy-page';
 
 type Company = {
   name: string;
@@ -9936,26 +9941,18 @@ export default function HiringTiersPage() {
       <SimpleHeader />
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-8">
-          <Link href="/product-strategy" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-            Product Strategy
-          </Link>
-          <span>/</span>
-          <span className="text-gray-900 dark:text-white font-medium">Hiring Tiers</span>
-        </nav>
+        <StrategyBreadcrumb
+          current="Hiring Tiers"
+          linkClassName="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+        />
 
-        <header className="mb-10">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 mb-3">
-            Course Reference
-          </span>
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">
-            Company Hiring Tiers
-          </h1>
-          <p className="text-gray-600 dark:text-gray-300 max-w-2xl">
-            Indian Software Engineer / SDE / Associate Engineer roles classified by CTC. Click a
-            tier to expand, then click a company to see exam pattern details.
-          </p>
+        <StrategyPageIntro
+          badge="Course Reference"
+          badgeClassName="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300"
+          title="Company Hiring Tiers"
+          description="Indian Software Engineer / SDE / Associate Engineer roles classified by CTC. Click a tier to expand, then click a company to see exam pattern details."
+          descriptionClassName="max-w-2xl"
+        >
 
           {/* Legend */}
           <div className="flex flex-wrap gap-4 mt-6">
@@ -9967,7 +9964,7 @@ export default function HiringTiersPage() {
               </div>
             ))}
           </div>
-        </header>
+        </StrategyPageIntro>
 
         {/* Search box */}
         <div className="relative mb-6">
@@ -10187,17 +10184,14 @@ export default function HiringTiersPage() {
           </p>
         </div>
 
-        {/* Nav */}
-        <div className="flex items-center justify-between pt-6 border-t border-gray-200 dark:border-gray-700 mt-8">
-          <Link href="/product-strategy" className="text-sm text-blue-600 dark:text-blue-400 hover:underline">
-            ← Strategy Overview
-          </Link>
-        </div>
+        <StrategyPageNav
+          left={{ href: '/product-strategy', label: '← Strategy Overview' }}
+          linkClassName="text-sm text-blue-600 dark:text-blue-400 hover:underline"
+          className="pt-6 mt-8"
+        />
       </main>
 
-      <footer className="border-t border-gray-200 dark:border-gray-700 py-6 px-6 text-center text-sm text-gray-400 dark:text-gray-500 mt-12">
-        © {new Date().getFullYear()} EasyLoops. Internal course reference document.
-      </footer>
+      <StrategyFooter message="EasyLoops. Internal course reference document." />
     </div>
   );
 }

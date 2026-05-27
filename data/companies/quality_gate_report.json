@@ -1,0 +1,16 @@
+{
+  "schema_version": "company-quality-gate-v1",
+  "generated_at": "2026-05-27T09:37:57.017Z",
+  "enforce_publish_gate": true,
+  "policy": {
+    "min_recent_interview_reviews": 2,
+    "interview_recency_days": 183,
+    "min_source_references": 2
+  },
+  "totals": {
+    "evaluated_companies": 530,
+    "failed_companies": 0,
+    "unique_companies": 530
+  },
+  "failures": []
+}

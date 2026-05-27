@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import HiringTiersPage from '@/app/product-strategy/hiring-tiers/page';
 
@@ -30,11 +30,21 @@ describe('HiringTiersPage', () => {
     expect(labels.some((t) => /Tier.3/i.test(t))).toBe(true);
   });
 
-  it('shows Tier-1 companies by default (Tier-1 accordion is open)', () => {
+  it('keeps Tier-1 companies hidden until Tier-1 is opened', async () => {
+    const user = userEvent.setup();
     render(<HiringTiersPage />);
-    // Tier-1 is open by default; these companies are in Tier-1
-    expect(screen.getAllByText(/TCS/).length).toBeGreaterThan(0);
-    expect(screen.getAllByText(/Razorpay/).length).toBeGreaterThan(0);
+    const tier1Btn = screen.getAllByRole('button').find(
+      (b) => /Tier.1/i.test(b.textContent ?? '')
+    )!;
+
+    // Tier accordions are collapsed by default
+    expect(screen.queryByRole('button', { name: /Razorpay/i })).not.toBeInTheDocument();
+
+    await user.click(tier1Btn);
+
+    // Tier-1 companies appear after opening
+    expect(screen.getAllByRole('button', { name: /Razorpay/i }).length).toBeGreaterThan(0);
+    expect(screen.getAllByRole('button', { name: /Google/i }).length).toBeGreaterThan(0);
   });
 
   it('Tier-2 companies are hidden until accordion is opened', async () => {
@@ -61,6 +71,40 @@ describe('HiringTiersPage', () => {
     const searchInput = screen.getByRole('textbox');
     await user.type(searchInput, 'Google');
     expect(screen.getAllByText(/Google/).length).toBeGreaterThan(0);
+  });
+
+  it('expands a company card to show detailed interview information', async () => {
+    render(<HiringTiersPage />);
+
+    const tier1Btn = screen.getAllByRole('button').find(
+      (b) => /Tier.1/i.test(b.textContent ?? '')
+    )!;
+    fireEvent.click(tier1Btn);
+
+    const razorpayButton = screen.getAllByText('Razorpay')[0].closest('button');
+    expect(razorpayButton).not.toBeNull();
+
+    fireEvent.click(razorpayButton!);
+
+    expect(screen.getByText('No negative marking')).toBeInTheDocument();
+    expect(screen.getByText('Rounds')).toBeInTheDocument();
+    expect(screen.getByText('Exam Pattern')).toBeInTheDocument();
+    expect(screen.getByText('Interviews')).toBeInTheDocument();
+  });
+
+  it('matches designation shorthands in search and can clear the search query', async () => {
+    const user = userEvent.setup();
+    render(<HiringTiersPage />);
+
+    const searchInput = screen.getByRole('textbox');
+    await user.type(searchInput, 'sde2');
+
+    expect(screen.getAllByText(/SDE 2/i).length).toBeGreaterThan(0);
+
+    await user.click(screen.getByRole('button', { name: 'Clear search' }));
+
+    expect(searchInput).toHaveValue('');
+    expect(screen.queryByRole('button', { name: 'Clear search' })).not.toBeInTheDocument();
   });
 
   it('renders breadcrumb back to Product Strategy', () => {

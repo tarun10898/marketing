@@ -28,6 +28,9 @@ next-env.d.ts
 
 # Testing
 /coverage
+/playwright-report
+/test-results
+/blob-report
 
 # Misc
 .DS_Store

@@ -1,5 +1,12 @@
-import Link from 'next/link';
 import { SimpleHeader } from '@/shared/components';
+import {
+  FeatureCard,
+  StrategyBreadcrumb,
+  StrategyFooter,
+  StrategyPageIntro,
+  StrategyPageNav,
+  StrategySectionTitle,
+} from '@/shared/components/strategy-page';
 
 const promotionItems = [
   {
@@ -103,34 +110,23 @@ export default function PositioningPage() {
       <SimpleHeader />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-8">
-          <Link href="/product-strategy" className="hover:text-violet-600 dark:hover:text-violet-400 transition-colors">
-            Product Strategy
-          </Link>
-          <span>/</span>
-          <span className="text-gray-900 dark:text-white font-medium">Position · Promotion · Price</span>
-        </nav>
+        <StrategyBreadcrumb
+          current="Position · Promotion · Price"
+          linkClassName="hover:text-violet-600 dark:hover:text-violet-400 transition-colors"
+        />
 
-        <header className="mb-12">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest bg-violet-100 text-violet-700 dark:bg-violet-900 dark:text-violet-300 mb-3">
-            Stage 1
-          </span>
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">
-            Position · Promotion · Price
-          </h1>
-          <p className="text-gray-600 dark:text-gray-300 max-w-2xl">
-            How EasyLoops is positioned in the market, how we will promote it, and our pricing
-            strategy designed for global + regional affordability.
-          </p>
-        </header>
+        <StrategyPageIntro
+          badge="Stage 1"
+          badgeClassName="bg-violet-100 text-violet-700 dark:bg-violet-900 dark:text-violet-300"
+          title="Position · Promotion · Price"
+          description="How EasyLoops is positioned in the market, how we will promote it, and our pricing strategy designed for global + regional affordability."
+          descriptionClassName="max-w-2xl"
+          className="mb-12"
+        />
 
         {/* Positioning */}
         <section className="mb-14">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
-            <span className="inline-block w-1 h-7 rounded bg-violet-500" />
-            Product Positioning
-          </h2>
+          <StrategySectionTitle title="Product Positioning" accentClassName="bg-violet-500" />
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700 shadow-sm mb-6">
             <p className="text-xs uppercase tracking-widest font-semibold text-violet-600 dark:text-violet-400 mb-2">
@@ -163,31 +159,22 @@ export default function PositioningPage() {
 
         {/* Promotion */}
         <section className="mb-14">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
-            <span className="inline-block w-1 h-7 rounded bg-pink-500" />
-            Promotion Plan
-          </h2>
+          <StrategySectionTitle title="Promotion Plan" accentClassName="bg-pink-500" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {promotionItems.map((item) => (
-              <div
+              <FeatureCard
                 key={item.phase}
-                className="bg-white/65 dark:bg-slate-800/55 backdrop-blur-md rounded-xl p-5 border border-white/70 dark:border-slate-700/50 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
-              >
-                <p className="font-semibold text-slate-900 dark:text-white mb-1 text-sm">
-                  {item.phase}
-                </p>
-                <p className="text-sm text-slate-500 dark:text-slate-400">{item.detail}</p>
-              </div>
+                title={item.phase}
+                description={item.detail}
+                titleClassName="mb-1 text-sm"
+              />
             ))}
           </div>
         </section>
 
         {/* Pricing */}
         <section className="mb-14">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
-            <span className="inline-block w-1 h-7 rounded bg-emerald-500" />
-            Pricing Strategy
-          </h2>
+          <StrategySectionTitle title="Pricing Strategy" accentClassName="bg-emerald-500" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {pricingTiers.map((tier) => (
               <div
@@ -254,20 +241,16 @@ export default function PositioningPage() {
               Stage 2
             </span>
           </div>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
-            <span className="inline-block w-1 h-7 rounded bg-teal-500" />
-            Customer Engagement
-          </h2>
+          <StrategySectionTitle title="Customer Engagement" accentClassName="bg-teal-500" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
             {engagementItems.map((e) => (
-              <div
+              <FeatureCard
                 key={e.title}
-                className="bg-white/65 dark:bg-slate-800/55 backdrop-blur-md rounded-xl p-5 border border-white/70 dark:border-slate-700/50 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
-              >
-                <div className="text-2xl mb-3">{e.icon}</div>
-                <p className="font-semibold text-slate-900 dark:text-white mb-1">{e.title}</p>
-                <p className="text-sm text-slate-500 dark:text-slate-400">{e.detail}</p>
-              </div>
+                icon={e.icon}
+                title={e.title}
+                description={e.detail}
+                titleClassName="mb-1"
+              />
             ))}
           </div>
 
@@ -295,26 +278,14 @@ export default function PositioningPage() {
           </div>
         </section>
 
-        {/* Nav */}
-        <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
-          <Link
-            href="/product-strategy/competitor-scan"
-            className="text-sm text-violet-600 dark:text-violet-400 hover:underline"
-          >
-            ← Competitor Scan
-          </Link>
-          <Link
-            href="/product-strategy/resources"
-            className="text-sm text-violet-600 dark:text-violet-400 hover:underline"
-          >
-            Resources →
-          </Link>
-        </div>
+        <StrategyPageNav
+          left={{ href: '/product-strategy/competitor-scan', label: '← Competitor Scan' }}
+          right={{ href: '/product-strategy/resources', label: 'Resources →' }}
+          linkClassName="text-sm text-violet-600 dark:text-violet-400 hover:underline"
+        />
       </main>
 
-      <footer className="border-t border-gray-200 dark:border-gray-700 py-6 px-6 text-center text-sm text-gray-400 dark:text-gray-500 mt-12">
-        © {new Date().getFullYear()} EasyLoops. Internal strategy document.
-      </footer>
+      <StrategyFooter message="EasyLoops. Internal strategy document." />
     </div>
   );
 }

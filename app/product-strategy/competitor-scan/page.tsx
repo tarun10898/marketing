@@ -1,5 +1,11 @@
-import Link from 'next/link';
 import { SimpleHeader } from '@/shared/components';
+import {
+  StrategyBreadcrumb,
+  StrategyFooter,
+  StrategyPageIntro,
+  StrategyPageNav,
+  StrategySectionTitle,
+} from '@/shared/components/strategy-page';
 
 const globalCompetitors = [
   { rank: 1, platform: 'Coursera', provides: 'University courses, Professional Certificates, Degrees', pricing: 'Free audit; Plus: ~$59/mo or $399/yr', features: 'High-quality videos, readings, quizzes, peer assignments, personal notes, progress tracking', model: 'Institution + Company Partnership' },
@@ -132,34 +138,22 @@ export default function CompetitorScanPage() {
       <SimpleHeader />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-8">
-          <Link href="/product-strategy" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-            Product Strategy
-          </Link>
-          <span>/</span>
-          <span className="text-gray-900 dark:text-white font-medium">Competitor Scan</span>
-        </nav>
+        <StrategyBreadcrumb
+          current="Competitor Scan"
+          linkClassName="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+        />
 
-        <header className="mb-10">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300 mb-3">
-            Stage 1
-          </span>
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">
-            Competitor Scan
-          </h1>
-          <p className="text-gray-600 dark:text-gray-300 max-w-2xl">
-            50 global and 50 Indian learning platforms analysed across pricing, features, and
-            content-creation models to identify where EasyLoops can lead.
-          </p>
-        </header>
+        <StrategyPageIntro
+          badge="Stage 1"
+          badgeClassName="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300"
+          title="Competitor Scan"
+          description="50 global and 50 Indian learning platforms analysed across pricing, features, and content-creation models to identify where EasyLoops can lead."
+          descriptionClassName="max-w-2xl"
+        />
 
         {/* Global competitors */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
-            <span className="inline-block w-1 h-7 rounded bg-blue-500" />
-            Global Competitors
-          </h2>
+          <StrategySectionTitle title="Global Competitors" accentClassName="bg-blue-500" />
           <div className="overflow-x-auto rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
             <table className="min-w-full text-sm">
               <thead>
@@ -193,10 +187,7 @@ export default function CompetitorScanPage() {
 
         {/* Indian competitors */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
-            <span className="inline-block w-1 h-7 rounded bg-orange-500" />
-            Indian Competitors
-          </h2>
+          <StrategySectionTitle title="Indian Competitors" accentClassName="bg-orange-500" />
           <div className="overflow-x-auto rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
             <table className="min-w-full text-sm">
               <thead>
@@ -248,26 +239,14 @@ export default function CompetitorScanPage() {
           </div>
         </section>
 
-        {/* Nav */}
-        <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
-          <Link
-            href="/product-strategy"
-            className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
-          >
-            ← Back to Strategy Overview
-          </Link>
-          <Link
-            href="/product-strategy/positioning"
-            className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
-          >
-            Position · Promotion · Price →
-          </Link>
-        </div>
+        <StrategyPageNav
+          left={{ href: '/product-strategy', label: '← Back to Strategy Overview' }}
+          right={{ href: '/product-strategy/positioning', label: 'Position · Promotion · Price →' }}
+          linkClassName="text-sm text-blue-600 dark:text-blue-400 hover:underline"
+        />
       </main>
 
-      <footer className="border-t border-gray-200 dark:border-gray-700 py-6 px-6 text-center text-sm text-gray-400 dark:text-gray-500 mt-12">
-        © {new Date().getFullYear()} EasyLoops. Internal strategy document.
-      </footer>
+      <StrategyFooter message="EasyLoops. Internal strategy document." />
     </div>
   );
 }
