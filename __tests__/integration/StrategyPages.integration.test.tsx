@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import ProductStrategyPage from '@/app/product-strategy/page';
 import ResourcesPage from '@/app/product-strategy/resources/page';
@@ -63,7 +63,7 @@ describe('Strategy pages integration', () => {
     expect(screen.getByText(/Internal course reference document/i)).toBeInTheDocument();
 
     const searchInput = screen.getByRole('textbox');
-    await user.type(searchInput, 'sde2');
+    fireEvent.change(searchInput, { target: { value: 'sde2' } });
     expect(screen.getAllByText(/SDE 2/i).length).toBeGreaterThan(0);
 
     await user.click(screen.getByRole('button', { name: 'Clear search' }));
