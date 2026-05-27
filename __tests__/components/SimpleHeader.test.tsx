@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { SimpleHeader } from '@/shared/components';
 
@@ -12,40 +12,22 @@ jest.mock('next/link', () => {
 });
 
 describe('SimpleHeader', () => {
-  it('renders the EasyLoops brand logo text', () => {
+  it('renders the strategy title', () => {
     render(<SimpleHeader />);
-    expect(screen.getByText('EL')).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Product Market Placement Strategy' })).toBeInTheDocument();
   });
 
-  it('renders the brand name', () => {
+  it('strategy title links to strategy home', () => {
     render(<SimpleHeader />);
-    expect(screen.getByText('EasyLoops')).toBeInTheDocument();
-  });
-
-  it('renders all navigation links', () => {
-    render(<SimpleHeader />);
-    expect(screen.getByText('Competitors')).toBeInTheDocument();
-    expect(screen.getByText('Positioning')).toBeInTheDocument();
-    expect(screen.getByText('Hiring Tiers')).toBeInTheDocument();
-    expect(screen.getByText('Feedback')).toBeInTheDocument();
-    expect(screen.getByText('Resources')).toBeInTheDocument();
-  });
-
-  it('nav links point to correct routes', () => {
-    render(<SimpleHeader />);
-    const competitorsLink = screen.getByRole('link', { name: 'Competitors' });
-    expect(competitorsLink).toHaveAttribute('href', '/product-strategy/competitor-scan');
-
-    const positioningLink = screen.getByRole('link', { name: 'Positioning' });
-    expect(positioningLink).toHaveAttribute('href', '/product-strategy/positioning');
-
-    const hiringLink = screen.getByRole('link', { name: 'Hiring Tiers' });
-    expect(hiringLink).toHaveAttribute('href', '/product-strategy/hiring-tiers');
+    expect(screen.getByRole('link', { name: 'Product Market Placement Strategy' })).toHaveAttribute(
+      'href',
+      '/product-strategy'
+    );
   });
 
   it('renders the dark mode toggle button', () => {
     render(<SimpleHeader />);
-    expect(screen.getByRole('button')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Toggle dark mode' })).toBeInTheDocument();
   });
 
   it('toggles dark class on <html> when button is clicked', async () => {
@@ -57,5 +39,21 @@ describe('SimpleHeader', () => {
     expect(document.documentElement.classList.contains('dark')).toBe(true);
     await user.click(btn);
     expect(document.documentElement.classList.contains('dark')).toBe(false);
+  });
+
+  it('updates header visual style after scrolling', () => {
+    render(<SimpleHeader />);
+    const header = screen.getByRole('banner');
+
+    expect(header.className).toContain('bg-white/20');
+
+    Object.defineProperty(window, 'scrollY', {
+      configurable: true,
+      value: 24,
+      writable: true,
+    });
+    fireEvent.scroll(window);
+
+    expect(header.className).toContain('bg-white/40');
   });
 });

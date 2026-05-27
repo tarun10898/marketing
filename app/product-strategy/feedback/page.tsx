@@ -1,5 +1,11 @@
-import Link from 'next/link';
 import { SimpleHeader } from '@/shared/components';
+import {
+  ResourceLinkCard,
+  StrategyBreadcrumb,
+  StrategyFooter,
+  StrategyPageIntro,
+  StrategyPageNav,
+} from '@/shared/components/strategy-page';
 
 const feedbackLinks = [
   {
@@ -31,90 +37,42 @@ export default function FeedbackPage() {
       <SimpleHeader />
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-8">
-          <Link
-            href="/product-strategy"
-            className="hover:text-rose-600 dark:hover:text-rose-400 transition-colors"
-          >
-            Product Strategy
-          </Link>
-          <span>/</span>
-          <span className="text-gray-900 dark:text-white font-medium">Feedback Links</span>
-        </nav>
+        <StrategyBreadcrumb
+          current="Feedback Links"
+          linkClassName="hover:text-rose-600 dark:hover:text-rose-400 transition-colors"
+        />
 
-        <header className="mb-10">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest bg-rose-100 text-rose-700 dark:bg-rose-900 dark:text-rose-300 mb-3">
-            Stage 2
-          </span>
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">
-            Feedback Links
-          </h1>
-          <p className="text-gray-600 dark:text-gray-300">
-            Feedback forms, surveys, and response sheets used to gather learner and interview
-            insights.
-          </p>
-        </header>
+        <StrategyPageIntro
+          badge="Stage 2"
+          badgeClassName="bg-rose-100 text-rose-700 dark:bg-rose-900 dark:text-rose-300"
+          title="Feedback Links"
+          description="Feedback forms, surveys, and response sheets used to gather learner and interview insights."
+        />
 
         <section className="space-y-4 mb-12">
           {feedbackLinks.map((r) => (
-            <a
+            <ResourceLinkCard
               key={r.href}
+              title={r.title}
+              description={r.description}
               href={r.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-start gap-4 bg-white/65 dark:bg-slate-800/55 backdrop-blur-md rounded-2xl p-6 border border-white/70 dark:border-slate-700/50 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-            >
-              <span className="text-3xl flex-shrink-0">{r.icon}</span>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 mb-1">
-                  <p className="font-semibold text-gray-900 dark:text-white group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">
-                    {r.title}
-                  </p>
-                  <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 flex-shrink-0">
-                    {r.type}
-                  </span>
-                </div>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">{r.description}</p>
-                <p className="text-xs text-rose-600 dark:text-rose-400 truncate">{r.href}</p>
-              </div>
-              <svg
-                className="w-5 h-5 text-gray-300 dark:text-gray-600 group-hover:text-rose-500 transition-colors flex-shrink-0 mt-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
-              </svg>
-            </a>
+              type={r.type}
+              icon={r.icon}
+              titleClassName="group-hover:text-rose-600 dark:group-hover:text-rose-400"
+              urlClassName="text-rose-600 dark:text-rose-400"
+              iconClassName="group-hover:text-rose-500"
+            />
           ))}
         </section>
 
-        {/* Nav */}
-        <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
-          <Link
-            href="/product-strategy/resources"
-            className="text-sm text-rose-600 dark:text-rose-400 hover:underline"
-          >
-            ← Resources
-          </Link>
-          <Link
-            href="/product-strategy"
-            className="text-sm text-rose-600 dark:text-rose-400 hover:underline"
-          >
-            Strategy Overview →
-          </Link>
-        </div>
+        <StrategyPageNav
+          left={{ href: '/product-strategy/resources', label: '← Resources' }}
+          right={{ href: '/product-strategy', label: 'Strategy Overview →' }}
+          linkClassName="text-sm text-rose-600 dark:text-rose-400 hover:underline"
+        />
       </main>
 
-      <footer className="border-t border-gray-200 dark:border-gray-700 py-6 px-6 text-center text-sm text-gray-400 dark:text-gray-500 mt-12">
-        © {new Date().getFullYear()} EasyLoops. Internal strategy document.
-      </footer>
+      <StrategyFooter message="EasyLoops. Internal strategy document." />
     </div>
   );
 }

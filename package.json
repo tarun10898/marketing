@@ -3,14 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "npm run build && npm run test && npm run lint",
     "dev": "next dev --turbopack",
+    "dev:quick": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "eslint app shared",
     "lint:fix": "eslint app shared --fix",
     "test": "jest",
+    "test:integration": "jest __tests__/integration",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:e2e": "playwright test",
+    "verify": "npm test && npm run lint && npm run build",
+    "verify:ci": "npm run test:coverage && npm run lint && npm run build",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "15.5.18",
@@ -19,6 +26,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
+    "@playwright/test": "^1.60.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
@@ -29,6 +37,7 @@
     "autoprefixer": "^10.4.21",
     "eslint": "^9.39.4",
     "eslint-config-next": "^15.5.18",
+    "husky": "^9.1.7",
     "jest": "^30.4.2",
     "jest-environment-jsdom": "^30.4.1",
     "postcss": "^8.5.3",
