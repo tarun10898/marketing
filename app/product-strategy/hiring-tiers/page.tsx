@@ -112,9 +112,9 @@ export function HiringTiersPageContent({
 
   return (
     <StrategyDetailPageShell
-      current="Hiring Tiers"
+      current="Popular Companies Students and Experienced Ones Know"
       badge="Course Reference"
-      title="Company Hiring Tiers"
+      title="Popular Companies Students and Experienced Ones Know"
       description="Indian Software Engineer / SDE / Associate Engineer roles classified by CTC. Click a category to expand, then click a company to see exam pattern details."
       breadcrumbLinkClassName={pageTheme.breadcrumbLinkClassName}
       introBadgeClassName={pageTheme.introBadgeClassName}

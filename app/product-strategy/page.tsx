@@ -46,7 +46,7 @@ const stages = [
   },
   {
     number: '06',
-    title: 'Company Hiring Tiers',
+    title: 'Popular Companies Students and Experienced Ones Know',
     description:
       'All Indian SE / SDE hiring companies classified into Tier-1 (≥₹10 LPA), Tier-2 (₹4.5–10 LPA), and Tier-3 (≤₹4.5 LPA) with exam patterns.',
     href: '/product-strategy/hiring-tiers',

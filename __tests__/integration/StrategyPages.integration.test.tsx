@@ -77,7 +77,7 @@ describe('Strategy pages integration', () => {
     const user = userEvent.setup();
     render(<HiringTiersPage />);
 
-    expect(screen.getByRole('heading', { name: 'Company Hiring Tiers' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Popular Companies Students and Experienced Ones Know' })).toBeInTheDocument();
     expect(screen.getByText('Course Reference')).toBeInTheDocument();
     expect(screen.getByText(/Internal course reference document/i)).toBeInTheDocument();
 

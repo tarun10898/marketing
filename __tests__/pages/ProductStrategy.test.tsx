@@ -27,7 +27,7 @@ describe('ProductStrategyPage (dashboard)', () => {
     expect(screen.getByText('Customer Engagement & KPIs')).toBeInTheDocument();
     expect(screen.getByText('Resources')).toBeInTheDocument();
     expect(screen.getByText('Feedback Links')).toBeInTheDocument();
-    expect(screen.getByText('Company Hiring Tiers')).toBeInTheDocument();
+    expect(screen.getByText('Popular Companies Students and Experienced Ones Know')).toBeInTheDocument();
   });
 
   it('stage cards link to correct routes', () => {
@@ -41,7 +41,7 @@ describe('ProductStrategyPage (dashboard)', () => {
     ).toHaveAttribute('href', '/product-strategy/feedback');
 
     expect(
-      screen.getByRole('link', { name: /Company Hiring Tiers/i })
+      screen.getByRole('link', { name: /Popular Companies Students and Experienced Ones Know/i })
     ).toHaveAttribute('href', '/product-strategy/hiring-tiers');
   });
 

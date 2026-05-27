@@ -123,7 +123,7 @@ function renderPage() {
 describe('HiringTiersPage', () => {
   it('renders the page heading', () => {
     renderPage();
-    expect(screen.getByRole('heading', { name: /Company Hiring Tiers/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Popular Companies Students and Experienced Ones Know/i })).toBeInTheDocument();
   });
 
   it('renders top-level accordions for Freshers and Experienced', () => {

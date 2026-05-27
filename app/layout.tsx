@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" style={rootThemeVariables as CSSProperties}>
-      <body className={`${bodyFont.variable} ${displayFont.variable} font-sans`}>
+    <html lang="en" data-scroll-behavior="smooth" style={rootThemeVariables as CSSProperties}>
+      <body suppressHydrationWarning className={`${bodyFont.variable} ${displayFont.variable} font-sans`}>
         {children}
       </body>
     </html>

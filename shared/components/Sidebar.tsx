@@ -41,8 +41,8 @@ export function Sidebar({ className = '' }: { className?: string }) {
     },
     {
       href: '/product-strategy/hiring-tiers',
-      label: 'Hiring Tiers',
-      detail: 'SDE company classification',
+      label: 'Popular Companies Students and Experienced Ones Know',
+      detail: 'Company classification for freshers & experienced',
       icon: '💼',
     },
   ];

@@ -185,7 +185,7 @@ export const strategyPageThemes = {
   },
   hiringTiers: {
     route: '/product-strategy/hiring-tiers',
-    label: 'Hiring Tiers',
+    label: 'Popular Companies Students and Experienced Ones Know',
     summary: 'Primary theme tokens own the page shell, search controls, and footer note while tier semantics stay domain-specific.',
     breadcrumbLinkClassName: 'hover:text-primary dark:hover:text-primary-dark transition-colors',
     introBadgeClassName:
