@@ -1,3 +1,4 @@
+import { strategyPageThemes } from '@/app/config-layout/theme';
 import { SimpleHeader } from '@/shared/components';
 import {
   FeatureCard,
@@ -105,6 +106,8 @@ const kpis = [
 ];
 
 export default function PositioningPage() {
+  const pageTheme = strategyPageThemes.positioning;
+
   return (
     <div className="min-h-screen transition-colors">
       <SimpleHeader />
@@ -112,12 +115,12 @@ export default function PositioningPage() {
       <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <StrategyBreadcrumb
           current="Position · Promotion · Price"
-          linkClassName="hover:text-violet-600 dark:hover:text-violet-400 transition-colors"
+          linkClassName={pageTheme.breadcrumbLinkClassName}
         />
 
         <StrategyPageIntro
           badge="Stage 1"
-          badgeClassName="bg-violet-100 text-violet-700 dark:bg-violet-900 dark:text-violet-300"
+          badgeClassName={pageTheme.introBadgeClassName}
           title="Position · Promotion · Price"
           description="How EasyLoops is positioned in the market, how we will promote it, and our pricing strategy designed for global + regional affordability."
           descriptionClassName="max-w-2xl"
@@ -126,30 +129,30 @@ export default function PositioningPage() {
 
         {/* Positioning */}
         <section className="mb-14">
-          <StrategySectionTitle title="Product Positioning" accentClassName="bg-violet-500" />
+          <StrategySectionTitle title="Product Positioning" accentClassName="bg-primary" />
 
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700 shadow-sm mb-6">
-            <p className="text-xs uppercase tracking-widest font-semibold text-violet-600 dark:text-violet-400 mb-2">
+          <div className="bg-white dark:bg-surface-dark-subtle rounded-2xl p-8 border border-border/40 dark:border-border-dark/50 shadow-sm mb-6">
+            <p className="text-xs uppercase tracking-widest font-semibold text-primary dark:text-primary-dark mb-2">
               Unique Value Proposition
             </p>
-            <blockquote className="text-2xl font-bold text-gray-800 dark:text-white italic mb-4">
+            <blockquote className="font-display text-2xl font-bold text-ink dark:text-ink-dark italic mb-4">
               &quot;Learn anywhere, in your language, with structured loops that make knowledge
               stick.&quot;
             </blockquote>
             <div className="grid sm:grid-cols-2 gap-4 mt-4">
-              <div className="bg-violet-50 dark:bg-violet-900/20 rounded-xl p-4">
-                <p className="text-xs font-semibold uppercase tracking-wider text-violet-700 dark:text-violet-400 mb-1">
+              <div className="bg-primary-soft/35 dark:bg-primary/15 rounded-xl p-4">
+                <p className="text-xs font-semibold uppercase tracking-wider text-primary dark:text-primary-dark mb-1">
                   Tone
                 </p>
-                <p className="text-gray-700 dark:text-gray-300 text-sm">
+                <p className="text-ink-muted dark:text-ink-dark-muted text-sm">
                   Motivational · Professional · Aspirational
                 </p>
               </div>
-              <div className="bg-violet-50 dark:bg-violet-900/20 rounded-xl p-4">
-                <p className="text-xs font-semibold uppercase tracking-wider text-violet-700 dark:text-violet-400 mb-1">
+              <div className="bg-primary-soft/35 dark:bg-primary/15 rounded-xl p-4">
+                <p className="text-xs font-semibold uppercase tracking-wider text-primary dark:text-primary-dark mb-1">
                   Key Differentiator
                 </p>
-                <p className="text-gray-700 dark:text-gray-300 text-sm">
+                <p className="text-ink-muted dark:text-ink-dark-muted text-sm">
                   Multilingual sub-pages (Hindi, Telugu, Tamil, Kannada) + global English hub
                 </p>
               </div>
@@ -159,7 +162,7 @@ export default function PositioningPage() {
 
         {/* Promotion */}
         <section className="mb-14">
-          <StrategySectionTitle title="Promotion Plan" accentClassName="bg-pink-500" />
+          <StrategySectionTitle title="Promotion Plan" accentClassName="bg-secondary" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {promotionItems.map((item) => (
               <FeatureCard
@@ -174,15 +177,15 @@ export default function PositioningPage() {
 
         {/* Pricing */}
         <section className="mb-14">
-          <StrategySectionTitle title="Pricing Strategy" accentClassName="bg-emerald-500" />
+          <StrategySectionTitle title="Pricing Strategy" accentClassName="bg-primary" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {pricingTiers.map((tier) => (
               <div
                 key={tier.name}
                 className={`rounded-2xl p-6 border shadow-sm ${
                   tier.highlight
-                    ? 'bg-violet-600 border-violet-500 text-white'
-                    : 'bg-white dark:bg-gray-800 border-gray-100 dark:border-gray-700'
+                    ? 'bg-primary border-primary text-white'
+                    : 'bg-white dark:bg-surface-dark-subtle border-border/40 dark:border-border-dark/50'
                 }`}
               >
                 {tier.highlight && (
@@ -199,14 +202,14 @@ export default function PositioningPage() {
                 </p>
                 <p
                   className={`text-sm mb-3 ${
-                    tier.highlight ? 'text-violet-200' : 'text-gray-500 dark:text-gray-400'
+                    tier.highlight ? 'text-white/80' : 'text-ink-muted dark:text-ink-dark-muted'
                   }`}
                 >
                   {tier.description}
                 </p>
                 <p
                   className={`text-base font-semibold mb-4 ${
-                    tier.highlight ? 'text-white' : 'text-gray-800 dark:text-gray-200'
+                    tier.highlight ? 'text-white' : 'text-ink dark:text-ink-dark'
                   }`}
                 >
                   {tier.price}
@@ -216,7 +219,7 @@ export default function PositioningPage() {
                     <li
                       key={f}
                       className={`text-sm flex items-start gap-2 ${
-                        tier.highlight ? 'text-violet-100' : 'text-gray-600 dark:text-gray-300'
+                        tier.highlight ? 'text-white/90' : 'text-ink-muted dark:text-ink-dark-muted'
                       }`}
                     >
                       <span className="mt-0.5">✓</span>
@@ -227,7 +230,7 @@ export default function PositioningPage() {
               </div>
             ))}
           </div>
-          <p className="text-xs text-gray-400 dark:text-gray-500 mt-4">
+          <p className="text-xs text-ink-muted/80 dark:text-ink-dark-muted/75 mt-4">
             Freemium model: Free intro courses, premium advanced tracks. No Cost EMI available for
             Indian users. Global pricing adjusted to local affordability while maintaining brand
             premium.
@@ -237,11 +240,11 @@ export default function PositioningPage() {
         {/* Stage 2 – Customer Engagement */}
         <section id="engagement" className="mb-14">
           <div className="mb-2">
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest bg-emerald-100 text-emerald-700 dark:bg-emerald-900 dark:text-emerald-300 mb-3">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest bg-secondary-soft/80 text-secondary dark:bg-secondary/20 dark:text-secondary-dark mb-3">
               Stage 2
             </span>
           </div>
-          <StrategySectionTitle title="Customer Engagement" accentClassName="bg-teal-500" />
+          <StrategySectionTitle title="Customer Engagement" accentClassName="bg-secondary" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
             {engagementItems.map((e) => (
               <FeatureCard
@@ -255,22 +258,22 @@ export default function PositioningPage() {
           </div>
 
           {/* KPIs */}
-          <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
+          <h3 className="font-display text-lg font-bold text-ink dark:text-ink-dark mb-4">
             Metrics &amp; KPIs
           </h3>
-          <div className="overflow-x-auto rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
+          <div className="overflow-x-auto rounded-xl shadow-sm border border-border dark:border-border-dark">
             <table className="min-w-full text-sm">
               <thead>
-                <tr className="bg-gray-50 dark:bg-gray-800 text-left">
-                  <th className="px-4 py-3 font-semibold text-gray-700 dark:text-gray-300 w-40">Category</th>
-                  <th className="px-4 py-3 font-semibold text-gray-700 dark:text-gray-300">Key Metrics</th>
+                <tr className="bg-surface-subtle dark:bg-surface-dark-subtle text-left">
+                  <th className="px-4 py-3 font-semibold text-ink-muted dark:text-ink-dark-muted w-40">Category</th>
+                  <th className="px-4 py-3 font-semibold text-ink-muted dark:text-ink-dark-muted">Key Metrics</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-100 dark:divide-gray-700">
+              <tbody className="divide-y divide-border/50 dark:divide-border-dark/50">
                 {kpis.map((k) => (
-                  <tr key={k.category} className="bg-white dark:bg-gray-900">
-                    <td className="px-4 py-3 font-semibold text-gray-800 dark:text-white">{k.category}</td>
-                    <td className="px-4 py-3 text-gray-600 dark:text-gray-300">{k.metrics}</td>
+                  <tr key={k.category} className="bg-white dark:bg-surface-dark">
+                    <td className="px-4 py-3 font-semibold text-ink dark:text-ink-dark">{k.category}</td>
+                    <td className="px-4 py-3 text-ink-muted dark:text-ink-dark-muted">{k.metrics}</td>
                   </tr>
                 ))}
               </tbody>
@@ -281,7 +284,7 @@ export default function PositioningPage() {
         <StrategyPageNav
           left={{ href: '/product-strategy/competitor-scan', label: '← Competitor Scan' }}
           right={{ href: '/product-strategy/resources', label: 'Resources →' }}
-          linkClassName="text-sm text-violet-600 dark:text-violet-400 hover:underline"
+          linkClassName={pageTheme.navLinkClassName}
         />
       </main>
 

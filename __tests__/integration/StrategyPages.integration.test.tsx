@@ -1,5 +1,6 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import ConfigLayoutPage from '@/app/config-layout/page';
 import ProductStrategyPage from '@/app/product-strategy/page';
 import ResourcesPage from '@/app/product-strategy/resources/page';
 import HiringTiersPage from '@/app/product-strategy/hiring-tiers/page';
@@ -54,6 +55,24 @@ describe('Strategy pages integration', () => {
     expect(document.documentElement.classList.contains('dark')).toBe(true);
   });
 
+  it('integrates the config layout page with shared header behavior and themed route links', async () => {
+    const user = userEvent.setup();
+    render(<ConfigLayoutPage />);
+
+    expect(screen.getByRole('heading', { name: 'Config Layout' })).toBeInTheDocument();
+    expect(screen.getByText('Single source of truth')).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: 'Go to strategy overview' })
+    ).toHaveAttribute('href', '/product-strategy');
+    expect(
+      screen.getByRole('link', { name: /Competitor Scan/i })
+    ).toHaveAttribute('href', '/product-strategy/competitor-scan');
+
+    const darkModeButton = screen.getByRole('button', { name: 'Toggle dark mode' });
+    await user.click(darkModeButton);
+    expect(document.documentElement.classList.contains('dark')).toBe(true);
+  });
+
   it('integrates the hiring tiers page shell with search and accordion interactions', async () => {
     const user = userEvent.setup();
     render(<HiringTiersPage />);
@@ -63,7 +82,7 @@ describe('Strategy pages integration', () => {
     expect(screen.getByText(/Internal course reference document/i)).toBeInTheDocument();
 
     const searchInput = screen.getByRole('textbox');
-    await user.type(searchInput, 'sde2');
+    fireEvent.change(searchInput, { target: { value: 'sde2' } });
     expect(screen.getAllByText(/SDE 2/i).length).toBeGreaterThan(0);
 
     await user.click(screen.getByRole('button', { name: 'Clear search' }));
