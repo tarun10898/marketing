@@ -83,7 +83,7 @@ describe('Strategy pages integration', () => {
 
     const searchInput = screen.getByRole('textbox');
     fireEvent.change(searchInput, { target: { value: 'sde2' } });
-    expect(screen.getAllByText(/SDE 2/i).length).toBeGreaterThan(0);
+    expect((await screen.findAllByText(/SDE 2/i)).length).toBeGreaterThan(0);
 
     await user.click(screen.getByRole('button', { name: 'Clear search' }));
     expect(searchInput).toHaveValue('');
@@ -94,7 +94,7 @@ describe('Strategy pages integration', () => {
     expect(tier1Button).toBeDefined();
 
     await user.click(tier1Button!);
-    const razorpayButton = screen.getAllByText('Razorpay')[0].closest('button');
+    const razorpayButton = (await screen.findAllByText('Razorpay'))[0].closest('button');
     expect(razorpayButton).not.toBeNull();
 
     await user.click(razorpayButton!);

@@ -1,20 +1,20 @@
-const nextJest = require('next/jest');
+const nextJest = require("next/jest");
 
-const createJestConfig = nextJest({ dir: './' });
+const createJestConfig = nextJest({ dir: "./" });
 
 /** @type {import('jest').Config} */
 const config = {
-  testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  testEnvironment: "jsdom",
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/$1',
+    "^@/(.*)$": "<rootDir>/$1",
   },
-  testMatch: ['**/__tests__/**/*.test.{ts,tsx}'],
+  testMatch: ["**/__tests__/**/*.test.{ts,tsx}"],
   collectCoverageFrom: [
-    'app/**/*.{ts,tsx}',
-    'shared/**/*.{ts,tsx}',
-    '!**/*.d.ts',
-    '!**/node_modules/**',
+    "app/**/*.{ts,tsx}",
+    "shared/**/*.{ts,tsx}",
+    "!**/*.d.ts",
+    "!**/node_modules/**",
   ],
   coverageThreshold: {
     global: {

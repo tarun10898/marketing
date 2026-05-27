@@ -2,6 +2,8 @@
 
 This app now treats route code as an orchestration layer, not a dumping ground for data, rendering, and business rules.
 
+See `docs/adr.md` for the decision log that explains why these rules exist and when they should change.
+
 ## Route Contract
 
 - `page.tsx` should compose data, state, and route-local modules. Keep it small and readable.
