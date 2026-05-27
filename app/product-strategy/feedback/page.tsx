@@ -1,11 +1,7 @@
 import { strategyPageThemes } from '@/app/config-layout/theme';
-import { SimpleHeader } from '@/shared/components';
 import {
   ResourceLinkCard,
-  StrategyBreadcrumb,
-  StrategyFooter,
-  StrategyPageIntro,
-  StrategyPageNav,
+  StrategyDetailPageShell,
 } from '@/shared/components/strategy-page';
 
 const feedbackLinks = [
@@ -36,46 +32,34 @@ export default function FeedbackPage() {
   const pageTheme = strategyPageThemes.feedback;
 
   return (
-    <div className="min-h-screen transition-colors">
-      <SimpleHeader />
-
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <StrategyBreadcrumb
-          current="Feedback Links"
-          linkClassName={pageTheme.breadcrumbLinkClassName}
-        />
-
-        <StrategyPageIntro
-          badge="Stage 2"
-          badgeClassName={pageTheme.introBadgeClassName}
-          title="Feedback Links"
-          description="Feedback forms, surveys, and response sheets used to gather learner and interview insights."
-        />
-
-        <section className="space-y-4 mb-12">
-          {feedbackLinks.map((r) => (
-            <ResourceLinkCard
-              key={r.href}
-              title={r.title}
-              description={r.description}
-              href={r.href}
-              type={r.type}
-              icon={r.icon}
-              titleClassName={pageTheme.resourceTitleHoverClassName}
-              urlClassName={pageTheme.resourceUrlClassName}
-              iconClassName={pageTheme.resourceIconHoverClassName}
-            />
-          ))}
-        </section>
-
-        <StrategyPageNav
-          left={{ href: '/product-strategy/resources', label: '← Resources' }}
-          right={{ href: '/product-strategy', label: 'Strategy Overview →' }}
-          linkClassName={pageTheme.navLinkClassName}
-        />
-      </main>
-
-      <StrategyFooter message="EasyLoops. Internal strategy document." />
-    </div>
+    <StrategyDetailPageShell
+      current="Feedback Links"
+      badge="Stage 2"
+      title="Feedback Links"
+      description="Feedback forms, surveys, and response sheets used to gather learner and interview insights."
+      breadcrumbLinkClassName={pageTheme.breadcrumbLinkClassName}
+      introBadgeClassName={pageTheme.introBadgeClassName}
+      navLinkClassName={pageTheme.navLinkClassName}
+      leftNav={{ href: '/product-strategy/resources', label: '← Resources' }}
+      rightNav={{ href: '/product-strategy', label: 'Strategy Overview →' }}
+      footerMessage="EasyLoops. Internal strategy document."
+      mainClassName="max-w-3xl"
+    >
+      <section className="space-y-4 mb-12">
+        {feedbackLinks.map((r) => (
+          <ResourceLinkCard
+            key={r.href}
+            title={r.title}
+            description={r.description}
+            href={r.href}
+            type={r.type}
+            icon={r.icon}
+            titleClassName={pageTheme.resourceTitleHoverClassName}
+            urlClassName={pageTheme.resourceUrlClassName}
+            iconClassName={pageTheme.resourceIconHoverClassName}
+          />
+        ))}
+      </section>
+    </StrategyDetailPageShell>
   );
 }

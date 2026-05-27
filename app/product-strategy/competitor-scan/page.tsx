@@ -1,10 +1,6 @@
 import { strategyPageThemes } from '@/app/config-layout/theme';
-import { SimpleHeader } from '@/shared/components';
 import {
-  StrategyBreadcrumb,
-  StrategyFooter,
-  StrategyPageIntro,
-  StrategyPageNav,
+  StrategyDetailPageShell,
   StrategySectionTitle,
 } from '@/shared/components/strategy-page';
 
@@ -137,25 +133,21 @@ export default function CompetitorScanPage() {
   const pageTheme = strategyPageThemes.competitorScan;
 
   return (
-    <div className="min-h-screen transition-colors">
-      <SimpleHeader />
-
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <StrategyBreadcrumb
-          current="Competitor Scan"
-          linkClassName={pageTheme.breadcrumbLinkClassName}
-        />
-
-        <StrategyPageIntro
-          badge="Stage 1"
-          badgeClassName={pageTheme.introBadgeClassName}
-          title="Competitor Scan"
-          description="50 global and 50 Indian learning platforms analysed across pricing, features, and content-creation models to identify where EasyLoops can lead."
-          descriptionClassName="max-w-2xl"
-        />
-
-        {/* Global competitors */}
-        <section className="mb-16">
+    <StrategyDetailPageShell
+      current="Competitor Scan"
+      badge="Stage 1"
+      title="Competitor Scan"
+      description="50 global and 50 Indian learning platforms analysed across pricing, features, and content-creation models to identify where EasyLoops can lead."
+      breadcrumbLinkClassName={pageTheme.breadcrumbLinkClassName}
+      introBadgeClassName={pageTheme.introBadgeClassName}
+      navLinkClassName={pageTheme.navLinkClassName}
+      leftNav={{ href: '/product-strategy', label: '← Back to Strategy Overview' }}
+      rightNav={{ href: '/product-strategy/positioning', label: 'Position · Promotion · Price →' }}
+      footerMessage="EasyLoops. Internal strategy document."
+      mainClassName="max-w-7xl"
+      introDescriptionClassName="max-w-2xl"
+    >
+      <section className="mb-16">
           <StrategySectionTitle title="Global Competitors" accentClassName="bg-primary" />
           <div className="overflow-x-auto rounded-xl shadow-sm border border-border dark:border-border-dark">
             <table className="min-w-full text-sm">
@@ -186,10 +178,9 @@ export default function CompetitorScanPage() {
               </tbody>
             </table>
           </div>
-        </section>
+      </section>
 
-        {/* Indian competitors */}
-        <section className="mb-16">
+      <section className="mb-16">
           <StrategySectionTitle title="Indian Competitors" accentClassName="bg-secondary" />
           <div className="overflow-x-auto rounded-xl shadow-sm border border-border dark:border-border-dark">
             <table className="min-w-full text-sm">
@@ -222,10 +213,9 @@ export default function CompetitorScanPage() {
               </tbody>
             </table>
           </div>
-        </section>
+      </section>
 
-        {/* Content model glossary */}
-        <section className="mb-12">
+      <section className="mb-12">
           <h2 className="font-display text-xl font-bold text-ink dark:text-ink-dark mb-5">
             Content Creation Model Glossary
           </h2>
@@ -240,16 +230,7 @@ export default function CompetitorScanPage() {
               </div>
             ))}
           </div>
-        </section>
-
-        <StrategyPageNav
-          left={{ href: '/product-strategy', label: '← Back to Strategy Overview' }}
-          right={{ href: '/product-strategy/positioning', label: 'Position · Promotion · Price →' }}
-          linkClassName={pageTheme.navLinkClassName}
-        />
-      </main>
-
-      <StrategyFooter message="EasyLoops. Internal strategy document." />
-    </div>
+      </section>
+    </StrategyDetailPageShell>
   );
 }

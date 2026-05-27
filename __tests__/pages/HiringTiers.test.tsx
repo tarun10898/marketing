@@ -31,7 +31,6 @@ describe('HiringTiersPage', () => {
   });
 
   it('keeps Tier-1 companies hidden until Tier-1 is opened', async () => {
-    const user = userEvent.setup();
     render(<HiringTiersPage />);
     const tier1Btn = screen.getAllByRole('button').find(
       (b) => /Tier.1/i.test(b.textContent ?? '')
@@ -40,7 +39,7 @@ describe('HiringTiersPage', () => {
     // Tier accordions are collapsed by default
     expect(screen.queryByRole('button', { name: /Razorpay/i })).not.toBeInTheDocument();
 
-    await user.click(tier1Btn);
+    fireEvent.click(tier1Btn);
 
     // Tier-1 companies appear after opening
     expect(screen.getAllByRole('button', { name: /Razorpay/i }).length).toBeGreaterThan(0);
