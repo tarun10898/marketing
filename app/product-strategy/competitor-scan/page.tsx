@@ -196,6 +196,7 @@ export default function CompetitorScanPage() {
           <button
             onClick={() => setSearchQuery('')}
             className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-ink-muted/60 hover:text-ink dark:text-ink-dark-muted/65 dark:hover:text-ink-dark transition-colors"
+            aria-label="Clear search"
           >
             <svg className="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
