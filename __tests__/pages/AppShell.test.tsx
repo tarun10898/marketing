@@ -21,7 +21,7 @@ describe('App shell pages/layouts', () => {
   });
 
   it('exports expected root metadata', () => {
-    expect(rootMetadata.title).toBe('EasyLoops – Product Strategy');
+    expect(rootMetadata.title).toBe('EasyLoops Internal');
     expect(rootMetadata.description).toContain('internal product market placement strategy dashboard');
   });
 
@@ -35,7 +35,7 @@ describe('App shell pages/layouts', () => {
   });
 
   it('exports expected product strategy metadata and passes children through', () => {
-    expect(productStrategyMetadata.title).toBe('Product Market Placement Strategy – EasyLoops');
+    expect(productStrategyMetadata.title).toBe('EasyLoops Internal – Product Strategy');
 
     const child = <section data-testid="ps-child">PS Child</section>;
     const element = ProductStrategyLayout({ children: child });

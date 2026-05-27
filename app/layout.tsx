@@ -5,7 +5,7 @@ import { rootThemeVariables } from '@/app/config-layout/theme';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'EasyLoops – Product Strategy',
+  title: 'EasyLoops Internal',
   description: 'EasyLoops internal product market placement strategy dashboard.',
 };
 

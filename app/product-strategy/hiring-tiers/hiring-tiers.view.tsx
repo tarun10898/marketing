@@ -3,6 +3,7 @@ import {
   eligibilitySummary,
   tierColors,
   type TierSummary,
+  tierDefinitions,
 } from './hiring-tiers.meta';
 import type { Tier } from './hiring-tiers.data';
 import { getCompanyKey } from './hiring-tiers.model';
@@ -205,7 +206,25 @@ export function HiringTiersAccordionList({
             </button>
 
             {isTierOpen && isFullTier(tier) ? (
-              <div className="px-4 pb-4 space-y-2">
+              <div className="px-4 pb-4 space-y-3">
+                {/* Tier Overview Card */}
+                {tierDefinitions[tier.id] && (
+                  <div className={`p-4 rounded-xl border mb-3 text-xs grid grid-cols-1 md:grid-cols-3 gap-3 bg-white/20 dark:bg-surface-dark-subtle/25 backdrop-blur-sm ${colors.detailBorder}`}>
+                    <div>
+                      <p className="font-bold text-ink dark:text-ink-dark mb-0.5 uppercase tracking-wider text-[9px] opacity-75">Overview</p>
+                      <p className="text-ink-muted dark:text-ink-dark-muted leading-relaxed">{tierDefinitions[tier.id].summary}</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-ink dark:text-ink-dark mb-0.5 uppercase tracking-wider text-[9px] opacity-75">Interview Complexity</p>
+                      <p className="text-ink-muted dark:text-ink-dark-muted leading-relaxed">{tierDefinitions[tier.id].interviewComplexity}</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-ink dark:text-ink-dark mb-0.5 uppercase tracking-wider text-[9px] opacity-75">Opportunity Path</p>
+                      <p className="text-ink-muted dark:text-ink-dark-muted leading-relaxed">{tierDefinitions[tier.id].opportunityPath}</p>
+                    </div>
+                  </div>
+                )}
+
                 {tier.companies.map((company) => {
                   const companyKey = getCompanyKey(tier.id, company);
                   const isCompanyOpen = openCompanies.has(companyKey);
@@ -253,57 +272,65 @@ export function HiringTiersAccordionList({
 
                       {isCompanyOpen ? (
                         <div className={`pl-6 pr-5 pb-5 border-t ${colors.detailBorder} ${colors.detailBg}`}>
-                          <div className="pt-4 space-y-4 text-sm">
-                            <div className="flex items-center gap-2">
-                              <span className={`inline-block w-2 h-2 rounded-full ${company.negativeMarking ? 'bg-red-500' : 'bg-green-500'}`} />
-                              <span className="text-gray-600 dark:text-gray-300 font-medium">
-                                {company.negativeMarking ? 'Negative marking applies' : 'No negative marking'}
-                              </span>
-                            </div>
-
-                            <div>
-                              <p className="text-xs uppercase tracking-widest font-semibold text-gray-400 dark:text-gray-500 mb-1">
-                                Rounds
-                              </p>
-                              <p className="text-gray-700 dark:text-gray-300">{company.rounds}</p>
-                            </div>
-
-                            <div>
-                              <p className="text-xs uppercase tracking-widest font-semibold text-gray-400 dark:text-gray-500 mb-2">
-                                Exam Pattern
-                              </p>
-                              <ul className="space-y-1">
-                                {company.pattern.map((step) => (
-                                  <li key={step} className="flex items-start gap-2 text-gray-700 dark:text-gray-300">
-                                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-gray-400 dark:bg-gray-500 flex-shrink-0" />
-                                    {step}
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-
-                            <div>
-                              <p className="text-xs uppercase tracking-widest font-semibold text-gray-400 dark:text-gray-500 mb-1">
-                                Interview Focus
-                              </p>
-                              <p className="text-gray-700 dark:text-gray-300">{company.interviews}</p>
-                            </div>
-
-                            <div>
-                              <p className="text-xs uppercase tracking-widest font-semibold text-gray-400 dark:text-gray-500 mb-1">
-                                Eligibility
-                              </p>
-                              <p className="text-gray-700 dark:text-gray-300">{company.eligibility}</p>
-                            </div>
-
-                            {company.notes ? (
-                              <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-3">
-                                <p className="text-xs font-semibold text-amber-700 dark:text-amber-400 mb-0.5">
-                                  Note
-                                </p>
-                                <p className="text-gray-700 dark:text-gray-300">{company.notes}</p>
+                          <div className="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                            
+                            {/* Left Column: Rounds & Exam Pattern */}
+                            <div className="space-y-4">
+                              <div className="flex items-center gap-2">
+                                <span className={`inline-block w-2.5 h-2.5 rounded-full ${company.negativeMarking ? 'bg-red-500 shadow-sm shadow-red-500/50' : 'bg-green-500 shadow-sm shadow-green-500/50'}`} />
+                                <span className="text-ink-muted dark:text-ink-dark-muted font-bold text-xs">
+                                  {company.negativeMarking ? 'Negative marking applies' : 'No negative marking'}
+                                </span>
                               </div>
-                            ) : null}
+
+                              <div>
+                                <p className="text-[10px] uppercase tracking-wider font-bold text-ink-muted dark:text-ink-dark-muted mb-1">
+                                  Rounds & Format
+                                </p>
+                                <p className="text-ink dark:text-ink-dark text-sm bg-white/45 dark:bg-surface-dark-subtle/30 p-2.5 rounded-xl border border-white/60 dark:border-border-dark/30 leading-relaxed">{company.rounds}</p>
+                              </div>
+
+                              <div>
+                                <p className="text-[10px] uppercase tracking-wider font-bold text-ink-muted dark:text-ink-dark-muted mb-1.5">
+                                  Exam Pattern
+                                </p>
+                                <ul className="space-y-1.5 bg-white/45 dark:bg-surface-dark-subtle/30 p-3 rounded-xl border border-white/60 dark:border-border-dark/30">
+                                  {company.pattern.map((step) => (
+                                    <li key={step} className="flex items-start gap-2 text-ink dark:text-ink-dark text-sm">
+                                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary-dark/60 dark:bg-primary-dark/80 flex-shrink-0" />
+                                      <span className="leading-relaxed">{step}</span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+
+                            {/* Right Column: Focus, Eligibility & Notes */}
+                            <div className="space-y-4">
+                              <div>
+                                <p className="text-[10px] uppercase tracking-wider font-bold text-ink-muted dark:text-ink-dark-muted mb-1">
+                                  Interview Focus
+                                </p>
+                                <p className="text-ink dark:text-ink-dark text-sm bg-white/45 dark:bg-surface-dark-subtle/30 p-2.5 rounded-xl border border-white/60 dark:border-border-dark/30 leading-relaxed">{company.interviews}</p>
+                              </div>
+
+                              <div>
+                                <p className="text-[10px] uppercase tracking-wider font-bold text-ink-muted dark:text-ink-dark-muted mb-1">
+                                  Eligibility
+                                </p>
+                                <p className="text-ink dark:text-ink-dark text-sm bg-white/45 dark:bg-surface-dark-subtle/30 p-2.5 rounded-xl border border-white/60 dark:border-border-dark/30 leading-relaxed">{company.eligibility}</p>
+                              </div>
+
+                              {company.notes ? (
+                                <div className="bg-amber-500/10 dark:bg-amber-500/5 border border-amber-500/20 rounded-xl px-4 py-3 shadow-sm shadow-amber-500/5">
+                                  <p className="text-[10px] uppercase tracking-wider font-bold text-amber-700 dark:text-amber-400 mb-1">
+                                    Important Note
+                                  </p>
+                                  <p className="text-ink-muted dark:text-ink-dark-muted text-xs leading-relaxed">{company.notes}</p>
+                                </div>
+                              ) : null}
+                            </div>
+
                           </div>
                         </div>
                       ) : null}
