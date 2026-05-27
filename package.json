@@ -12,9 +12,12 @@
     "lint:fix": "eslint app shared --fix",
     "test": "jest",
     "test:integration": "jest __tests__/integration",
+    "test:security": "jest __tests__/features/SecurityHeaders.test.ts",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:e2e": "playwright test",
+    "security:check": "npm audit --audit-level=high",
+    "verify:security": "npm run test:security && npm run security:check",
     "verify": "npm test && npm run lint && npm run build",
     "verify:ci": "npm run test:coverage && npm run lint && npm run build",
     "prepare": "husky"

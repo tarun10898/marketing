@@ -2,10 +2,16 @@ import {
   coreModules,
   eligibilitySummary,
   tierColors,
-  tiers as allHiringTiers,
-  type Tier,
-} from './hiring-tiers.data';
+  type TierSummary,
+} from './hiring-tiers.meta';
+import type { Tier } from './hiring-tiers.data';
 import { getCompanyKey } from './hiring-tiers.model';
+
+type DisplayTier = Tier | TierSummary;
+
+type HiringTiersLegendProps = {
+  tiers: TierSummary[];
+};
 
 type HiringTiersSearchProps = {
   value: string;
@@ -15,16 +21,23 @@ type HiringTiersSearchProps = {
 type HiringTiersResultSummaryProps = {
   query: string;
   resultCount: number;
+  isLoading?: boolean;
 };
 
 type HiringTiersAccordionListProps = {
-  tiers: Tier[];
+  tiers: DisplayTier[];
   activeTiers: Set<string>;
   openCompanies: Set<string>;
   searchActive: boolean;
   onToggleTier: (tierId: string) => void;
   onToggleCompany: (companyKey: string) => void;
+  isLoading?: boolean;
+  loadingTierId?: string | null;
 };
+
+function isFullTier(tier: DisplayTier): tier is Tier {
+  return 'companies' in tier;
+}
 
 function ChevronIcon({ open }: { open: boolean }) {
   return (
@@ -57,10 +70,10 @@ function CompanyExperienceBadge({ experience }: { experience?: string }) {
   );
 }
 
-export function HiringTiersLegend() {
+export function HiringTiersLegend({ tiers }: HiringTiersLegendProps) {
   return (
     <div className="mt-6 flex flex-wrap gap-4">
-      {allHiringTiers.map((tier) => (
+      {tiers.map((tier) => (
         <div key={tier.id} className="flex items-center gap-2">
           <span className={`inline-block w-3 h-3 rounded-full ${tierColors[tier.id].dot}`} />
           <span className="text-sm font-semibold text-ink dark:text-ink-dark">{tier.label}</span>
@@ -106,9 +119,18 @@ export function HiringTiersSearch({ value, onChange }: HiringTiersSearchProps) {
 export function HiringTiersResultSummary({
   query,
   resultCount,
+  isLoading,
 }: HiringTiersResultSummaryProps) {
   if (!query) {
     return null;
+  }
+
+  if (isLoading) {
+    return (
+      <p className="text-sm text-ink-muted dark:text-ink-dark-muted mb-4">
+        Loading hiring tier results for &ldquo;{query}&rdquo;...
+      </p>
+    );
   }
 
   return (
@@ -125,7 +147,17 @@ export function HiringTiersAccordionList({
   searchActive,
   onToggleTier,
   onToggleCompany,
+  isLoading,
+  loadingTierId,
 }: HiringTiersAccordionListProps) {
+  if (isLoading) {
+    return (
+      <div className="rounded-2xl border border-dashed border-border dark:border-border-dark bg-white/60 dark:bg-surface-dark/60 px-6 py-8 text-center text-sm text-ink-muted dark:text-ink-dark-muted">
+        Loading hiring tier data...
+      </div>
+    );
+  }
+
   if (!tiers.length) {
     return (
       <div className="rounded-2xl border border-dashed border-border dark:border-border-dark bg-white/60 dark:bg-surface-dark/60 px-6 py-8 text-center text-sm text-ink-muted dark:text-ink-dark-muted">
@@ -139,12 +171,18 @@ export function HiringTiersAccordionList({
       {tiers.map((tier) => {
         const colors = tierColors[tier.id];
         const isTierOpen = activeTiers.has(tier.id);
+        const companyCountLabel = isFullTier(tier)
+          ? `${tier.companies.length} companies / tracks`
+          : loadingTierId === tier.id
+            ? 'Loading companies...'
+            : tier.supportingLabel;
 
         return (
           <div key={tier.id} className={`rounded-2xl border overflow-hidden ${colors.header}`}>
             <button
               onClick={() => !searchActive && onToggleTier(tier.id)}
-              className={`w-full flex items-center justify-between px-6 py-5 text-left ${searchActive ? 'cursor-default' : ''}`}
+              disabled={loadingTierId === tier.id}
+              className={`w-full flex items-center justify-between px-6 py-5 text-left ${searchActive ? 'cursor-default' : ''} ${loadingTierId === tier.id ? 'opacity-80 cursor-wait' : ''}`}
             >
               <div className="flex items-center gap-4">
                 <span className={`inline-block w-3 h-3 rounded-full ${colors.dot}`} />
@@ -156,7 +194,7 @@ export function HiringTiersAccordionList({
                     </span>
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
-                    {tier.companies.length} companies / tracks
+                    {companyCountLabel}
                   </p>
                 </div>
               </div>
@@ -166,7 +204,7 @@ export function HiringTiersAccordionList({
               </span>
             </button>
 
-            {isTierOpen ? (
+            {isTierOpen && isFullTier(tier) ? (
               <div className="px-4 pb-4 space-y-2">
                 {tier.companies.map((company) => {
                   const companyKey = getCompanyKey(tier.id, company);

@@ -6,8 +6,38 @@ on:
 
 permissions:
   contents: read
+  pull-requests: read
 
 jobs:
+  security:
+    name: Security
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+        env:
+          HUSKY: 0
+
+      - name: Security checklist - validate headers and CSP
+        run: npm run test:security
+
+      - name: Security checklist - audit high severity dependencies
+        run: npm run security:check
+
+      - name: Security checklist - review dependency changes
+        if: github.event_name == 'pull_request'
+        uses: actions/dependency-review-action@v4
+
   verify:
     name: Verify
     runs-on: ubuntu-latest

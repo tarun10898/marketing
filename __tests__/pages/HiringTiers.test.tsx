@@ -1,6 +1,82 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import HiringTiersPage from '@/app/product-strategy/hiring-tiers/page';
+import { HiringTiersPageContent } from '@/app/product-strategy/hiring-tiers/page';
+
+const mockTiers = [
+  {
+    id: 'tier1',
+    label: 'Tier‑1',
+    range: '≥ ₹10 LPA',
+    accent: 'emerald',
+    badgeBg: 'bg-emerald-100',
+    badgeText: 'text-emerald-700',
+    borderColor: 'border-emerald-200',
+    companies: [
+      {
+        name: 'Razorpay',
+        role: 'Software Engineer (Fresher)',
+        ctc: '₹15–25+ LPA',
+        negativeMarking: false,
+        rounds: 'Online assessment → Technical rounds → HR',
+        pattern: ['DSA screening', 'Technical interviews'],
+        interviews: 'DSA + CS fundamentals',
+        eligibility: '60%+ and no active backlogs',
+      },
+      {
+        name: 'Google',
+        role: 'SDE 2 / SDE III',
+        ctc: '₹35–55+ LPA',
+        negativeMarking: false,
+        rounds: 'Online assessment → Interview loop',
+        pattern: ['Algorithms', 'Googleyness'],
+        interviews: 'Algorithms + systems',
+        eligibility: 'Top-tier academics preferred',
+      },
+    ],
+  },
+  {
+    id: 'tier2',
+    label: 'Tier‑2',
+    range: '₹4.5–10 LPA',
+    accent: 'blue',
+    badgeBg: 'bg-blue-100',
+    badgeText: 'text-blue-700',
+    borderColor: 'border-blue-200',
+    companies: [
+      {
+        name: 'Capgemini',
+        role: 'Analyst / Engineer',
+        ctc: '₹4.5–7.5 LPA',
+        negativeMarking: false,
+        rounds: 'Assessment → Interview',
+        pattern: ['Aptitude', 'Coding'],
+        interviews: 'Projects + communication',
+        eligibility: '60%+ throughout',
+      },
+    ],
+  },
+  {
+    id: 'tier3',
+    label: 'Tier‑3',
+    range: '≤ ₹4.5 LPA',
+    accent: 'slate',
+    badgeBg: 'bg-slate-100',
+    badgeText: 'text-slate-700',
+    borderColor: 'border-slate-200',
+    companies: [
+      {
+        name: 'SupportCo',
+        role: 'SDE 2 (Experienced Hire)',
+        ctc: '₹4 LPA',
+        negativeMarking: false,
+        rounds: 'Assessment → Interview',
+        pattern: ['Basics'],
+        interviews: 'Core CS',
+        eligibility: 'Open eligibility',
+      },
+    ],
+  },
+] as const;
 
 jest.mock('next/link', () => {
   const MockLink = ({ children, href }: { children: React.ReactNode; href: string }) => (
@@ -14,14 +90,18 @@ jest.mock('@/shared/components', () => ({
   SimpleHeader: () => <header data-testid="simple-header" />,
 }));
 
+function renderPage() {
+  render(<HiringTiersPageContent initialTiers={mockTiers as never} />);
+}
+
 describe('HiringTiersPage', () => {
   it('renders the page heading', () => {
-    render(<HiringTiersPage />);
+    renderPage();
     expect(screen.getByRole('heading', { name: /Company Hiring Tiers/i })).toBeInTheDocument();
   });
 
   it('renders accordion buttons for all three tiers', () => {
-    render(<HiringTiersPage />);
+    renderPage();
     // Each tier renders a button containing its label
     const buttons = screen.getAllByRole('button');
     const labels = buttons.map((b) => b.textContent ?? '');
@@ -31,7 +111,8 @@ describe('HiringTiersPage', () => {
   });
 
   it('keeps Tier-1 companies hidden until Tier-1 is opened', async () => {
-    render(<HiringTiersPage />);
+    const user = userEvent.setup();
+    renderPage();
     const tier1Btn = screen.getAllByRole('button').find(
       (b) => /Tier.1/i.test(b.textContent ?? '')
     )!;
@@ -39,16 +120,16 @@ describe('HiringTiersPage', () => {
     // Tier accordions are collapsed by default
     expect(screen.queryByRole('button', { name: /Razorpay/i })).not.toBeInTheDocument();
 
-    fireEvent.click(tier1Btn);
+    await user.click(tier1Btn);
 
     // Tier-1 companies appear after opening
-    expect(screen.getAllByRole('button', { name: /Razorpay/i }).length).toBeGreaterThan(0);
-    expect(screen.getAllByRole('button', { name: /Google/i }).length).toBeGreaterThan(0);
-  });
+    expect((await screen.findAllByRole('button', { name: /Razorpay/i })).length).toBeGreaterThan(0);
+    expect((await screen.findAllByRole('button', { name: /Google/i })).length).toBeGreaterThan(0);
+  }, 10000);
 
   it('Tier-2 companies are hidden until accordion is opened', async () => {
     const user = userEvent.setup();
-    render(<HiringTiersPage />);
+    renderPage();
 
     // Tier-2 accordion header button contains "Tier‑2"
     const tier2Btn = screen.getAllByRole('button').find(
@@ -61,29 +142,30 @@ describe('HiringTiersPage', () => {
     await user.click(tier2Btn);
 
     // After opening, Tier-2 companies appear
-    expect(screen.getAllByText(/Capgemini/).length).toBeGreaterThan(0);
+    expect((await screen.findAllByText(/Capgemini/)).length).toBeGreaterThan(0);
   });
 
   it('search input filters companies across tiers', async () => {
     const user = userEvent.setup();
-    render(<HiringTiersPage />);
+    renderPage();
     const searchInput = screen.getByRole('textbox');
     await user.type(searchInput, 'Google');
-    expect(screen.getAllByText(/Google/).length).toBeGreaterThan(0);
+    expect((await screen.findAllByText(/Google/)).length).toBeGreaterThan(0);
   });
 
   it('expands a company card to show detailed interview information', async () => {
-    render(<HiringTiersPage />);
+    const user = userEvent.setup();
+    renderPage();
 
     const tier1Btn = screen.getAllByRole('button').find(
       (b) => /Tier.1/i.test(b.textContent ?? '')
     )!;
-    fireEvent.click(tier1Btn);
+    await user.click(tier1Btn);
 
-    const razorpayButton = screen.getAllByText('Razorpay')[0].closest('button');
+    const razorpayButton = (await screen.findAllByText('Razorpay'))[0].closest('button');
     expect(razorpayButton).not.toBeNull();
 
-    fireEvent.click(razorpayButton!);
+    await user.click(razorpayButton!);
 
     expect(screen.getByText('No negative marking')).toBeInTheDocument();
     expect(screen.getByText('Rounds')).toBeInTheDocument();
@@ -93,12 +175,12 @@ describe('HiringTiersPage', () => {
 
   it('matches designation shorthands in search and can clear the search query', async () => {
     const user = userEvent.setup();
-    render(<HiringTiersPage />);
+    renderPage();
 
     const searchInput = screen.getByRole('textbox');
     await user.type(searchInput, 'sde2');
 
-    expect(screen.getAllByText(/SDE 2/i).length).toBeGreaterThan(0);
+    expect((await screen.findAllByText(/SDE 2/i)).length).toBeGreaterThan(0);
 
     await user.click(screen.getByRole('button', { name: 'Clear search' }));
 
@@ -107,7 +189,7 @@ describe('HiringTiersPage', () => {
   });
 
   it('renders breadcrumb back to Product Strategy', () => {
-    render(<HiringTiersPage />);
+    renderPage();
     expect(screen.getByRole('link', { name: 'Product Strategy' })).toHaveAttribute(
       'href',
       '/product-strategy'
