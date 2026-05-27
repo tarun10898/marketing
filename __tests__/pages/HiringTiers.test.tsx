@@ -14,8 +14,9 @@ const mockTiers = [
     companies: [
       {
         name: 'Razorpay',
-        role: 'Software Engineer (Fresher)',
+        role: 'SDE 2 (Fresher)',
         ctc: '₹15–25+ LPA',
+        experience: 'Fresher',
         negativeMarking: false,
         rounds: 'Online assessment → Technical rounds → HR',
         pattern: ['DSA screening', 'Technical interviews'],
@@ -26,6 +27,7 @@ const mockTiers = [
         name: 'Google',
         role: 'SDE 2 / SDE III',
         ctc: '₹35–55+ LPA',
+        experience: 'Experienced (2–5 yrs)',
         negativeMarking: false,
         rounds: 'Online assessment → Interview loop',
         pattern: ['Algorithms', 'Googleyness'],
@@ -47,6 +49,7 @@ const mockTiers = [
         name: 'Capgemini',
         role: 'Analyst / Engineer',
         ctc: '₹4.5–7.5 LPA',
+        experience: 'Fresher',
         negativeMarking: false,
         rounds: 'Assessment → Interview',
         pattern: ['Aptitude', 'Coding'],
@@ -68,6 +71,29 @@ const mockTiers = [
         name: 'SupportCo',
         role: 'SDE 2 (Experienced Hire)',
         ctc: '₹4 LPA',
+        experience: 'Experienced (3–5 yrs)',
+        negativeMarking: false,
+        rounds: 'Assessment → Interview',
+        pattern: ['Basics'],
+        interviews: 'Core CS',
+        eligibility: 'Open eligibility',
+      },
+      {
+        name: 'Wipro',
+        role: 'Project Engineer (Fresher)',
+        ctc: '₹3.5 LPA',
+        experience: 'Fresher',
+        negativeMarking: false,
+        rounds: 'Assessment → Interview',
+        pattern: ['Basics'],
+        interviews: 'Core CS',
+        eligibility: 'Open eligibility',
+      },
+      {
+        name: 'TCS',
+        role: 'Systems Engineer (Experienced)',
+        ctc: '₹4.2 LPA',
+        experience: 'Experienced (2–4 yrs)',
         negativeMarking: false,
         rounds: 'Assessment → Interview',
         pattern: ['Basics'],
@@ -100,56 +126,93 @@ describe('HiringTiersPage', () => {
     expect(screen.getByRole('heading', { name: /Company Hiring Tiers/i })).toBeInTheDocument();
   });
 
-  it('renders accordion buttons for all three tiers', () => {
+  it('renders top-level accordions for Freshers and Experienced', () => {
     renderPage();
-    // Each tier renders a button containing its label
     const buttons = screen.getAllByRole('button');
     const labels = buttons.map((b) => b.textContent ?? '');
-    expect(labels.some((t) => /Tier.1/i.test(t))).toBe(true);
-    expect(labels.some((t) => /Tier.2/i.test(t))).toBe(true);
-    expect(labels.some((t) => /Tier.3/i.test(t))).toBe(true);
+    expect(labels.some((t) => /Freshers/i.test(t))).toBe(true);
+    expect(labels.some((t) => /Experienced/i.test(t))).toBe(true);
   });
 
-  it('keeps Tier-1 companies hidden until Tier-1 is opened', async () => {
+  it('keeps sub-accordions hidden until top-level is opened', async () => {
     const user = userEvent.setup();
     renderPage();
-    const tier1Btn = screen.getAllByRole('button').find(
-      (b) => /Tier.1/i.test(b.textContent ?? '')
-    )!;
 
-    // Tier accordions are collapsed by default
+    // Sub-groups shouldn't be visible yet (only Legend elements exist, which aren't buttons)
+    const buttonsBefore = screen.getAllByRole('button');
+    const labelsBefore = buttonsBefore.map((b) => b.textContent ?? '');
+    expect(labelsBefore.some((t) => /Tier.1/i.test(t))).toBe(false);
+
+    const freshersBtn = buttonsBefore.find((b) => /Freshers/i.test(b.textContent ?? ''))!;
+    await user.click(freshersBtn);
+
+    // Now Tier-1, Tier-2, Tier-3 buttons should be visible
+    const buttonsAfter = screen.getAllByRole('button');
+    const labelsAfter = buttonsAfter.map((b) => b.textContent ?? '');
+    expect(labelsAfter.some((t) => /Tier.1/i.test(t))).toBe(true);
+    expect(labelsAfter.some((t) => /Tier.2/i.test(t))).toBe(true);
+    expect(labelsAfter.some((t) => /Tier.3/i.test(t))).toBe(true);
+  });
+
+  it('keeps Tier-1 companies hidden until Tier-1 sub-accordion is opened', async () => {
+    const user = userEvent.setup();
+    renderPage();
+
+    const freshersBtn = screen.getAllByRole('button').find((b) => /Freshers/i.test(b.textContent ?? ''))!;
+    await user.click(freshersBtn);
+
+    const tier1Btn = screen.getAllByRole('button').find((b) => /Tier.1/i.test(b.textContent ?? ''))!;
     expect(screen.queryByRole('button', { name: /Razorpay/i })).not.toBeInTheDocument();
 
     await user.click(tier1Btn);
-
-    // Tier-1 companies appear after opening
     expect((await screen.findAllByRole('button', { name: /Razorpay/i })).length).toBeGreaterThan(0);
-    expect((await screen.findAllByRole('button', { name: /Google/i })).length).toBeGreaterThan(0);
-  }, 10000);
+  });
 
-  it('Tier-2 companies are hidden until accordion is opened', async () => {
+  it('Experienced accordion expands to show Product-Based and Service-Based categories', async () => {
     const user = userEvent.setup();
     renderPage();
 
-    // Tier-2 accordion header button contains "Tier‑2"
-    const tier2Btn = screen.getAllByRole('button').find(
-      (b) => /Tier.2/i.test(b.textContent ?? '')
-    )!;
+    const experiencedBtn = screen.getAllByRole('button').find((b) => /Experienced/i.test(b.textContent ?? ''))!;
+    await user.click(experiencedBtn);
 
-    // Before opening, Tier-2 content is not in DOM
-    expect(screen.queryAllByText('Capgemini').length).toBe(0);
-
-    await user.click(tier2Btn);
-
-    // After opening, Tier-2 companies appear
-    expect((await screen.findAllByText(/Capgemini/)).length).toBeGreaterThan(0);
+    const buttons = screen.getAllByRole('button');
+    const labels = buttons.map((b) => b.textContent ?? '');
+    expect(labels.some((t) => t.startsWith('Product-Based'))).toBe(true);
+    expect(labels.some((t) => t.startsWith('Service-Based'))).toBe(true);
   });
 
-  it('search input filters companies across tiers', async () => {
+  it('Experienced accordion shows Product-Based and Service-Based companies correctly', async () => {
+    const user = userEvent.setup();
+    renderPage();
+
+    const experiencedBtn = screen.getAllByRole('button').find((b) => /Experienced/i.test(b.textContent ?? ''))!;
+    await user.click(experiencedBtn);
+
+    const productBtn = screen.getAllByRole('button').find((b) => b.textContent?.startsWith('Product-Based'))!;
+    const serviceBtn = screen.getAllByRole('button').find((b) => b.textContent?.startsWith('Service-Based'))!;
+
+    // Product companies (like Google) should be hidden initially
+    expect(screen.queryByText('Google')).not.toBeInTheDocument();
+
+    await user.click(productBtn);
+    // Now Google should be visible
+    expect(screen.getByText('Google')).toBeInTheDocument();
+
+    // Service companies (like TCS) should be hidden initially
+    expect(screen.queryByText('TCS')).not.toBeInTheDocument();
+
+    await user.click(serviceBtn);
+    // Now TCS should be visible
+    expect(screen.getByText('TCS')).toBeInTheDocument();
+  });
+
+  it('search input filters companies across categories and auto-expands categories', async () => {
     const user = userEvent.setup();
     renderPage();
     const searchInput = screen.getByRole('textbox');
     await user.type(searchInput, 'Google');
+
+    // Google should be visible automatically because search active auto-expands matching categories
     expect((await screen.findAllByText(/Google/)).length).toBeGreaterThan(0);
   });
 
@@ -157,9 +220,10 @@ describe('HiringTiersPage', () => {
     const user = userEvent.setup();
     renderPage();
 
-    const tier1Btn = screen.getAllByRole('button').find(
-      (b) => /Tier.1/i.test(b.textContent ?? '')
-    )!;
+    const freshersBtn = screen.getAllByRole('button').find((b) => /Freshers/i.test(b.textContent ?? ''))!;
+    await user.click(freshersBtn);
+
+    const tier1Btn = screen.getAllByRole('button').find((b) => /Tier.1/i.test(b.textContent ?? ''))!;
     await user.click(tier1Btn);
 
     const razorpayButton = (await screen.findAllByText('Razorpay'))[0].closest('button');
