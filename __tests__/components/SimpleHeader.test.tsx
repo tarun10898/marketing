@@ -14,12 +14,12 @@ jest.mock('next/link', () => {
 describe('SimpleHeader', () => {
   it('renders the strategy title', () => {
     render(<SimpleHeader />);
-    expect(screen.getByRole('link', { name: 'Product Market Placement Strategy' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /easyloops internal/i })).toBeInTheDocument();
   });
 
   it('strategy title links to strategy home', () => {
     render(<SimpleHeader />);
-    expect(screen.getByRole('link', { name: 'Product Market Placement Strategy' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /easyloops internal/i })).toHaveAttribute(
       'href',
       '/product-strategy'
     );
@@ -33,7 +33,7 @@ describe('SimpleHeader', () => {
   it('toggles dark class on <html> when button is clicked', async () => {
     const user = userEvent.setup();
     render(<SimpleHeader />);
-    const btn = screen.getByRole('button');
+    const btn = screen.getByRole('button', { name: 'Toggle dark mode' });
     expect(document.documentElement.classList.contains('dark')).toBe(false);
     await user.click(btn);
     expect(document.documentElement.classList.contains('dark')).toBe(true);
@@ -45,7 +45,7 @@ describe('SimpleHeader', () => {
     render(<SimpleHeader />);
     const header = screen.getByRole('banner');
 
-    expect(header.className).toContain('bg-white/20');
+    expect(header.className).toContain('bg-white/35');
 
     Object.defineProperty(window, 'scrollY', {
       configurable: true,
@@ -54,6 +54,6 @@ describe('SimpleHeader', () => {
     });
     fireEvent.scroll(window);
 
-    expect(header.className).toContain('bg-white/40');
+    expect(header.className).toContain('bg-white/55');
   });
 });

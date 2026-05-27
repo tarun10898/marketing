@@ -22,11 +22,11 @@ describe('Strategy pages integration', () => {
     render(<ProductStrategyPage />);
 
     expect(
-      screen.getByRole('link', { name: 'Product Market Placement Strategy' })
+      screen.getByRole('link', { name: /easyloops internal/i })
     ).toHaveAttribute('href', '/product-strategy');
     expect(screen.getByRole('button', { name: 'Toggle dark mode' })).toBeInTheDocument();
     expect(screen.getByText(/Internal strategy document/i)).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /Competitor Scan/i })).toHaveAttribute(
+    expect(screen.getAllByRole('link', { name: /Competitor Scan/i })[0]).toHaveAttribute(
       'href',
       '/product-strategy/competitor-scan'
     );

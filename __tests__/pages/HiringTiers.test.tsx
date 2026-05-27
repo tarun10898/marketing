@@ -168,9 +168,9 @@ describe('HiringTiersPage', () => {
     await user.click(razorpayButton!);
 
     expect(screen.getByText('No negative marking')).toBeInTheDocument();
-    expect(screen.getByText('Rounds')).toBeInTheDocument();
+    expect(screen.getByText('Rounds & Format')).toBeInTheDocument();
     expect(screen.getByText('Exam Pattern')).toBeInTheDocument();
-    expect(screen.getByText('Interviews')).toBeInTheDocument();
+    expect(screen.getByText('Interview Focus')).toBeInTheDocument();
   });
 
   it('matches designation shorthands in search and can clear the search query', async () => {

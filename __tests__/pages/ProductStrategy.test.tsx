@@ -11,6 +11,7 @@ jest.mock('next/link', () => {
 
 jest.mock('@/shared/components', () => ({
   SimpleHeader: () => <header data-testid="simple-header" />,
+  Sidebar: () => <aside data-testid="sidebar" />,
 }));
 
 describe('ProductStrategyPage (dashboard)', () => {

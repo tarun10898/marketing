@@ -26,6 +26,30 @@ export const tierSummaries: TierSummary[] = [
   },
 ];
 
+export type TierDefinition = {
+  summary: string;
+  interviewComplexity: string;
+  opportunityPath: string;
+};
+
+export const tierDefinitions: Record<string, TierDefinition> = {
+  tier1: {
+    summary: 'High career impact roles with complex interviews and direct global opportunities.',
+    interviewComplexity: 'High complexity; multi-stage rounds with deep DSA, LLD/HLD, system design, and advanced problem solving.',
+    opportunityPath: 'Direct path to global product firms and faster salary growth.',
+  },
+  tier2: {
+    summary: 'Medium career impact roles with moderate interviews and strong stepping-stone value.',
+    interviewComplexity: 'Moderate complexity; usually 2-3 rounds focused on coding fundamentals and basic DSA.',
+    opportunityPath: 'Solid experience path; reskilling can enable transition to Tier 1 in 2-3 years.',
+  },
+  tier3: {
+    summary: 'Lower career impact fresher roles with simpler interviews; fallback tier requiring reskilling for big transitions.',
+    interviewComplexity: 'Low complexity; aptitude plus basic coding/pseudocode in many cases.',
+    opportunityPath: 'Use as fallback while reskilling in DSA, system design, projects, and open source.',
+  },
+};
+
 export const tierColors: Record<string, {
   header: string; dot: string; chevron: string;
   companyBase: string; companyHover: string; companyOpen: string;
