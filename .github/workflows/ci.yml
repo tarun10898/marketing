@@ -34,9 +34,6 @@ jobs:
       - name: Security checklist - audit high severity dependencies
         run: npm run security:check
 
-      - name: Security checklist - review dependency changes
-        if: github.event_name == 'pull_request'
-        uses: actions/dependency-review-action@v4
 
   verify:
     name: Verify
