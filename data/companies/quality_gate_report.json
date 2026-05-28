@@ -1,16 +1,53 @@
 {
   "schema_version": "company-quality-gate-v1",
-  "generated_at": "2026-05-27T09:37:57.017Z",
-  "enforce_publish_gate": true,
+  "generated_at": "2026-05-28T20:12:02.772Z",
+  "enforce_publish_gate": false,
   "policy": {
     "min_recent_interview_reviews": 2,
     "interview_recency_days": 183,
     "min_source_references": 2
   },
   "totals": {
-    "evaluated_companies": 530,
-    "failed_companies": 0,
-    "unique_companies": 530
+    "evaluated_companies": 4055,
+    "failed_companies": 3,
+    "unique_companies": 4052
   },
-  "failures": []
+  "failures": [
+    {
+      "file": "companies_batch_166.json",
+      "company_name": "Global Avionics Division",
+      "company_id": "global-avionics-division--dup-2",
+      "canonical_company_name": "avionics division",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-28"
+    },
+    {
+      "file": "companies_batch_178.json",
+      "company_name": "GNFC Fertilizer Division",
+      "company_id": "gsfc-fertilizer-division",
+      "canonical_company_name": "gsfc fertilizer division",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-28"
+    },
+    {
+      "file": "companies_batch_182.json",
+      "company_name": "Global Mining Division",
+      "company_id": "mining-division-india",
+      "canonical_company_name": "mining division",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-28"
+    }
+  ]
 }

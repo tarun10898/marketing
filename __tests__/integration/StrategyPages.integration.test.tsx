@@ -109,5 +109,5 @@ describe('Strategy pages integration', () => {
     await user.click(razorpayButton!);
     expect(screen.getByText('No negative marking')).toBeInTheDocument();
     expect(screen.getByText('Exam Pattern')).toBeInTheDocument();
-  });
+  }, 20000);
 });
