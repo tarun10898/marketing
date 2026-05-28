@@ -46,3 +46,44 @@ describe('Hiring tiers model', () => {
     expect(countHiringTierCompanies(result)).toBeGreaterThan(0);
   });
 });
+
+describe('Nested Hiring Tiers model helper', () => {
+  const {
+    getNestedHiringTiers,
+    countNestedHiringTierCompanies,
+  } = require('@/app/product-strategy/hiring-tiers/hiring-tiers.model');
+
+  it('correctly segments freshers and experienced companies', () => {
+    const result = getNestedHiringTiers(tiers as any, '');
+    expect(result).toHaveLength(2); // 'freshers' and 'experienced'
+
+    const freshers = result.find((g: any) => g.id === 'freshers')!;
+    const experienced = result.find((g: any) => g.id === 'experienced')!;
+
+    expect(freshers.subGroups).toHaveLength(3); // Tier 1, Tier 2, Tier 3
+    expect(experienced.subGroups).toHaveLength(2); // Product-Based, Service-Based
+
+    // Check count matching
+    const totalCount = countNestedHiringTierCompanies(result);
+    expect(totalCount).toBeGreaterThan(0);
+  });
+
+  it('filters nested categories correctly by search query', () => {
+    const mockData = [
+      {
+        id: 'tier1',
+        label: 'Tier-1',
+        companies: [
+          { name: 'Google', role: 'SDE III', experience: 'Experienced' }
+        ]
+      }
+    ];
+    const result = getNestedHiringTiers(mockData as any, 'Google');
+    const freshers = result.find((g: any) => g.id === 'freshers');
+    const experienced = result.find((g: any) => g.id === 'experienced');
+
+    expect(freshers).toBeUndefined();
+    expect(experienced).toBeDefined();
+    expect(experienced!.subGroups.find((s: any) => s.id === 'product')!.companies.length).toBeGreaterThan(0);
+  });
+});

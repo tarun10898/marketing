@@ -77,7 +77,7 @@ describe('Strategy pages integration', () => {
     const user = userEvent.setup();
     render(<HiringTiersPage />);
 
-    expect(screen.getByRole('heading', { name: 'Company Hiring Tiers' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Popular Companies Students and Experienced Ones Know' })).toBeInTheDocument();
     expect(screen.getByText('Course Reference')).toBeInTheDocument();
     expect(screen.getByText(/Internal course reference document/i)).toBeInTheDocument();
 
@@ -88,12 +88,21 @@ describe('Strategy pages integration', () => {
     await user.click(screen.getByRole('button', { name: 'Clear search' }));
     expect(searchInput).toHaveValue('');
 
-    const tier1Button = screen.getAllByRole('button').find(
+    // Step 1: Expand the top-level "Freshers" group first
+    const freshersButton = screen.getAllByRole('button').find(
+      (button) => /freshers/i.test(button.textContent ?? '')
+    );
+    expect(freshersButton).toBeDefined();
+    await user.click(freshersButton!);
+
+    // Step 2: "Tier-1" sub-group is now visible — expand it
+    const tier1Button = (await screen.findAllByRole('button')).find(
       (button) => /Tier.1/i.test(button.textContent ?? '')
     );
     expect(tier1Button).toBeDefined();
-
     await user.click(tier1Button!);
+
+    // Step 3: Razorpay should now be visible inside Tier-1
     const razorpayButton = (await screen.findAllByText('Razorpay'))[0].closest('button');
     expect(razorpayButton).not.toBeNull();
 

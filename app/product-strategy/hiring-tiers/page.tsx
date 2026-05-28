@@ -7,15 +7,16 @@ import type { Tier } from './hiring-tiers.data';
 import { loadHiringTiersDataset } from './hiring-tiers.loader';
 import { tierSummaries } from './hiring-tiers.meta';
 import {
-  countHiringTierCompanies,
-  filterHiringTiers,
+  countNestedHiringTierCompanies,
+  getNestedHiringTiers,
+  initialNestedGroups,
 } from './hiring-tiers.model';
 import {
   CoreModulesCallout,
   HiringTiersAccordionList,
   HiringTiersLegend,
   HiringTiersResultSummary,
-  HiringTiersSearch,
+  HiringTiersFilterControls,
 } from './hiring-tiers.view';
 
 type HiringTiersPageContentProps = {
@@ -29,21 +30,14 @@ export function HiringTiersPageContent({
 }: HiringTiersPageContentProps) {
   const pageTheme = strategyPageThemes.hiringTiers;
   const [allTiers, setAllTiers] = useState<Tier[] | null>(initialTiers ?? null);
-  const [openTiers, setOpenTiers] = useState<Set<string>>(new Set());
+  const [openGroups, setOpenGroups] = useState<Set<string>>(new Set());
+  const [openSubGroups, setOpenSubGroups] = useState<Set<string>>(new Set());
   const [openCompanies, setOpenCompanies] = useState<Set<string>>(new Set());
   const [isDataLoading, setIsDataLoading] = useState(false);
-  const [loadingTierId, setLoadingTierId] = useState<string | null>(null);
   const [search, setSearch] = useState('');
+
   const query = search.trim();
   const searchActive = query.length > 0;
-  const filteredTiers = allTiers ? filterHiringTiers(allTiers, search) : [];
-  const activeTiers = searchActive && allTiers
-    ? new Set(filteredTiers.map((tier) => tier.id))
-    : openTiers;
-  const resultCount = allTiers ? countHiringTierCompanies(filteredTiers) : 0;
-  const visibleTiers = searchActive
-    ? filteredTiers
-    : allTiers ?? tierSummaries;
 
   const ensureDatasetLoaded = async () => {
     if (allTiers) {
@@ -69,20 +63,26 @@ export function HiringTiersPageContent({
     }
   };
 
-  const toggleTier = async (id: string) => {
+  const toggleGroup = async (groupId: string) => {
     if (!allTiers) {
-      setLoadingTierId(id);
-
-      try {
-        await ensureDatasetLoaded();
-      } finally {
-        setLoadingTierId(null);
-      }
+      await ensureDatasetLoaded();
     }
 
-    setOpenTiers((prev) => {
+    setOpenGroups((prev) => {
       const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
+      next.has(groupId) ? next.delete(groupId) : next.add(groupId);
+      return next;
+    });
+  };
+
+  const toggleSubGroup = async (subGroupId: string) => {
+    if (!allTiers) {
+      await ensureDatasetLoaded();
+    }
+
+    setOpenSubGroups((prev) => {
+      const next = new Set(prev);
+      next.has(subGroupId) ? next.delete(subGroupId) : next.add(subGroupId);
       return next;
     });
   };
@@ -95,12 +95,27 @@ export function HiringTiersPageContent({
     });
   };
 
+  const nestedGroups = allTiers
+    ? getNestedHiringTiers(allTiers, search)
+    : initialNestedGroups;
+
+  // Auto-expand everything when searching, otherwise use manual toggles
+  const activeGroups = searchActive
+    ? new Set(nestedGroups.map((g) => g.id))
+    : openGroups;
+
+  const activeSubGroups = searchActive
+    ? new Set(nestedGroups.flatMap((g) => g.subGroups.map((sub) => sub.id)))
+    : openSubGroups;
+
+  const resultCount = allTiers ? countNestedHiringTierCompanies(nestedGroups) : 0;
+
   return (
     <StrategyDetailPageShell
-      current="Hiring Tiers"
+      current="Popular Companies Students and Experienced Ones Know"
       badge="Course Reference"
-      title="Company Hiring Tiers"
-      description="Indian Software Engineer / SDE / Associate Engineer roles classified by CTC. Click a tier to expand, then click a company to see exam pattern details."
+      title="Popular Companies Students and Experienced Ones Know"
+      description="Indian Software Engineer / SDE / Associate Engineer roles classified by CTC. Click a category to expand, then click a company to see exam pattern details."
       breadcrumbLinkClassName={pageTheme.breadcrumbLinkClassName}
       introBadgeClassName={pageTheme.introBadgeClassName}
       navLinkClassName={pageTheme.navLinkClassName}
@@ -111,17 +126,26 @@ export function HiringTiersPageContent({
       introChildren={<HiringTiersLegend tiers={tierSummaries} />}
       navClassName="pt-6 mt-8"
     >
-      <HiringTiersSearch value={search} onChange={handleSearchChange} />
-      <HiringTiersResultSummary query={query} resultCount={resultCount} isLoading={searchActive && isDataLoading && !allTiers} />
+      <HiringTiersFilterControls
+        search={search}
+        onSearchChange={handleSearchChange}
+      />
+      <HiringTiersResultSummary
+        query={query}
+        resultCount={resultCount}
+        isLoading={searchActive && isDataLoading && !allTiers}
+      />
       <HiringTiersAccordionList
-        tiers={visibleTiers}
-        activeTiers={activeTiers}
+        groups={nestedGroups}
+        openGroups={activeGroups}
+        openSubGroups={activeSubGroups}
         openCompanies={openCompanies}
         searchActive={searchActive}
-        onToggleTier={toggleTier}
+        onToggleGroup={toggleGroup}
+        onToggleSubGroup={toggleSubGroup}
         onToggleCompany={toggleCompany}
         isLoading={searchActive && isDataLoading && !allTiers}
-        loadingTierId={loadingTierId}
+        allTiersLoaded={!!allTiers}
       />
       <CoreModulesCallout />
     </StrategyDetailPageShell>
