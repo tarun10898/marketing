@@ -10,6 +10,8 @@ test('filters and expands hiring tier content', async ({ page }) => {
   await page.getByRole('button', { name: 'Clear search' }).click();
   await expect(searchInput).toHaveValue('');
 
+  // Expand Freshers group first, then Tier-1 sub-group
+  await page.getByRole('button').filter({ hasText: /freshers/i }).first().click();
   await page.getByRole('button').filter({ hasText: /Tier.?1/i }).first().click();
   await page.getByRole('button', { name: /Razorpay/i }).first().click();
 
