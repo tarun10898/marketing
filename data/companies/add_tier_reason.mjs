@@ -1,5 +1,21 @@
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 
+function safeWriteFileSync(path, content, options) {
+  let attempts = 5;
+  while (attempts > 0) {
+    try {
+      writeFileSync(path, content, options);
+      return;
+    } catch (err) {
+      attempts--;
+      if (attempts === 0) throw err;
+      console.warn(`Warning: write failed to ${path}. Retrying in 100ms... (${err.message})`);
+      const end = Date.now() + 100;
+      while (Date.now() < end) {}
+    }
+  }
+}
+
 const dir = "data/companies";
 const COMPANY_REGISTRY_PATH = `${dir}/company_registry.json`;
 const QUALITY_GATE_REPORT_PATH = `${dir}/quality_gate_report.json`;
@@ -2098,7 +2114,7 @@ for (const file of files) {
     };
   });
 
-  writeFileSync(path, `${JSON.stringify(updated, null, 2)}\n`, "utf8");
+  safeWriteFileSync(path, `${JSON.stringify(updated, null, 2)}\n`, "utf8");
   console.log("Updated", file, "companies:", updated.length);
 }
 
@@ -2135,7 +2151,7 @@ const registry = {
     occurrences: entry.occurrences,
   })),
 };
-writeFileSync(COMPANY_REGISTRY_PATH, `${JSON.stringify(registry, null, 2)}\n`, "utf8");
+safeWriteFileSync(COMPANY_REGISTRY_PATH, `${JSON.stringify(registry, null, 2)}\n`, "utf8");
 
 const qualityGateReport = {
   schema_version: "company-quality-gate-v1",
@@ -2153,7 +2169,7 @@ const qualityGateReport = {
   },
   failures: qualityGateViolations,
 };
-writeFileSync(
+safeWriteFileSync(
   QUALITY_GATE_REPORT_PATH,
   `${JSON.stringify(qualityGateReport, null, 2)}\n`,
   "utf8",

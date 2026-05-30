@@ -1,0 +1,531 @@
+# Master List of Indian Early-Stage Startups
+
+This document tracks prominent early-stage Indian startups, innovators, and incubated ventures. Check them off as new batches are created.
+
+---
+
+## 1. Fintech & Insurtech (50 Companies)
+- [x] Dial4242
+- [x] Finsall
+- [x] Mysa Finance
+- [x] Saventh
+- [x] Butter Money
+- [x] Salt.pe
+- [x] OneCard
+- [x] Jupiter Money
+- [x] Fi Money
+- [x] Uni Cards
+- [x] Slice Card
+- [x] Groww
+- [x] INDmoney
+- [x] Kuvera
+- [x] Scripbox
+- [x] Jar App
+- [x] Dezerv
+- [x] Wint Wealth
+- [x] Multipl
+- [x] Eduvanz
+- [x] Propelld
+- [x] Leap Finance
+- [x] GyanDhan
+- [x] Credflow
+- [x] Chqbook
+- [x] Open Financial
+- [x] Khatabook
+- [x] OkCredit
+- [x] Vyapar
+- [x] FloBiz
+- [x] Mahila Money
+- [x] Basis
+- [x] Zolve
+- [x] Niyo
+- [x] Karbon Card
+- [x] EnKash
+- [x] Rupifi
+- [x] Progcap
+- [x] Mintifi
+- [x] Klub
+- [x] Velocity
+- [x] GetVantage
+- [x] Jiraf
+- [x] Mintoak
+- [x] PayGlocal
+- [x] SafeGold
+- [x] Siply
+- [x] Tortoise
+- [x] Decentro
+- [x] Tartan
+
+## 2. AI, DeepTech & SaaS (55 Companies)
+- [x] Daffodil Health
+- [x] The Energy Company
+- [x] Dreamfly Innovations
+- [x] BYTES
+- [x] Blinkin Technologies
+- [x] Regeno Ventures
+- [x] Garage on Road
+- [x] Pinmicro
+- [x] Gypsee
+- [x] ClearQuote Technologies
+- [x] INKA
+- [x] Nullpointer
+- [x] Canectar Foods
+- [x] Fabric Monde
+- [x] CHMI Indobionics
+- [x] PupilMesh
+- [x] Taxshe
+- [x] Gudgum
+- [x] Fidato Health
+- [x] Plutomen
+- [x] ZippiAi
+- [x] Propall
+- [x] Rescript
+- [x] Sarvam AI
+- [x] Krutrim AI
+- [x] KissanAI
+- [x] CoRover
+- [x] Hanooman AI
+- [x] Flow AI
+- [x] DevRev
+- [x] Atlan
+- [x] Acceldata
+- [x] Hevo Data
+- [x] InVideo
+- [x] Murf AI
+- [x] Playment
+- [x] Threado
+- [x] Toplyne
+- [x] Appsmith
+- [x] Locofast
+- [x] SuperTokens
+- [x] Requestly
+- [x] Zipwave
+- [x] LightMetrics
+- [x] Intello Labs
+- [x] Vue.ai
+- [x] Mad Street Den
+- [x] Pixis
+- [x] Entropik
+- [x] Rezo.ai
+- [x] Gnani.ai
+- [x] Vernacular.ai
+- [x] Yellow.ai
+- [x] Jio Haptik
+- [x] Niki.ai
+
+## 3. AgriTech & Rural Tech (50 Companies)
+- [x] Ninjacart
+- [x] DeHaat
+- [x] CropIn
+- [x] AgroStar
+- [x] WayCool
+- [x] Clover Ventures
+- [x] Fasal
+- [x] Bijak
+- [x] Ergos
+- [x] Arya.ag
+- [x] AgNext
+- [x] Intello Labs Agri
+- [x] BharatAgri
+- [x] Krishify
+- [x] Gramophone
+- [x] Animall
+- [x] Stellapps
+- [x] Promethean Spenta
+- [x] Reshamandi
+- [x] Ecozen
+- [x] Kheyti
+- [x] EM3 Agri
+- [x] TartanSense
+- [x] Niqo Robotics
+- [x] BigHaat
+- [x] Agri10x
+- [x] Eggoz
+- [x] Otipy
+- [x] Grow Out
+- [x] Hectar Global
+- [x] Loopworm
+- [x] Phool.co
+- [x] BioPrime
+- [x] Absolute Foods
+- [x] Barton Breeze
+- [x] UrbanKisaan
+- [x] Hydroponic India
+- [x] E-Nam
+- [x] Farmart
+- [x] Gold Farm
+- [x] Krishi Network
+- [x] Outgrow
+- [x] AgriBazaar
+- [x] KisanKonnect
+- [x] Jai Kisan
+- [x] Hesa
+- [x] 1WayAgri
+- [x] Farmley
+- [x] Greenizon
+- [x] BharatRohan
+
+## 4. HealthTech & BioTech (50 Companies)
+- [x] Medigo
+- [x] HealthifyMe
+- [x] Cure.fit
+- [x] Practo
+- [x] MFine
+- [x] PharmEasy
+- [x] Tata 1mg
+- [x] MediBuddy
+- [x] Healthkart
+- [x] DocOnline
+- [x] Lybrate
+- [x] HealthPlix
+- [x] Clinikk
+- [x] Even Healthcare
+- [x] Loop Health
+- [x] Kenko Health
+- [x] Plum Benefits
+- [x] Nova Benefits
+- [x] Ayu Health
+- [x] Pristyn Care
+- [x] Glamyo Health
+- [x] HexaHealth
+- [x] Orange Health
+- [x] Redcliffe Labs
+- [x] Healthians
+- [x] Meddo
+- [x] BeatO
+- [x] Sugar.fit
+- [x] Wellthy Therapeutics
+- [x] Fitterfly
+- [x] Portea Medical
+- [x] CallHealth
+- [x] Dozee
+- [x] Tricog Health
+- [x] SigTuple
+- [x] Niramai
+- [x] Onco.com
+- [x] ZenOnco
+- [x] Aindra Systems
+- [x] Pandorum Technologies
+- [x] Eyestem
+- [x] Bugworks
+- [x] MedGenome
+- [x] Mapmygenome
+- [x] GenePath
+- [x] Strand Life Sciences
+- [x] Molbio Diagnostics
+- [x] Mylab Discovery
+- [x] Jeevtronics
+- [x] Windmill Health
+
+## 5. CleanTech, EV & Sustainability (50 Companies)
+- [x] Ather Energy
+- [x] Ola Electric
+- [x] Simple Energy
+- [x] Ultraviolette
+- [x] Matter Motor
+- [x] Tork Motors
+- [x] Revolt Motors
+- [x] Yulu
+- [x] Bounce Infinity
+- [x] Euler Motors
+- [x] Altigreen
+- [x] Log9 Materials
+- [x] Exponent Energy
+- [x] Battery Smart
+- [x] Sheru
+- [x] Kazam
+- [x] Bolt.earth
+- [x] Statiki
+- [x] BluSmart
+- [x] Shoonya
+- [x] Zypp Electric
+- [x] TI Clean Mobility
+- [x] Strom Motors
+- [x] Pravaig Dynamics
+- [x] cellprop
+- [x] Sun Mobility
+- [x] Chargeup
+- [x] eBikeGo
+- [x] Cellestial E-Mobility
+- [x] Revos
+- [x] Vidyut Tech
+- [x] Turno
+- [x] Oorja.io
+- [x] Greensole
+- [x] Phool Sustainable
+- [x] Bambrew
+- [x] Banyan Nation
+- [x] Recykal
+- [x] Nepra
+- [x] TrashCon
+- [x] Kabadiwalla Connect
+- [x] Attero Recycling
+- [x] Lohum
+- [x] Ace Green Recycling
+- [x] Carbon Clean
+- [x] Sea6 Energy
+- [x] GPS Renewables
+- [x] CleanMax
+- [x] ReNew Power
+- [x] Sterling and Wilson Green
+
+## 6. E-commerce, D2C & Consumer Brands (50 Companies)
+- [x] Mitti Cafe
+- [x] Gudgum Co
+- [x] Utopian Drinks
+- [x] Chokhat Home
+- [x] Gofig Foods
+- [x] Klimate Apparel
+- [x] Licious
+- [x] Country Delight
+- [x] Zappfresh
+- [x] FreshToHome
+- [x] TenderCuts
+- [x] MilkBasket
+- [x] Supr Daily
+- [x] Blinkit
+- [x] Zepto
+- [x] BigBasket
+- [x] Dunzo
+- [x] DealShare
+- [x] CityMall
+- [x] Shop101
+- [x] GlowRoad
+- [x] SimSim
+- [x] Bulbul
+- [x] Trell
+- [x] Wooplr
+- [x] Limeroad
+- [x] Fynd
+- [x] Koovs
+- [x] Bewakoof
+- [x] Souled Store
+- [x] Snitch
+- [x] Blue Tokai
+- [x] Sleepy Owl
+- [x] Rage Coffee
+- [x] Country Bean
+- [x] Chaayos
+- [x] Chai Point
+- [x] Teabox
+- [x] Vahdam Teas
+- [x] Paper Boat
+- [x] Whole Truth Foods
+- [x] Open Secret
+- [x] Yoga Bar
+- [x] Epigamia
+- [x] ID Fresh Food
+- [x] SleepyCat
+- [x] Wakefit
+- [x] Flo Mattress
+- [x] Sunday Mattress
+- [x] Duroflex
+
+## 7. EdTech & Skill Development (50 Companies)
+- [x] Unacademy
+- [x] PhysicsWallah
+- [x] Eruditus
+- [x] Upgrad
+- [x] Lead School
+- [x] Classplus
+- [x] Teachmint
+- [x] Cuemath
+- [x] CampK12
+- [x] Lido Learning
+- [x] Toppr
+- [x] Doubtnut
+- [x] Brainly India
+- [x] Vedantu
+- [x] Meritnation
+- [x] Adda247
+- [x] Testbook
+- [x] Oliveboard
+- [x] ixamBee
+- [x] Board Infinity
+- [x] Internshala
+- [x] Newton School
+- [x] Masai School
+- [x] FunctionUp
+- [x] Attainu
+- [x] Kraftshala
+- [x] GrowthSchool
+- [x] Stoa School
+- [x] Seekho
+- [x] MentorKart
+- [x] BeyondSkool
+- [x] Kutuki
+- [x] PlayShifu
+- [x] Qin1
+- [x] Lingooda India
+- [x] multiBhashi
+- [x] EnglishHelper
+- [x] Kings Learning
+- [x] Utter
+- [x] Hello English
+- [x] STEP by Hindu
+- [x] CareerLabs
+- [x] Veranda Learning
+- [x] Coding Ninjas
+- [x] Coding Blocks
+- [x] GeeksforGeeks
+- [x] InterviewBit
+- [x] Scaler Academy
+- [x] PrepInsta
+- [x] TalentSprint
+
+## 8. HR Tech, Logistics & Gig Economy (50 Companies)
+- [x] Delhivery
+- [x] Xpressbees
+- [x] Shadowfax
+- [x] Porter
+- [x] Blowhorn
+- [x] LetsTransport
+- [x] Rivigo
+- [x] BlackBuck
+- [x] Intugine
+- [x] Locus.sh
+- [x] FarEye
+- [x] LogiNext
+- [x] Increff
+- [x] Shiprocket
+- [x] Shyplite
+- [x] NimbusPost
+- [x] iThink Logistics
+- [x] Pickrr
+- [x] Shipway
+- [x] Sendy India
+- [x] Dunzo for Business
+- [x] Wazirpool
+- [x] Apna App
+- [x] WorkIndia
+- [x] Kaam24
+- [x] BabaJobs
+- [x] Helper4U
+- [x] Betterplace
+- [x] Awign
+- [x] Taskmo
+- [x] Gigforce
+- [x] TaskCut
+- [x] TapChief
+- [x] Flexiple
+- [x] CrewScale
+- [x] Turing India
+- [x] Cutshort
+- [x] Instahyre
+- [x] Hirist
+- [x] Belong.co
+- [x] Mettl
+- [x] Wheebox
+- [x] Mercer-Mettl
+- [x] Darwinbox
+- [x] Keka HR
+- [x] greytHR
+- [x] Pocket HRMS
+- [x] sumHR
+- [x] ZingHR
+- [x] HROne
+
+## 9. SpaceTech, Robotics & Drone Technology (50 Companies)
+- [x] Skyroot Aerospace
+- [x] Pixxel
+- [x] Agnikul Cosmos
+- [x] Dhruva Space
+- [x] Bellatrix Aerospace
+- [x] GalaxEye Space
+- [x] Kawa Space
+- [x] Astrogate Labs
+- [x] Digantara
+- [x] InspeCity
+- [x] SpaceFields
+- [x] Manastu Space
+- [x] Vyom Space
+- [x] SatSure
+- [x] ideaForge
+- [x] Asteria Aerospace
+- [x] Aarav Unmanned Systems
+- [x] Thanos Technologies
+- [x] Endure Air Systems
+- [x] Skye Air Mobility
+- [x] Redwing Labs
+- [x] Marut Drones
+- [x] Skylark Drones
+- [x] Garuda Aerospace
+- [x] IoTechWorld
+- [x] insideFPV
+- [x] Optimus Logic
+- [x] Cynic Automation
+- [x] GreyOrange Robotics
+- [x] Addverb Technologies
+- [x] Systemantics
+- [x] Cynlr
+- [x] Asimov Robotics
+- [x] Gridbots Technologies
+- [x] Hi-Tech Robotic Systemz
+- [x] Invento Robotics
+- [x] Ottonomy.io
+- [x] Mukunda Foods Robotics
+- [x] Genrobotics
+- [x] CleanRobotics India
+- [x] Solinas Integrity
+- [x] Sagar Defence
+- [x] Torus Robotics
+- [x] EyeROV
+- [x] Planys Technologies
+- [x] NavAlt
+- [x] EVage Ventures
+- [x] Cellprop Systems
+- [x] Flowtrik
+- [x] e-Trio
+
+## 10. Web3, Creator Economy & Media Tech (50 Companies)
+- [x] WazirX
+- [x] CoinDCX
+- [x] Coinswitch Kuber
+- [x] Mudrex
+- [x] ZebPay
+- [x] Giottus
+- [x] Liminal Custody
+- [x] EPNS (Push Protocol)
+- [x] Biconomy
+- [x] Router Protocol
+- [x] Instadapp
+- [x] Persistence One
+- [x] Shardeum
+- [x] Vance
+- [x] Flint Money
+- [x] Kresus
+- [x] FanClash
+- [x] Loco Stream
+- [x] Rooter
+- [x] Turnip
+- [x] Winzo Games
+- [x] MPL (Mobile Premier League)
+- [x] Dream11
+- [x] My11Circle
+- [x] Games24x7
+- [x] Nazara Technologies
+- [x] Pocket Aces
+- [x] Pratilipi
+- [x] Kahaniya
+- [x] Kuku FM
+- [x] Pocket FM
+- [x] Headfone
+- [x] Khabri
+- [x] Stage OTT
+- [x] CityShor
+- [x] Little Black Book (LBB)
+- [x] Popxo
+- [x] MissMalini
+- [x] Filmygyan
+- [x] Inshorts
+- [x] Dailyhunt
+- [x] Way2News
+- [x] Knocksense
+- [x] Sorted
+- [x] TagMango
+- [x] Cosmofeed
+- [x] Graphy (Unacademy)
+- [x] Rigi
+- [x] Hypestar
+- [x] Chingari
+
