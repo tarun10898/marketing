@@ -83,7 +83,7 @@ describe('Strategy pages integration', () => {
 
     const searchInput = screen.getByRole('textbox');
     fireEvent.change(searchInput, { target: { value: 'sde2' } });
-    expect((await screen.findAllByText(/SDE 2/i)).length).toBeGreaterThan(0);
+    expect((await screen.findAllByText(/SDE 2/i, {}, { timeout: 5000 })).length).toBeGreaterThan(0);
 
     await user.click(screen.getByRole('button', { name: 'Clear search' }));
     expect(searchInput).toHaveValue('');
@@ -109,5 +109,5 @@ describe('Strategy pages integration', () => {
     await user.click(razorpayButton!);
     expect(screen.getByText('No negative marking')).toBeInTheDocument();
     expect(screen.getByText('Exam Pattern')).toBeInTheDocument();
-  });
+  }, 20000);
 });

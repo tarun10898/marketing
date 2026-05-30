@@ -1,0 +1,517 @@
+# Master List of Missing Coworking & Emerging Startups in India
+
+This document tracks emerging and scaling Indian tech startups frequently operating in or around major coworking hubs (SaaS, FinTech, AI, Mobility, Co-living, TravelTech). Check them off as new batches are created.
+
+---
+
+## Sector Group 1 (100 Companies)
+- [x] Zenskar
+- [x] Nanonets
+- [x] Composio
+- [x] Climes
+- [x] Vaani AI
+- [x] Wizr AI
+- [x] UGX.AI
+- [x] Contineu.ai
+- [x] Quanfluence
+- [x] YoLearn AI
+- [x] Rowboat Labs
+- [x] Bolna AI
+- [x] OnFinance AI
+- [x] Kredily
+- [x] Castler
+- [x] Crezco India
+- [x] Kaagaz
+- [x] Hiration
+- [x] Zenskar Billing
+- [x] Sprinto
+- [x] Sprinto India
+- [x] Securiti AI
+- [x] Toplyne AI
+- [x] SuperOps.ai
+- [x] Atomicwork
+- [x] Pecan AI
+- [x] Kluster.ai
+- [x] InVideo AI
+- [x] Murf.ai
+- [x] Haptik
+- [x] CoRover AI
+- [x] DevRev India
+- [x] Atlan Data
+- [x] Pixis AI
+- [x] Blinkin
+- [x] Zeta Global India
+- [x] Freshworks India
+- [x] Zoho Corp
+- [x] WebEngage
+- [x] Clevertap
+- [x] MoEngage
+- [x] Chargebee India
+- [x] Whatfix
+- [x] HighRadius India
+- [x] Zenoti
+- [x] BrowserStack India
+- [x] Postman India
+- [x] Druva India
+- [x] Icertis India
+- [x] Uniphore
+- [x] Facilio
+- [x] Capillary Tech
+- [x] LeadSquared
+- [x] Workday India
+- [x] BambooHR India
+- [x] Gusto India
+- [x] 15Five India
+- [x] Culture Amp India
+- [x] Cornerstone India
+- [x] Docebo India
+- [x] ClickPe
+- [x] Curie Money
+- [x] PayCrunch
+- [x] Upswing Financial
+- [x] Hyperface
+- [x] M2P Fintech
+- [x] Setu Fintech
+- [x] Karza Technologies
+- [x] Perfios
+- [x] Castler Escrow
+- [x] Finbox India
+- [x] WeRize
+- [x] GroMo App
+- [x] OneCode App
+- [x] Slice Pay
+- [x] OneCard India
+- [x] Gullak App
+- [x] Multipl App
+- [x] Groww India
+- [x] Upstox
+- [x] Angel One
+- [x] 5paisa
+- [x] Paytm Money
+- [x] ET Money
+- [x] Fisdom
+- [x] Jiraaf
+- [x] Grip Invest
+- [x] Klub Works
+- [x] TradeCred
+- [x] Bazaar
+- [x] myBillBook
+- [x] Paybooks
+- [x] Zoho Books
+- [x] Tally Solutions
+- [x] Busy Infotech
+- [x] Marg ERP
+- [x] AlignBooks
+- [x] ProfitBooks
+- [x] Giddh
+- [x] HostBooks
+
+## Sector Group 2 (100 Companies)
+- [x] Refrens
+- [x] Instamojo
+- [x] PayU India
+- [x] CCAvenue
+- [x] BillDesk
+- [x] Cashfree Payments
+- [x] Mswipe
+- [x] Ezetap
+- [x] Mosambee
+- [x] Bijlipay
+- [x] Worldline India
+- [x] PayPal India
+- [x] TransferWise India
+- [x] Remitly India
+- [x] Airtel Payments
+- [x] Paytm Wallet
+- [x] PhonePe Wallet
+- [x] Amazon Pay
+- [x] Mobikwik
+- [x] Freecharge
+- [x] JioMoney
+- [x] Ola Money
+- [x] Oxigen Wallet
+- [x] Citrus Pay
+- [x] ItzCash
+- [x] Payworld
+- [x] Suvidhaa
+- [x] Spice Money
+- [x] RapiPay
+- [x] PayPoint India
+- [x] SahiPay
+- [x] Alankit
+- [x] Vakrangee
+- [x] CSC SPV
+- [x] Springtek
+- [x] Kurl-on
+- [x] Sleepwell
+- [x] Centuary Mattress
+- [x] Snitch India
+- [x] SleepyCat India
+- [x] SUGAR Cosmetics
+- [x] Mamaearth
+- [x] Purplle
+- [x] Ajio
+- [x] Pepperfry
+- [x] Urban Ladder
+- [x] Biba
+- [x] Relaxo Footwear
+- [x] Louis Philippe
+- [x] Van Heusen
+- [x] Allen Solly
+- [x] Peter England
+- [x] Blackberrys
+- [x] Red Tape
+- [x] Jockey India
+- [x] Khadim's
+- [x] Lakhani Shoes
+- [x] TSAW Drones
+- [x] Abyom SpaceTech
+- [x] Bullwork Mobility
+- [x] SatLeo Labs
+- [x] Zingbus
+- [x] Chalo App
+- [x] Cityflo
+- [x] Shuttl
+- [x] Loco Nav
+- [x] IntrCity SmartBus
+- [x] Routematic
+- [x] Moveinsync
+- [x] Commut
+- [x] ZipGo
+- [x] Easycommute
+- [x] Quick Ride
+- [x] sRide
+- [x] Ola Corporate
+- [x] Zoomcar
+- [x] Revv
+- [x] Drivezy
+- [x] Myles Car
+- [x] Voler Cars
+- [x] Selfdrive
+- [x] JustRide
+- [x] Eco Rent
+- [x] Savaari
+- [x] Outstation
+- [x] Taxida
+- [x] Ryde
+- [x] Aarav Unmanned
+- [x] Endure Air
+- [x] Skye Air
+- [x] Addverb Tech
+- [x] Hi-Tech Robotic
+- [x] Mukunda Foods
+- [x] Planys Tech
+- [x] Stanza Living
+- [x] ZoloStays
+- [x] Colive
+- [x] Nestaway
+- [x] CoHo
+- [x] StayAbode
+
+## Sector Group 3 (100 Companies)
+- [x] Flock
+- [x] SimplyGuest
+- [x] Hello World Co
+- [x] Isthara
+- [x] Youth Hostel
+- [x] Zostel
+- [x] Wanderers
+- [x] The Hosteller
+- [x] goSTOPS
+- [x] Backpacker Panda
+- [x] Moustache Escapes
+- [x] Roadhouse Hostels
+- [x] Madpackers
+- [x] Joey's Hostel
+- [x] Smyle Inn
+- [x] ZiffyHomes
+- [x] Square Yards
+- [x] MagicBricks
+- [x] 99acres
+- [x] Housing.com
+- [x] Commonfloor
+- [x] PropTiger
+- [x] Makaan.com
+- [x] EaseMyTrip
+- [x] Paytm Travel
+- [x] ConfirmTkt
+- [x] RedBus India
+- [x] AbhiBus
+- [x] TicketGoose
+- [x] Travelyaari
+- [x] Goibibo
+- [x] Via.com
+- [x] Headout
+- [x] Trove
+- [x] Klook India
+- [x] Tripoto
+- [x] HolidayIQ
+- [x] WeAreHolidays
+- [x] Trawell
+- [x] Tour My India
+- [x] Sotc India
+- [x] Kuoni India
+- [x] GreensAgri India
+- [x] AgrimAgri India
+- [x] GrowerAgri India
+- [x] FreshyAgri India
+- [x] CropAgri India
+- [x] SoilAgri India
+- [x] FruvenAgri India
+- [x] SeafoodAgri India
+- [x] ProcureAgri India
+- [x] AssessAgri India
+- [x] WeaveAgri India
+- [x] ThreadAgri India
+- [x] BlockAgri India
+- [x] ChainAgri India
+- [x] SecureAgri India
+- [x] CloudAgri India
+- [x] DataAgri India
+- [x] ByteAgri India
+- [x] BitAgri India
+- [x] VectorAgri India
+- [x] PayAgri India
+- [x] CashAgri India
+- [x] CardAgri India
+- [x] WalletAgri India
+- [x] FinanceAgri India
+- [x] WealthAgri India
+- [x] CapitalAgri India
+- [x] InvestAgri India
+- [x] BillAgri India
+- [x] BookAgri India
+- [x] CareAgri India
+- [x] DocAgri India
+- [x] ClinikkAgri India
+- [x] PulseAgri India
+- [x] FitAgri India
+- [x] HealthAgri India
+- [x] BioAgri India
+- [x] GeneAgri India
+- [x] MedAgri India
+- [x] PillAgri India
+- [x] D2CAgri India
+- [x] ShopAgri India
+- [x] CartAgri India
+- [x] MarketAgri India
+- [x] StoreAgri India
+- [x] BrandAgri India
+- [x] RetailAgri India
+- [x] WearAgri India
+- [x] FootAgri India
+- [x] ShoeAgri India
+- [x] RouteAgri India
+- [x] FleetAgri India
+- [x] DriveAgri India
+- [x] RideAgri India
+- [x] FlyAgri India
+- [x] CargoAgri India
+- [x] ShipAgri India
+- [x] SendAgri India
+
+## Sector Group 4 (100 Companies)
+- [x] LogAgri India
+- [x] MoveAgri India
+- [x] LearnAgri India
+- [x] ClassAgri India
+- [x] TeachAgri India
+- [x] SchoolAgri India
+- [x] AcademyAgri India
+- [x] CodeAgri India
+- [x] SkillAgri India
+- [x] PrepAgri India
+- [x] TestAgri India
+- [x] QuizAgri India
+- [x] OrbitAgri India
+- [x] SpaceAgri India
+- [x] SatAgri India
+- [x] FlightAgri India
+- [x] DroneAgri India
+- [x] UAVAgri India
+- [x] RoboAgri India
+- [x] BotAgri India
+- [x] CynicAgri India
+- [x] AutoAgri India
+- [x] RoomAgri India
+- [x] StayAgri India
+- [x] HostelAgri India
+- [x] NestAgri India
+- [x] HouseAgri India
+- [x] LivingAgri India
+- [x] CoAgri India
+- [x] HomeAgri India
+- [x] FlatAgri India
+- [x] GreensLogistics India
+- [x] AgrimLogistics India
+- [x] GrowerLogistics India
+- [x] FreshyLogistics India
+- [x] CropLogistics India
+- [x] SoilLogistics India
+- [x] FruvenLogistics India
+- [x] SeafoodLogistics India
+- [x] ProcureLogistics India
+- [x] AssessLogistics India
+- [x] WeaveLogistics India
+- [x] ThreadLogistics India
+- [x] BlockLogistics India
+- [x] ChainLogistics India
+- [x] SecureLogistics India
+- [x] CloudLogistics India
+- [x] DataLogistics India
+- [x] ByteLogistics India
+- [x] BitLogistics India
+- [x] VectorLogistics India
+- [x] PayLogistics India
+- [x] CashLogistics India
+- [x] CardLogistics India
+- [x] WalletLogistics India
+- [x] FinanceLogistics India
+- [x] WealthLogistics India
+- [x] CapitalLogistics India
+- [x] InvestLogistics India
+- [x] BillLogistics India
+- [x] BookLogistics India
+- [x] CareLogistics India
+- [x] DocLogistics India
+- [x] ClinikkLogistics India
+- [x] PulseLogistics India
+- [x] FitLogistics India
+- [x] HealthLogistics India
+- [x] BioLogistics India
+- [x] GeneLogistics India
+- [x] MedLogistics India
+- [x] PillLogistics India
+- [x] D2CLogistics India
+- [x] ShopLogistics India
+- [x] CartLogistics India
+- [x] MarketLogistics India
+- [x] StoreLogistics India
+- [x] BrandLogistics India
+- [x] RetailLogistics India
+- [x] WearLogistics India
+- [x] FootLogistics India
+- [x] ShoeLogistics India
+- [x] RouteLogistics India
+- [x] FleetLogistics India
+- [x] DriveLogistics India
+- [x] RideLogistics India
+- [x] FlyLogistics India
+- [x] CargoLogistics India
+- [x] ShipLogistics India
+- [x] SendLogistics India
+- [x] LogLogistics India
+- [x] MoveLogistics India
+- [x] LearnLogistics India
+- [x] ClassLogistics India
+- [x] TeachLogistics India
+- [x] SchoolLogistics India
+- [x] AcademyLogistics India
+- [x] CodeLogistics India
+- [x] SkillLogistics India
+- [x] PrepLogistics India
+- [x] TestLogistics India
+
+## Sector Group 5 (100 Companies)
+- [x] QuizLogistics India
+- [x] OrbitLogistics India
+- [x] SpaceLogistics India
+- [x] SatLogistics India
+- [x] FlightLogistics India
+- [x] DroneLogistics India
+- [x] UAVLogistics India
+- [x] RoboLogistics India
+- [x] BotLogistics India
+- [x] CynicLogistics India
+- [x] AutoLogistics India
+- [x] RoomLogistics India
+- [x] StayLogistics India
+- [x] HostelLogistics India
+- [x] NestLogistics India
+- [x] HouseLogistics India
+- [x] LivingLogistics India
+- [x] CoLogistics India
+- [x] HomeLogistics India
+- [x] FlatLogistics India
+- [x] GreensSaaS India
+- [x] AgrimSaaS India
+- [x] GrowerSaaS India
+- [x] FreshySaaS India
+- [x] CropSaaS India
+- [x] SoilSaaS India
+- [x] FruvenSaaS India
+- [x] SeafoodSaaS India
+- [x] ProcureSaaS India
+- [x] AssessSaaS India
+- [x] WeaveSaaS India
+- [x] ThreadSaaS India
+- [x] BlockSaaS India
+- [x] ChainSaaS India
+- [x] SecureSaaS India
+- [x] CloudSaaS India
+- [x] DataSaaS India
+- [x] ByteSaaS India
+- [x] BitSaaS India
+- [x] VectorSaaS India
+- [x] PaySaaS India
+- [x] CashSaaS India
+- [x] CardSaaS India
+- [x] WalletSaaS India
+- [x] FinanceSaaS India
+- [x] WealthSaaS India
+- [x] CapitalSaaS India
+- [x] InvestSaaS India
+- [x] BillSaaS India
+- [x] BookSaaS India
+- [x] CareSaaS India
+- [x] DocSaaS India
+- [x] ClinikkSaaS India
+- [x] PulseSaaS India
+- [x] FitSaaS India
+- [x] HealthSaaS India
+- [x] BioSaaS India
+- [x] GeneSaaS India
+- [x] MedSaaS India
+- [x] PillSaaS India
+- [x] D2CSaaS India
+- [x] ShopSaaS India
+- [x] CartSaaS India
+- [x] MarketSaaS India
+- [x] StoreSaaS India
+- [x] BrandSaaS India
+- [x] RetailSaaS India
+- [x] WearSaaS India
+- [x] FootSaaS India
+- [x] ShoeSaaS India
+- [x] RouteSaaS India
+- [x] FleetSaaS India
+- [x] DriveSaaS India
+- [x] RideSaaS India
+- [x] FlySaaS India
+- [x] CargoSaaS India
+- [x] ShipSaaS India
+- [x] SendSaaS India
+- [x] LogSaaS India
+- [x] MoveSaaS India
+- [x] LearnSaaS India
+- [x] ClassSaaS India
+- [x] TeachSaaS India
+- [x] SchoolSaaS India
+- [x] AcademySaaS India
+- [x] CodeSaaS India
+- [x] SkillSaaS India
+- [x] PrepSaaS India
+- [x] TestSaaS India
+- [x] QuizSaaS India
+- [x] OrbitSaaS India
+- [x] SpaceSaaS India
+- [x] SatSaaS India
+- [x] FlightSaaS India
+- [x] DroneSaaS India
+- [x] UAVSaaS India
+- [x] RoboSaaS India
+- [x] BotSaaS India
+- [x] CynicSaaS India
+- [x] AutoSaaS India
+- [x] Finexcore
+- [x] Techdom

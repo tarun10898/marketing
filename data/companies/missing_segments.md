@@ -1,0 +1,267 @@
+# Master List of Missing Consumer, Gaming, Web3 & Cloud Companies
+
+This document tracks prominent missing companies from high-growth segments (D2C, Gaming/Esports, Web3/Blockchain, and Global Enterprise Cloud/DevOps). Check them off as new batches are created.
+
+---
+
+## 1. D2C, FMCG & Consumer Brands
+- [x] SUGAR Cosmetics
+- [x] Mamaearth
+- [x] Purplle
+- [x] Ajio
+- [x] Pepperfry
+- [x] Urban Ladder
+- [x] Biba
+- [x] Relaxo Footwear
+- [x] Louis Philippe India
+- [x] Van Heusen India
+- [x] Allen Solly India
+- [x] Peter England
+- [x] Blackberrys India
+- [x] Red Tape
+- [x] Jockey India
+- [x] Khadim's
+- [x] Lakhani Shoes
+- [x] Flite Footwear
+- [x] Sparx India
+- [x] Goldstar Shoes
+- [x] Malabar Gold
+- [x] CaratLane
+- [x] BlueStone Jewellers
+- [x] Voylla
+- [x] Giva Jewellery
+- [x] Happily Unmarried
+- [x] Ustraa
+- [x] The Man Company
+- [x] Beardo
+- [x] Juicy Chemistry
+- [x] VLCC India
+- [x] Shahnaz Husain
+- [x] Patanjali
+- [x] Marico
+- [x] ITC Limited
+- [x] Parle Agro
+- [x] Kwality Walls
+- [x] Haldiram's
+- [x] FirstCry
+- [x] Pilgrim Cosmetics
+- [x] Earth Rhythm
+- [x] Minimalist Cosmetics
+- [x] Foxtale
+- [x] Chemist at Play
+- [x] True Frog
+- [x] Arata
+- [x] SkinKraft
+- [x] Vedix
+- [x] Cureskin
+- [x] Gynoveda
+- [x] Kapiva
+- [x] Auric
+- [x] Oziva
+- [x] MuscleBlaze
+- [x] True Elements
+- [x] Slurrp Farm
+- [x] Timios
+- [x] Springtek
+- [x] Kurl-on
+- [x] Sleepwell
+- [x] Centuary Mattress
+- [x] Snitch India
+- [x] SleepyCat India
+
+## 2. Gaming, Esports & Entertainment
+- [x] Zupee
+- [x] Rush by Hike
+- [x] PokerBaazi
+- [x] Adda52
+- [x] RummyCircle
+- [x] Junglee Rummy
+- [x] Gamezy
+- [x] Zapak
+- [x] Indiagames
+- [x] 99Games
+- [x] Octro
+- [x] Moonfrog Labs
+- [x] PlaySimple Games
+- [x] Mech Mocha
+- [x] Skyesports
+- [x] Ultimate Battle
+- [x] Gamerji
+- [x] The Esports Club
+- [x] FanCode
+- [x] Cricbuzz
+- [x] Sportskeeda
+- [x] MyTeam11
+- [x] PlayerzPot
+- [x] BalleBaazi
+- [x] Real11
+- [x] BatBall11
+- [x] Vision11
+- [x] MyMaster11
+- [x] Sportasy
+- [x] Fantasy Power 11
+- [x] League11
+- [x] 11Wickets
+- [x] Fab11
+- [x] Prime Captain
+- [x] CardBaazi
+- [x] PokerStars India
+- [x] Spartan Poker
+- [x] KhelPlay Rummy
+- [x] Classic Rummy
+- [x] Deccan Rummy
+- [x] Taj Rummy
+- [x] Rummy Villa
+- [x] PlayRummy
+- [x] Ludo King
+- [x] Gametion Technologies
+- [x] Cosmos Video
+- [x] GetaClub
+- [x] SuperGaming
+- [x] Indus Game
+- [x] Roby Technologies
+- [x] Bombay Play
+- [x] Zynga India
+- [x] Ubisoft India
+- [x] EA India
+- [x] Rockstar India
+- [x] Lakshya Digital
+- [x] Dhruva Interactive
+- [x] Nazara Games
+- [x] Rooter Esports
+- [x] Gamerji India
+
+## 3. Web3, Blockchain & Cryptography
+- [x] Polygon
+- [x] Matic Network
+- [x] Bitbns
+- [x] BuyUcoin
+- [x] Unocoin
+- [x] PocketBits
+- [x] Coindelta
+- [x] Koinex
+- [x] Cryptokart
+- [x] Flitpay
+- [x] SunCrypto
+- [x] Koinbazar
+- [x] Coinome
+- [x] Ethlas India
+- [x] Chingari App
+- [x] Gari Network
+- [x] Taki
+- [x] Lysto
+- [x] Vidyut
+- [x] Stader Labs
+- [x] Superfluid India
+- [x] Wall App
+- [x] Siddharth Protocol
+- [x] Pundi X India
+- [x] Wanchain India
+- [x] Zebi
+- [x] Nucleus Vision
+- [x] Eleven01
+- [x] KrypC
+- [x] Primechain
+- [x] Signzy India
+- [x] KoineArth
+- [x] Somish
+- [x] RecordsKeeper
+- [x] Arcana Network
+- [x] Cryption Network
+- [x] Dhiway
+- [x] Builders Tribe
+- [x] Huddle01
+- [x] Lighthouse Web3
+- [x] Spheron Network
+- [x] Sino Global India
+- [x] Woodstock Fund
+- [x] Lumos Labs
+- [x] Flint Labs
+- [x] Frontier Wallet
+- [x] Defy Club
+- [x] Tegro
+- [x] OneRare
+- [x] Bullieverse
+- [x] Polygon Labs
+- [x] Polygon Studios
+- [x] Shardeum Foundation
+
+## 4. Global Cloud, Big Data & DevOps Tools
+- [x] Fivetran India
+- [x] dbt Labs India
+- [x] Dagster Labs India
+- [x] Milvus India
+- [x] Qdrant India
+- [x] Comet ML India
+- [x] Neptune.ai India
+- [x] Run:ai India
+- [x] Alteryx India
+- [x] Heroku India
+- [x] Travis CI India
+- [x] Kong Inc India
+- [x] Prometheus India
+- [x] Dynatrace India
+- [x] CockroachDB
+- [x] TiDB
+- [x] YugabyteDB India
+- [x] Aerospike India
+- [x] MariaDB India
+- [x] Percona India
+- [x] Starburst Data India
+- [x] Dremio India
+- [x] Denodo India
+- [x] MuleSoft India
+- [x] Auth0 India
+- [x] Okta India
+- [x] OneLogin India
+- [x] Ping Identity India
+- [x] MongoDB India Office
+- [x] Redis India Tech
+- [x] Neo4j India Dev
+
+## 5. Strategy Consulting & Advisory
+- [x] McKinsey & Company
+- [x] Bain & Company
+- [x] Boston Consulting Group (BCG)
+- [x] Kearney
+- [x] Oliver Wyman
+- [x] Roland Berger
+- [x] Deloitte Consulting
+- [x] PwC Advisory
+- [x] Ernst & Young (EY) Advisory
+- [x] KPMG Advisory
+- [x] Accenture Strategy
+
+## 6. MBA Recruiting Giants (Tech, Product & PM Roles)
+- [x] Colgate-Palmolive (Colgate-Palmolive Company)
+- [x] Hindustan Unilever (HUL)
+- [x] Procter & Gamble (P&G)
+- [x] L'Oréal
+- [x] Reckitt (Reckitt Benckiser)
+- [x] J.P. Morgan Chase
+- [x] Nestlé India
+- [x] Mondelez International
+- [x] PepsiCo India
+- [x] Coca-Cola India
+- [x] Tata Administrative Services (TAS)
+- [x] Aditya Birla Group (ABG)
+- [x] Reliance Industries (RIL)
+- [x] Mahindra Group
+- [x] ITC Limited
+- [x] Mastercard
+- [x] Visa
+- [x] American Express (Amex)
+- [x] Bajaj Finserv
+- [x] Shell India
+- [x] BP India
+- [x] Pidilite Industries
+- [x] Godrej Industries (Godrej Group)
+- [x] RPG Group
+- [x] Larsen & Toubro (L&T)
+- [x] JSW Group
+- [x] Udaan
+- [x] TVS Motor Company
+- [x] Johnson & Johnson India
+- [x] General Electric India
+- [x] Philips India
+- [x] JSW Steel

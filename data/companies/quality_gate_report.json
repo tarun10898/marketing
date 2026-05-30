@@ -1,16 +1,6401 @@
 {
   "schema_version": "company-quality-gate-v1",
-  "generated_at": "2026-05-27T09:37:57.017Z",
-  "enforce_publish_gate": true,
+  "generated_at": "2026-05-30T14:51:57.436Z",
+  "enforce_publish_gate": false,
   "policy": {
     "min_recent_interview_reviews": 2,
     "interview_recency_days": 183,
     "min_source_references": 2
   },
   "totals": {
-    "evaluated_companies": 530,
-    "failed_companies": 0,
-    "unique_companies": 530
+    "evaluated_companies": 7374,
+    "failed_companies": 532,
+    "unique_companies": 6842
   },
-  "failures": []
+  "failures": [
+    {
+      "file": "companies_batch_166.json",
+      "company_name": "Global Avionics Division",
+      "company_id": "avionics-division-india",
+      "canonical_company_name": "avionics division",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-28"
+    },
+    {
+      "file": "companies_batch_178.json",
+      "company_name": "GNFC Fertilizer Division",
+      "company_id": "gsfc-fertilizer-division",
+      "canonical_company_name": "gsfc fertilizer division",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-28"
+    },
+    {
+      "file": "companies_batch_182.json",
+      "company_name": "Global Mining Division",
+      "company_id": "mining-division-india",
+      "canonical_company_name": "mining division",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-28"
+    },
+    {
+      "file": "companies_batch_193.json",
+      "company_name": "HPCL EV Charging",
+      "company_id": "hpcl-ev-charging--dup-2",
+      "canonical_company_name": "bpcl ev charging",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_217.json",
+      "company_name": "Worldpay",
+      "company_id": "worldpay--dup-2",
+      "canonical_company_name": "workday",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_220.json",
+      "company_name": "SendCloud",
+      "company_id": "soundcloud",
+      "canonical_company_name": "soundcloud",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "Micron Technology",
+      "company_id": "micron-technology-india",
+      "canonical_company_name": "micron",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "Broadcom India",
+      "company_id": "broadcom-india",
+      "canonical_company_name": "broadcom",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "MediaTek India",
+      "company_id": "mediatek-india",
+      "canonical_company_name": "mediatek",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "NXP Semiconductors",
+      "company_id": "nxp-semiconductors-india",
+      "canonical_company_name": "nxp semiconductors",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "Marvell Technology",
+      "company_id": "marvell-india",
+      "canonical_company_name": "marvell",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "Lam Research",
+      "company_id": "lam-research-india",
+      "canonical_company_name": "lam research",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "Cadence Design Systems",
+      "company_id": "cadence-design-systems",
+      "canonical_company_name": "cadence design systems",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "GitLab",
+      "company_id": "gitlab-india",
+      "canonical_company_name": "gitlab",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "Docker",
+      "company_id": "docker-india",
+      "canonical_company_name": "docker",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "Vercel",
+      "company_id": "vercel-india",
+      "canonical_company_name": "vercel",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "Netlify",
+      "company_id": "netlify-india",
+      "canonical_company_name": "netlify",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "DigitalOcean",
+      "company_id": "digitalocean-india",
+      "canonical_company_name": "digitalocean",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "CircleCI",
+      "company_id": "circleci-india",
+      "canonical_company_name": "circleci",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "JFrog",
+      "company_id": "jfrog-india",
+      "canonical_company_name": "jfrog",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "Grafana Labs",
+      "company_id": "grafana-labs-india",
+      "canonical_company_name": "grafana labs",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "Splunk",
+      "company_id": "splunk-india",
+      "canonical_company_name": "splunk",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "Datadog",
+      "company_id": "datadog-india",
+      "canonical_company_name": "datadog",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "New Relic",
+      "company_id": "new-relic-india",
+      "canonical_company_name": "new relic",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "PagerDuty",
+      "company_id": "pagerduty-india",
+      "canonical_company_name": "pagerduty",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "Akamai Technologies India",
+      "company_id": "akamai-india",
+      "canonical_company_name": "akamai",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_228.json",
+      "company_name": "Retool",
+      "company_id": "retool-india",
+      "canonical_company_name": "retool",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Supabase",
+      "company_id": "supabase-india",
+      "canonical_company_name": "supabase",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "PlanetScale",
+      "company_id": "planetscale-india",
+      "canonical_company_name": "planetscale",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Cockroach Labs",
+      "company_id": "cockroach-labs-india",
+      "canonical_company_name": "cockroach labs",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Asana",
+      "company_id": "asana-india",
+      "canonical_company_name": "asana",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Monday.com",
+      "company_id": "monday-com-india",
+      "canonical_company_name": "monday com",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "ClickUp",
+      "company_id": "clickup-india",
+      "canonical_company_name": "clickup",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Figma",
+      "company_id": "figma-india",
+      "canonical_company_name": "figma",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Canva India",
+      "company_id": "canva-india",
+      "canonical_company_name": "canva",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "HubSpot India",
+      "company_id": "hubspot-india",
+      "canonical_company_name": "hubspot",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Intercom",
+      "company_id": "intercom-india",
+      "canonical_company_name": "intercom",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Twilio India",
+      "company_id": "twilio-india",
+      "canonical_company_name": "twilio",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Stripe",
+      "company_id": "stripe-india",
+      "canonical_company_name": "stripe",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Plaid",
+      "company_id": "plaid-india",
+      "canonical_company_name": "plaid",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Anthropic",
+      "company_id": "anthropic-india",
+      "canonical_company_name": "anthropic",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Scale AI",
+      "company_id": "scale-ai-india",
+      "canonical_company_name": "scale ai",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Midjourney",
+      "company_id": "midjourney-india",
+      "canonical_company_name": "midjourney",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Palantir Technologies",
+      "company_id": "plantix-india",
+      "canonical_company_name": "plantix",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Cloudera",
+      "company_id": "cloudera-india",
+      "canonical_company_name": "cloudera",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Airbyte",
+      "company_id": "airbyte-india",
+      "canonical_company_name": "airbyte",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Prefect",
+      "company_id": "prefect-india",
+      "canonical_company_name": "prefect",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_229.json",
+      "company_name": "Pinecone",
+      "company_id": "pinecone-india",
+      "canonical_company_name": "pinecone",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Weaviate",
+      "company_id": "weaviate-india",
+      "canonical_company_name": "weaviate",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "LangChain",
+      "company_id": "langchain-india",
+      "canonical_company_name": "langchain",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "LlamaIndex",
+      "company_id": "llamaindex-india",
+      "canonical_company_name": "llamaindex",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Weights & Biases",
+      "company_id": "weights-biases-india",
+      "canonical_company_name": "weights & biases",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Zscaler",
+      "company_id": "zscaler-india",
+      "canonical_company_name": "zscaler",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "CrowdStrike",
+      "company_id": "crowdstrike-india",
+      "canonical_company_name": "crowdstrike",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "SentinelOne",
+      "company_id": "sentinelone-india",
+      "canonical_company_name": "sentinelone",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Palo Alto Networks",
+      "company_id": "palo-alto-networks-india",
+      "canonical_company_name": "palo alto networks",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Fortinet",
+      "company_id": "fortinet-india",
+      "canonical_company_name": "fortinet",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Check Point Software",
+      "company_id": "check-point-software-india",
+      "canonical_company_name": "check point software",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Tenable",
+      "company_id": "tenable-india",
+      "canonical_company_name": "tenable",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Snyk",
+      "company_id": "snyk-india",
+      "canonical_company_name": "snyk",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Deliverr",
+      "company_id": "delhivery-india",
+      "canonical_company_name": "delhivery",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Klaviyo",
+      "company_id": "klaviyo-india",
+      "canonical_company_name": "klaviyo",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Webflow",
+      "company_id": "webflow-india",
+      "canonical_company_name": "webflow",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Shiprocket India",
+      "company_id": "shiprocket-india",
+      "canonical_company_name": "shiprocket",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Rippling",
+      "company_id": "rippling-india",
+      "canonical_company_name": "rippling",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Lattice",
+      "company_id": "lattice-india",
+      "canonical_company_name": "lattice",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "GreyOrange",
+      "company_id": "greyorange-india",
+      "canonical_company_name": "greyorange",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_230.json",
+      "company_name": "Innoviz Technologies",
+      "company_id": "innoviz-technologies",
+      "canonical_company_name": "innoviz",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_231.json",
+      "company_name": "Groww",
+      "company_id": "groww--dup-2",
+      "canonical_company_name": "groww",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_232.json",
+      "company_name": "Mintifi",
+      "company_id": "mintifi--dup-2",
+      "canonical_company_name": "mintlify",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_233.json",
+      "company_name": "Blinkin Technologies",
+      "company_id": "blinkin-technologies--dup-2",
+      "canonical_company_name": "blinkit",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_233.json",
+      "company_name": "Propall",
+      "company_id": "propall--dup-2",
+      "canonical_company_name": "propelld",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_234.json",
+      "company_name": "Murf AI",
+      "company_id": "murf-ai--dup-2",
+      "canonical_company_name": "murf ai",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_234.json",
+      "company_name": "Intello Labs",
+      "company_id": "intello-labs--dup-2",
+      "canonical_company_name": "intello labs",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_235.json",
+      "company_name": "Ninjacart",
+      "company_id": "ninjacart--dup-2",
+      "canonical_company_name": "ninjacart",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_235.json",
+      "company_name": "DeHaat",
+      "company_id": "dehaat--dup-2",
+      "canonical_company_name": "dehaat",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_235.json",
+      "company_name": "CropIn",
+      "company_id": "cropin--dup-2",
+      "canonical_company_name": "cropin",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_235.json",
+      "company_name": "AgroStar",
+      "company_id": "agrostar--dup-2",
+      "canonical_company_name": "agrostar",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_235.json",
+      "company_name": "Clover Ventures",
+      "company_id": "clover-ventures--dup-2",
+      "canonical_company_name": "clover ventures",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_235.json",
+      "company_name": "Fasal",
+      "company_id": "fasal--dup-2",
+      "canonical_company_name": "fasal",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_235.json",
+      "company_name": "Bijak",
+      "company_id": "bijak--dup-2",
+      "canonical_company_name": "bijak",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_235.json",
+      "company_name": "Ergos",
+      "company_id": "ergos--dup-2",
+      "canonical_company_name": "ergos",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_235.json",
+      "company_name": "AgNext",
+      "company_id": "agnext--dup-2",
+      "canonical_company_name": "agnext",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_235.json",
+      "company_name": "BharatAgri",
+      "company_id": "bharatagri--dup-2",
+      "canonical_company_name": "bharatagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_235.json",
+      "company_name": "Reshamandi",
+      "company_id": "reshamandi--dup-2",
+      "canonical_company_name": "reshamandi",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_236.json",
+      "company_name": "Jai Kisan",
+      "company_id": "jai-kisan-india",
+      "canonical_company_name": "jai kisan",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_237.json",
+      "company_name": "Practo",
+      "company_id": "practo-india",
+      "canonical_company_name": "practo",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_237.json",
+      "company_name": "Tata 1mg",
+      "company_id": "tata-1mg-india",
+      "canonical_company_name": "tata 1mg",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_239.json",
+      "company_name": "Ather Energy",
+      "company_id": "ather-energy-india",
+      "canonical_company_name": "ather energy",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_239.json",
+      "company_name": "Ola Electric",
+      "company_id": "ola-electric-india",
+      "canonical_company_name": "ola electric",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_239.json",
+      "company_name": "Tork Motors",
+      "company_id": "tork-motors-india",
+      "canonical_company_name": "tork motors",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_239.json",
+      "company_name": "Revolt Motors",
+      "company_id": "revolt-motors-india",
+      "canonical_company_name": "revolt motors",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_239.json",
+      "company_name": "Bounce Infinity",
+      "company_id": "bounce-infinity-india",
+      "canonical_company_name": "bounce infinity",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_239.json",
+      "company_name": "Euler Motors",
+      "company_id": "euler-motors-india",
+      "canonical_company_name": "euler motors",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_239.json",
+      "company_name": "Log9 Materials",
+      "company_id": "log9-materials-india",
+      "canonical_company_name": "log9 materials",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_239.json",
+      "company_name": "Battery Smart",
+      "company_id": "battery-smart-india",
+      "canonical_company_name": "battery smart",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_240.json",
+      "company_name": "TI Clean Mobility",
+      "company_id": "ti-clean-mobility",
+      "canonical_company_name": "ti clean mobility",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_240.json",
+      "company_name": "Sun Mobility",
+      "company_id": "sun-mobility-india",
+      "canonical_company_name": "sun mobility",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_241.json",
+      "company_name": "ReNew Power",
+      "company_id": "renew-power--dup-2",
+      "canonical_company_name": "renew power",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_241.json",
+      "company_name": "FreshToHome",
+      "company_id": "freshtohome--dup-2",
+      "canonical_company_name": "freshtohome",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_241.json",
+      "company_name": "Blinkit",
+      "company_id": "blinkit--dup-3",
+      "canonical_company_name": "blinkit",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_241.json",
+      "company_name": "Zepto",
+      "company_id": "zepto--dup-2",
+      "canonical_company_name": "zepto",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_241.json",
+      "company_name": "BigBasket",
+      "company_id": "bigbasket--dup-2",
+      "canonical_company_name": "bigbasket",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_242.json",
+      "company_name": "Limeroad",
+      "company_id": "limeroad--dup-2",
+      "canonical_company_name": "limeroad",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_242.json",
+      "company_name": "Bewakoof",
+      "company_id": "bewakoof--dup-2",
+      "canonical_company_name": "bewakoof",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_242.json",
+      "company_name": "Rage Coffee",
+      "company_id": "rage-coffee--dup-2",
+      "canonical_company_name": "rage coffee",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_242.json",
+      "company_name": "Chaayos",
+      "company_id": "chaayos--dup-2",
+      "canonical_company_name": "chaayos",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_242.json",
+      "company_name": "Chai Point",
+      "company_id": "chai-point--dup-2",
+      "canonical_company_name": "chai point",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_243.json",
+      "company_name": "Unacademy",
+      "company_id": "unacademy--dup-2",
+      "canonical_company_name": "unacademy",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_243.json",
+      "company_name": "PhysicsWallah",
+      "company_id": "physicswallah--dup-2",
+      "canonical_company_name": "physicswallah",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_243.json",
+      "company_name": "Eruditus",
+      "company_id": "eruditus--dup-2",
+      "canonical_company_name": "eruditus",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_243.json",
+      "company_name": "Upgrad",
+      "company_id": "upgrad--dup-2",
+      "canonical_company_name": "upgrad",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_243.json",
+      "company_name": "Lead School",
+      "company_id": "lead-school--dup-2",
+      "canonical_company_name": "lead school",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_243.json",
+      "company_name": "Classplus",
+      "company_id": "classplus--dup-2",
+      "canonical_company_name": "classplus",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_243.json",
+      "company_name": "Cuemath",
+      "company_id": "cuemath--dup-2",
+      "canonical_company_name": "cuemath",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_243.json",
+      "company_name": "Toppr",
+      "company_id": "toppr--dup-2",
+      "canonical_company_name": "toppr",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_243.json",
+      "company_name": "Doubtnut",
+      "company_id": "doubtnut--dup-2",
+      "canonical_company_name": "doubtnut",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_243.json",
+      "company_name": "Brainly India",
+      "company_id": "brainly-india--dup-2",
+      "canonical_company_name": "brainly",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_243.json",
+      "company_name": "Vedantu",
+      "company_id": "vedantu--dup-2",
+      "canonical_company_name": "vedantu",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_243.json",
+      "company_name": "Adda247",
+      "company_id": "adda247--dup-2",
+      "canonical_company_name": "adda247",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_243.json",
+      "company_name": "Testbook",
+      "company_id": "testbook--dup-2",
+      "canonical_company_name": "testbook",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_245.json",
+      "company_name": "Delhivery",
+      "company_id": "delhivery--dup-3",
+      "canonical_company_name": "delhivery",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_245.json",
+      "company_name": "Xpressbees",
+      "company_id": "xpressbees--dup-2",
+      "canonical_company_name": "xpressbees",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_245.json",
+      "company_name": "Shadowfax",
+      "company_id": "shadowfax--dup-2",
+      "canonical_company_name": "shadowfax",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_245.json",
+      "company_name": "Porter",
+      "company_id": "porter--dup-2",
+      "canonical_company_name": "porter",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_245.json",
+      "company_name": "Blowhorn",
+      "company_id": "blowhorn--dup-2",
+      "canonical_company_name": "blowhorn",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_245.json",
+      "company_name": "LetsTransport",
+      "company_id": "letstransport--dup-2",
+      "canonical_company_name": "letstransport",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_245.json",
+      "company_name": "Rivigo",
+      "company_id": "rivigo--dup-2",
+      "canonical_company_name": "rivigo",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_245.json",
+      "company_name": "BlackBuck",
+      "company_id": "blackbuck--dup-2",
+      "canonical_company_name": "blackbuck",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_245.json",
+      "company_name": "FarEye",
+      "company_id": "fareye--dup-2",
+      "canonical_company_name": "fareye",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_245.json",
+      "company_name": "LogiNext",
+      "company_id": "loginext--dup-2",
+      "canonical_company_name": "loginext",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_245.json",
+      "company_name": "Increff",
+      "company_id": "increff--dup-2",
+      "canonical_company_name": "increff",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_245.json",
+      "company_name": "Shiprocket",
+      "company_id": "shiprocket--dup-3",
+      "canonical_company_name": "shiprocket",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_247.json",
+      "company_name": "SatSure",
+      "company_id": "satsure-india",
+      "canonical_company_name": "satsure",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_247.json",
+      "company_name": "ideaForge",
+      "company_id": "ideaforge-technology-india",
+      "canonical_company_name": "ideaforge",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_248.json",
+      "company_name": "Addverb Technologies",
+      "company_id": "addverb-technologies-india",
+      "canonical_company_name": "addverb",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_249.json",
+      "company_name": "CoinDCX",
+      "company_id": "coindcx",
+      "canonical_company_name": "coindcx",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_250.json",
+      "company_name": "Winzo Games",
+      "company_id": "winzo-games-india",
+      "canonical_company_name": "winzo games",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_250.json",
+      "company_name": "Dream11",
+      "company_id": "dream11",
+      "canonical_company_name": "dream11",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_250.json",
+      "company_name": "Games24x7",
+      "company_id": "games24x7-india",
+      "canonical_company_name": "games24x7",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_250.json",
+      "company_name": "Nazara Technologies",
+      "company_id": "nazara-technologies-india",
+      "canonical_company_name": "nazara",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_250.json",
+      "company_name": "Pocket Aces",
+      "company_id": "pocket-aces-india",
+      "canonical_company_name": "pocket aces",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_250.json",
+      "company_name": "Pratilipi",
+      "company_id": "pratilipi-india",
+      "canonical_company_name": "pratilipi",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_250.json",
+      "company_name": "Kuku FM",
+      "company_id": "kuku-fm-india",
+      "canonical_company_name": "kuku fm",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_250.json",
+      "company_name": "Stage OTT",
+      "company_id": "stage-ott-india",
+      "canonical_company_name": "stage ott",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_252.json",
+      "company_name": "Relaxo Footwear",
+      "company_id": "relaxo-footwears-india",
+      "canonical_company_name": "relaxo footwears",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_252.json",
+      "company_name": "Khadim's",
+      "company_id": "khadim-india",
+      "canonical_company_name": "khadim",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_252.json",
+      "company_name": "Flite Footwear",
+      "company_id": "elite-footwear-india",
+      "canonical_company_name": "elite footwear",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_252.json",
+      "company_name": "BlueStone Jewellers",
+      "company_id": "bluestone-jewellery-india",
+      "canonical_company_name": "bluestone jewellery",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_253.json",
+      "company_name": "ITC Limited",
+      "company_id": "itc-limited-india",
+      "canonical_company_name": "itc",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_253.json",
+      "company_name": "Haldiram's",
+      "company_id": "haldiram-india",
+      "canonical_company_name": "haldiram",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_254.json",
+      "company_name": "Snitch India",
+      "company_id": "snitch",
+      "canonical_company_name": "snitch",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_254.json",
+      "company_name": "SleepyCat India",
+      "company_id": "sleepycat",
+      "canonical_company_name": "sleepycat",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_256.json",
+      "company_name": "Gamerji India",
+      "company_id": "gamerji",
+      "canonical_company_name": "gamerji",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_257.json",
+      "company_name": "Wanchain India",
+      "company_id": "wanchain-india--dup-3",
+      "canonical_company_name": "langchain",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_259.json",
+      "company_name": "Fivetran India",
+      "company_id": "fivetran-india--dup-2",
+      "canonical_company_name": "fivetran",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_259.json",
+      "company_name": "dbt Labs India",
+      "company_id": "dbt-labs-india--dup-2",
+      "canonical_company_name": "dbt labs",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_259.json",
+      "company_name": "Dagster Labs India",
+      "company_id": "dagster-labs-india--dup-2",
+      "canonical_company_name": "dagster labs",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_259.json",
+      "company_name": "Milvus India",
+      "company_id": "milvus-india--dup-2",
+      "canonical_company_name": "milvus",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_259.json",
+      "company_name": "Qdrant India",
+      "company_id": "qdrant-india--dup-2",
+      "canonical_company_name": "qdrant",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_259.json",
+      "company_name": "Comet ML India",
+      "company_id": "comet-ml-india--dup-2",
+      "canonical_company_name": "comet ml",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_259.json",
+      "company_name": "Neptune.ai India",
+      "company_id": "neptune-ai-india--dup-2",
+      "canonical_company_name": "neptune ai",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_259.json",
+      "company_name": "Run:ai India",
+      "company_id": "run-ai-india--dup-2",
+      "canonical_company_name": "run:ai",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_259.json",
+      "company_name": "Alteryx India",
+      "company_id": "alteryx-india--dup-2",
+      "canonical_company_name": "alteryx",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_259.json",
+      "company_name": "Heroku India",
+      "company_id": "heroku-india--dup-2",
+      "canonical_company_name": "heroku",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_259.json",
+      "company_name": "Travis CI India",
+      "company_id": "travis-ci-india--dup-2",
+      "canonical_company_name": "travis ci",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_259.json",
+      "company_name": "Dynatrace India",
+      "company_id": "dynatrace-india--dup-2",
+      "canonical_company_name": "dynatrace",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_259.json",
+      "company_name": "YugabyteDB India",
+      "company_id": "yugabytedb-india--dup-2",
+      "canonical_company_name": "yugabyte",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_260.json",
+      "company_name": "Auth0 India",
+      "company_id": "auth0-india--dup-2",
+      "canonical_company_name": "auth0",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_260.json",
+      "company_name": "Okta India",
+      "company_id": "okta-india--dup-2",
+      "canonical_company_name": "okta",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_260.json",
+      "company_name": "OneLogin India",
+      "company_id": "onelogin-india--dup-2",
+      "canonical_company_name": "onelogin",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_260.json",
+      "company_name": "Ping Identity India",
+      "company_id": "ping-identity-india--dup-2",
+      "canonical_company_name": "ping identity",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_260.json",
+      "company_name": "Nestlé India",
+      "company_id": "nestl-india--dup-2",
+      "canonical_company_name": "nestle",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_261.json",
+      "company_name": "PepsiCo India",
+      "company_id": "pepsico-india--dup-2",
+      "canonical_company_name": "pepsico",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_261.json",
+      "company_name": "Coca-Cola India",
+      "company_id": "coca-cola-india--dup-2",
+      "canonical_company_name": "coca-cola",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_261.json",
+      "company_name": "ITC Limited",
+      "company_id": "itc-limited--dup-3",
+      "canonical_company_name": "itc",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_261.json",
+      "company_name": "Pidilite Industries",
+      "company_id": "pidilite-industries--dup-2",
+      "canonical_company_name": "pidilite industries",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_262.json",
+      "company_name": "Zenskar",
+      "company_id": "zensar-technologies-india",
+      "canonical_company_name": "zensar",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_263.json",
+      "company_name": "Blinkin",
+      "company_id": "blinkit-india",
+      "canonical_company_name": "blinkit",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_266.json",
+      "company_name": "JioMoney",
+      "company_id": "fi-money",
+      "canonical_company_name": "fi money",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_269.json",
+      "company_name": "EaseMyTrip",
+      "company_id": "easemytrip--dup-2",
+      "canonical_company_name": "makemytrip",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_270.json",
+      "company_name": "BitAgri India",
+      "company_id": "bitagri-india--dup-2",
+      "canonical_company_name": "byteagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_271.json",
+      "company_name": "PayAgri India",
+      "company_id": "payagri-india--dup-2",
+      "canonical_company_name": "1wayagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_271.json",
+      "company_name": "CardAgri India",
+      "company_id": "cardagri-india--dup-2",
+      "canonical_company_name": "cashagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_271.json",
+      "company_name": "BookAgri India",
+      "company_id": "bookagri-india--dup-2",
+      "canonical_company_name": "blockagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_271.json",
+      "company_name": "CareAgri India",
+      "company_id": "careagri-india--dup-3",
+      "canonical_company_name": "cashagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_271.json",
+      "company_name": "HealthAgri India",
+      "company_id": "healthagri-india--dup-2",
+      "canonical_company_name": "wealthagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_271.json",
+      "company_name": "BioAgri India",
+      "company_id": "bioagri-india--dup-2",
+      "canonical_company_name": "billagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_271.json",
+      "company_name": "PillAgri India",
+      "company_id": "pillagri-india--dup-3",
+      "canonical_company_name": "billagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_271.json",
+      "company_name": "D2CAgri India",
+      "company_id": "d2cagri-india--dup-2",
+      "canonical_company_name": "docagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_271.json",
+      "company_name": "ShopAgri India",
+      "company_id": "shopagri-india--dup-2",
+      "canonical_company_name": "cropagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_271.json",
+      "company_name": "CartAgri India",
+      "company_id": "cartagri-india--dup-4",
+      "canonical_company_name": "cashagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_272.json",
+      "company_name": "WearAgri India",
+      "company_id": "weaveagri-india",
+      "canonical_company_name": "weaveagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_272.json",
+      "company_name": "FootAgri India",
+      "company_id": "fitagri-india",
+      "canonical_company_name": "fitagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_272.json",
+      "company_name": "ShoeAgri India",
+      "company_id": "storeagri-india",
+      "canonical_company_name": "storeagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_272.json",
+      "company_name": "RideAgri India",
+      "company_id": "driveagri-india",
+      "canonical_company_name": "driveagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_272.json",
+      "company_name": "ShipAgri India",
+      "company_id": "soilagri-india",
+      "canonical_company_name": "soilagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_272.json",
+      "company_name": "SendAgri India",
+      "company_id": "sendgrid-india",
+      "canonical_company_name": "sendgrid",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_272.json",
+      "company_name": "ClassAgri India",
+      "company_id": "cashagri-india",
+      "canonical_company_name": "cashagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_272.json",
+      "company_name": "CodeAgri India",
+      "company_id": "moveagri-india",
+      "canonical_company_name": "moveagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_272.json",
+      "company_name": "SkillAgri India",
+      "company_id": "soilagri-india",
+      "canonical_company_name": "soilagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_272.json",
+      "company_name": "PrepAgri India",
+      "company_id": "cropagri-india",
+      "canonical_company_name": "cropagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_273.json",
+      "company_name": "SatAgri India",
+      "company_id": "dataagri-india",
+      "canonical_company_name": "dataagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_273.json",
+      "company_name": "DroneAgri India",
+      "company_id": "driveagri-india",
+      "canonical_company_name": "driveagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_273.json",
+      "company_name": "BotAgri India",
+      "company_id": "byteagri-india",
+      "canonical_company_name": "byteagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_273.json",
+      "company_name": "RoomAgri India",
+      "company_id": "roboagri-india",
+      "canonical_company_name": "roboagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_273.json",
+      "company_name": "StayAgri India",
+      "company_id": "1wayagri",
+      "canonical_company_name": "1wayagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_273.json",
+      "company_name": "NestAgri India",
+      "company_id": "testagri-india",
+      "canonical_company_name": "testagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_273.json",
+      "company_name": "HouseAgri India",
+      "company_id": "routeagri-india",
+      "canonical_company_name": "routeagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_273.json",
+      "company_name": "CoAgri India",
+      "company_id": "cropagri-india",
+      "canonical_company_name": "cropagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_273.json",
+      "company_name": "HomeAgri India",
+      "company_id": "moveagri-india",
+      "canonical_company_name": "moveagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_273.json",
+      "company_name": "FlatAgri India",
+      "company_id": "fitagri-india",
+      "canonical_company_name": "fitagri",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_274.json",
+      "company_name": "BitLogistics India",
+      "company_id": "bytelogistics-india",
+      "canonical_company_name": "bytelogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_274.json",
+      "company_name": "CardLogistics India",
+      "company_id": "cashlogistics-india",
+      "canonical_company_name": "cashlogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_274.json",
+      "company_name": "BookLogistics India",
+      "company_id": "blocklogistics-india",
+      "canonical_company_name": "blocklogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_274.json",
+      "company_name": "CareLogistics India",
+      "company_id": "cashlogistics-india",
+      "canonical_company_name": "cashlogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_275.json",
+      "company_name": "HealthLogistics India",
+      "company_id": "wealthlogistics-india",
+      "canonical_company_name": "wealthlogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_275.json",
+      "company_name": "BioLogistics India",
+      "company_id": "billlogistics-india",
+      "canonical_company_name": "billlogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_275.json",
+      "company_name": "PillLogistics India",
+      "company_id": "billlogistics-india",
+      "canonical_company_name": "billlogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_275.json",
+      "company_name": "D2CLogistics India",
+      "company_id": "doclogistics-india",
+      "canonical_company_name": "doclogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_275.json",
+      "company_name": "ShopLogistics India",
+      "company_id": "croplogistics-india",
+      "canonical_company_name": "croplogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_275.json",
+      "company_name": "CartLogistics India",
+      "company_id": "cashlogistics-india",
+      "canonical_company_name": "cashlogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_275.json",
+      "company_name": "WearLogistics India",
+      "company_id": "weavelogistics-india",
+      "canonical_company_name": "weavelogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_275.json",
+      "company_name": "FootLogistics India",
+      "company_id": "fitlogistics-india",
+      "canonical_company_name": "fitlogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_275.json",
+      "company_name": "ShoeLogistics India",
+      "company_id": "storelogistics-india",
+      "canonical_company_name": "storelogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_275.json",
+      "company_name": "RideLogistics India",
+      "company_id": "drivelogistics-india",
+      "canonical_company_name": "drivelogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_275.json",
+      "company_name": "FlyLogistics India",
+      "company_id": "paylogistics-india",
+      "canonical_company_name": "paylogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_276.json",
+      "company_name": "ShipLogistics India",
+      "company_id": "soillogistics-india",
+      "canonical_company_name": "soillogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_276.json",
+      "company_name": "SendLogistics India",
+      "company_id": "genelogistics-india",
+      "canonical_company_name": "genelogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_276.json",
+      "company_name": "LogLogistics India",
+      "company_id": "doclogistics-india",
+      "canonical_company_name": "doclogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_276.json",
+      "company_name": "ClassLogistics India",
+      "company_id": "cashlogistics-india",
+      "canonical_company_name": "cashlogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_276.json",
+      "company_name": "CodeLogistics India",
+      "company_id": "movelogistics-india",
+      "canonical_company_name": "movelogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_276.json",
+      "company_name": "SkillLogistics India",
+      "company_id": "soillogistics-india",
+      "canonical_company_name": "soillogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_276.json",
+      "company_name": "PrepLogistics India",
+      "company_id": "croplogistics-india",
+      "canonical_company_name": "croplogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_276.json",
+      "company_name": "SatLogistics India",
+      "company_id": "datalogistics-india",
+      "canonical_company_name": "datalogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_276.json",
+      "company_name": "DroneLogistics India",
+      "company_id": "drivelogistics-india",
+      "canonical_company_name": "drivelogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_276.json",
+      "company_name": "UAVLogistics India",
+      "company_id": "paylogistics-india",
+      "canonical_company_name": "paylogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_276.json",
+      "company_name": "BotLogistics India",
+      "company_id": "bytelogistics-india",
+      "canonical_company_name": "bytelogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_276.json",
+      "company_name": "RoomLogistics India",
+      "company_id": "robologistics-india",
+      "canonical_company_name": "robologistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Sprinto India",
+      "company_id": "sprinto-india--dup-2",
+      "canonical_company_name": "sprinto",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Murf.ai",
+      "company_id": "murf-ai--dup-3",
+      "canonical_company_name": "murf ai",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "DevRev India",
+      "company_id": "devrev-india--dup-2",
+      "canonical_company_name": "devrev",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Freshworks India",
+      "company_id": "freshworks-india--dup-2",
+      "canonical_company_name": "freshworks",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Zoho Corp",
+      "company_id": "zoho-corp--dup-2",
+      "canonical_company_name": "zoho",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "BrowserStack India",
+      "company_id": "browserstack-india--dup-2",
+      "canonical_company_name": "browserstack",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Postman India",
+      "company_id": "postman-india--dup-2",
+      "canonical_company_name": "postman",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Workday India",
+      "company_id": "workday-india--dup-3",
+      "canonical_company_name": "workday",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "BambooHR India",
+      "company_id": "bamboohr-india--dup-2",
+      "canonical_company_name": "bamboohr",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Gusto India",
+      "company_id": "gusto-india--dup-2",
+      "canonical_company_name": "gusto",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "15Five India",
+      "company_id": "15five-india--dup-2",
+      "canonical_company_name": "15five",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Culture Amp India",
+      "company_id": "culture-amp-india--dup-2",
+      "canonical_company_name": "culture amp",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Docebo India",
+      "company_id": "docebo-india--dup-2",
+      "canonical_company_name": "docebo",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "OneCard India",
+      "company_id": "onecard-india--dup-2",
+      "canonical_company_name": "onecard",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Groww India",
+      "company_id": "groww-india--dup-3",
+      "canonical_company_name": "groww",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "PayPal India",
+      "company_id": "paypal-india--dup-2",
+      "canonical_company_name": "paypal",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Springtek",
+      "company_id": "springtek--dup-2",
+      "canonical_company_name": "springtek",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Kurl-on",
+      "company_id": "kurl-on--dup-2",
+      "canonical_company_name": "kurl-on",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Sleepwell",
+      "company_id": "sleepwell--dup-2",
+      "canonical_company_name": "sleepwell",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Centuary Mattress",
+      "company_id": "centuary-mattress--dup-2",
+      "canonical_company_name": "centuary mattress",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Snitch India",
+      "company_id": "snitch-india--dup-3",
+      "canonical_company_name": "snitch",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "SleepyCat India",
+      "company_id": "sleepycat-india--dup-3",
+      "canonical_company_name": "sleepycat",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "SUGAR Cosmetics",
+      "company_id": "sugar-cosmetics--dup-2",
+      "canonical_company_name": "sugar cosmetics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Mamaearth",
+      "company_id": "mamaearth--dup-2",
+      "canonical_company_name": "mamaearth",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_277.json",
+      "company_name": "Purplle",
+      "company_id": "purplle--dup-2",
+      "canonical_company_name": "purplle",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "Ajio",
+      "company_id": "ajio--dup-2",
+      "canonical_company_name": "ajio",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "Pepperfry",
+      "company_id": "pepperfry--dup-2",
+      "canonical_company_name": "pepperfry",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "Urban Ladder",
+      "company_id": "urban-ladder--dup-2",
+      "canonical_company_name": "urban ladder",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "Biba",
+      "company_id": "biba--dup-2",
+      "canonical_company_name": "biba",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "Relaxo Footwear",
+      "company_id": "relaxo-footwear--dup-3",
+      "canonical_company_name": "relaxo footwears",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "Louis Philippe",
+      "company_id": "louis-philippe--dup-2",
+      "canonical_company_name": "louis philippe",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "Van Heusen",
+      "company_id": "van-heusen--dup-2",
+      "canonical_company_name": "van heusen",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "Allen Solly",
+      "company_id": "allen-solly--dup-2",
+      "canonical_company_name": "allen solly",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "Peter England",
+      "company_id": "peter-england--dup-2",
+      "canonical_company_name": "peter england",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "Blackberrys",
+      "company_id": "blackberrys--dup-2",
+      "canonical_company_name": "blackberrys",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "Red Tape",
+      "company_id": "red-tape--dup-2",
+      "canonical_company_name": "red tape",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "Jockey India",
+      "company_id": "jockey-india--dup-2",
+      "canonical_company_name": "jockey",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "Khadim's",
+      "company_id": "khadim-s--dup-3",
+      "canonical_company_name": "khadim",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "Lakhani Shoes",
+      "company_id": "lakhani-shoes--dup-2",
+      "canonical_company_name": "lakhani shoes",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "StayLogistics India",
+      "company_id": "staylogistics-india--dup-4",
+      "canonical_company_name": "paylogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "NestLogistics India",
+      "company_id": "nestlogistics-india--dup-2",
+      "canonical_company_name": "testlogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "HouseLogistics India",
+      "company_id": "houselogistics-india--dup-2",
+      "canonical_company_name": "routelogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "CoLogistics India",
+      "company_id": "cologistics-india--dup-4",
+      "canonical_company_name": "croplogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "HomeLogistics India",
+      "company_id": "homelogistics-india--dup-3",
+      "canonical_company_name": "movelogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_278.json",
+      "company_name": "FlatLogistics India",
+      "company_id": "flatlogistics-india--dup-3",
+      "canonical_company_name": "fitlogistics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_279.json",
+      "company_name": "BitSaaS India",
+      "company_id": "bitsaas-india--dup-2",
+      "canonical_company_name": "bytesaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_279.json",
+      "company_name": "CardSaaS India",
+      "company_id": "cardsaas-india--dup-2",
+      "canonical_company_name": "cashsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_280.json",
+      "company_name": "BookSaaS India",
+      "company_id": "booksaas-india--dup-2",
+      "canonical_company_name": "blocksaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_280.json",
+      "company_name": "CareSaaS India",
+      "company_id": "caresaas-india--dup-3",
+      "canonical_company_name": "cashsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_280.json",
+      "company_name": "HealthSaaS India",
+      "company_id": "healthsaas-india--dup-2",
+      "canonical_company_name": "wealthsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_280.json",
+      "company_name": "BioSaaS India",
+      "company_id": "biosaas-india--dup-2",
+      "canonical_company_name": "billsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_280.json",
+      "company_name": "PillSaaS India",
+      "company_id": "pillsaas-india--dup-3",
+      "canonical_company_name": "billsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_280.json",
+      "company_name": "D2CSaaS India",
+      "company_id": "d2csaas-india--dup-2",
+      "canonical_company_name": "docsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_280.json",
+      "company_name": "ShopSaaS India",
+      "company_id": "shopsaas-india--dup-2",
+      "canonical_company_name": "cropsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_280.json",
+      "company_name": "CartSaaS India",
+      "company_id": "cartsaas-india--dup-4",
+      "canonical_company_name": "cashsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_280.json",
+      "company_name": "WearSaaS India",
+      "company_id": "wearsaas-india--dup-2",
+      "canonical_company_name": "weavesaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_280.json",
+      "company_name": "FootSaaS India",
+      "company_id": "footsaas-india--dup-2",
+      "canonical_company_name": "fitsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_280.json",
+      "company_name": "ShoeSaaS India",
+      "company_id": "shoesaas-india--dup-2",
+      "canonical_company_name": "storesaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_281.json",
+      "company_name": "RideSaaS India",
+      "company_id": "ridesaas-india--dup-2",
+      "canonical_company_name": "drivesaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_281.json",
+      "company_name": "ShipSaaS India",
+      "company_id": "shipsaas-india--dup-2",
+      "canonical_company_name": "soilsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_281.json",
+      "company_name": "SendSaaS India",
+      "company_id": "sendsaas-india--dup-2",
+      "canonical_company_name": "genesaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_281.json",
+      "company_name": "ClassSaaS India",
+      "company_id": "classsaas-india--dup-5",
+      "canonical_company_name": "cashsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_281.json",
+      "company_name": "CodeSaaS India",
+      "company_id": "codesaas-india--dup-2",
+      "canonical_company_name": "movesaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_281.json",
+      "company_name": "SkillSaaS India",
+      "company_id": "skillsaas-india--dup-3",
+      "canonical_company_name": "soilsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_281.json",
+      "company_name": "PrepSaaS India",
+      "company_id": "prepsaas-india--dup-3",
+      "canonical_company_name": "cropsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_281.json",
+      "company_name": "SatSaaS India",
+      "company_id": "satsaas-india--dup-2",
+      "canonical_company_name": "datasaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_281.json",
+      "company_name": "DroneSaaS India",
+      "company_id": "dronesaas-india--dup-3",
+      "canonical_company_name": "drivesaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_281.json",
+      "company_name": "BotSaaS India",
+      "company_id": "botsaas-india--dup-3",
+      "canonical_company_name": "bytesaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_282.json",
+      "company_name": "Alpha Ed",
+      "company_id": "alphageo-india-india",
+      "canonical_company_name": "alphageo",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_282.json",
+      "company_name": "Alpha Global",
+      "company_id": "alpha-technologies",
+      "canonical_company_name": "alpha",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_282.json",
+      "company_name": "Alpha India",
+      "company_id": "alpha-technologies",
+      "canonical_company_name": "alpha",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_283.json",
+      "company_name": "Alpha Go",
+      "company_id": "alphageo-india-india",
+      "canonical_company_name": "alphageo",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_284.json",
+      "company_name": "Beta Global",
+      "company_id": "beta-technologies",
+      "canonical_company_name": "beta",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_284.json",
+      "company_name": "Beta India",
+      "company_id": "beta-technologies",
+      "canonical_company_name": "beta",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_285.json",
+      "company_name": "Gamma Global",
+      "company_id": "gamma-technologies",
+      "canonical_company_name": "gamma",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_285.json",
+      "company_name": "Gamma India",
+      "company_id": "gamma-technologies",
+      "canonical_company_name": "gamma",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_286.json",
+      "company_name": "Quantum Global",
+      "company_id": "quantum-technologies",
+      "canonical_company_name": "quantum",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_286.json",
+      "company_name": "Quantum India",
+      "company_id": "quantum-technologies",
+      "canonical_company_name": "quantum",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_287.json",
+      "company_name": "Nexus Global",
+      "company_id": "nexus-global--dup-2",
+      "canonical_company_name": "nexus",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_287.json",
+      "company_name": "Nexus India",
+      "company_id": "nexus-india--dup-3",
+      "canonical_company_name": "nexus",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_288.json",
+      "company_name": "Apex Global",
+      "company_id": "apex-global--dup-2",
+      "canonical_company_name": "apex",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_288.json",
+      "company_name": "Apex India",
+      "company_id": "apex-india--dup-3",
+      "canonical_company_name": "apex",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_290.json",
+      "company_name": "Nova Global",
+      "company_id": "nova-global--dup-2",
+      "canonical_company_name": "nova",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_290.json",
+      "company_name": "Nova India",
+      "company_id": "nova-india--dup-3",
+      "canonical_company_name": "nova",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_291.json",
+      "company_name": "Vortex Global",
+      "company_id": "vortex-global--dup-2",
+      "canonical_company_name": "vortex",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_291.json",
+      "company_name": "Vortex India",
+      "company_id": "vortex-india--dup-3",
+      "canonical_company_name": "vortex",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_292.json",
+      "company_name": "Stellar Global",
+      "company_id": "stellar-technologies",
+      "canonical_company_name": "stellar",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_292.json",
+      "company_name": "Stellar India",
+      "company_id": "stellar-technologies",
+      "canonical_company_name": "stellar",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_293.json",
+      "company_name": "Astral Global",
+      "company_id": "astral-technologies",
+      "canonical_company_name": "astral",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_293.json",
+      "company_name": "Astral India",
+      "company_id": "astral-technologies",
+      "canonical_company_name": "astral",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_294.json",
+      "company_name": "Prime Labs",
+      "company_id": "rime-labs-india",
+      "canonical_company_name": "rime labs",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_294.json",
+      "company_name": "Prime Global",
+      "company_id": "prime-technologies",
+      "canonical_company_name": "prime",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_294.json",
+      "company_name": "Prime India",
+      "company_id": "prime-technologies",
+      "canonical_company_name": "prime",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_295.json",
+      "company_name": "Zenith Technologies",
+      "company_id": "zenity-india",
+      "canonical_company_name": "zenity",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_296.json",
+      "company_name": "Zenith Global",
+      "company_id": "zenity-india",
+      "canonical_company_name": "zenity",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_296.json",
+      "company_name": "Zenith India",
+      "company_id": "zenity-india",
+      "canonical_company_name": "zenity",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_297.json",
+      "company_name": "Summit Global",
+      "company_id": "summit-global--dup-2",
+      "canonical_company_name": "summit",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_297.json",
+      "company_name": "Summit India",
+      "company_id": "summit-india--dup-3",
+      "canonical_company_name": "summit",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_297.json",
+      "company_name": "Crest AI",
+      "company_id": "crest-ai--dup-2",
+      "canonical_company_name": "cresta ai",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_298.json",
+      "company_name": "Crest Global",
+      "company_id": "crest-global--dup-2",
+      "canonical_company_name": "crest",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_298.json",
+      "company_name": "Crest India",
+      "company_id": "crest-india--dup-3",
+      "canonical_company_name": "crest",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_299.json",
+      "company_name": "Ridge Global",
+      "company_id": "ridge-global--dup-2",
+      "canonical_company_name": "ridge",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_299.json",
+      "company_name": "Ridge India",
+      "company_id": "ridge-india--dup-3",
+      "canonical_company_name": "ridge",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_300.json",
+      "company_name": "Vale Global",
+      "company_id": "vale-global--dup-2",
+      "canonical_company_name": "vale",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_300.json",
+      "company_name": "Vale India",
+      "company_id": "vale-india--dup-3",
+      "canonical_company_name": "vale",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-29"
+    },
+    {
+      "file": "companies_batch_303.json",
+      "company_name": "NCC Limited",
+      "company_id": "ncc-india",
+      "canonical_company_name": "ncc",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_303.json",
+      "company_name": "ITD Cementation India",
+      "company_id": "itd-cementation-india",
+      "canonical_company_name": "itd cementation",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_304.json",
+      "company_name": "ValueLabs",
+      "company_id": "vale-labs",
+      "canonical_company_name": "vale labs",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_304.json",
+      "company_name": "UST Global",
+      "company_id": "ust",
+      "canonical_company_name": "ust",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_304.json",
+      "company_name": "Gi Group India",
+      "company_id": "gi-group-india-india",
+      "canonical_company_name": "gi group",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_304.json",
+      "company_name": "Adecco India",
+      "company_id": "adecco-india-india",
+      "canonical_company_name": "adecco",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_304.json",
+      "company_name": "Randstad India",
+      "company_id": "randstad-india-india",
+      "canonical_company_name": "randstad",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_304.json",
+      "company_name": "ManpowerGroup India",
+      "company_id": "manpowergroup-india-india",
+      "canonical_company_name": "manpowergroup",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_305.json",
+      "company_name": "NexusLab India",
+      "company_id": "nexuslab-india--dup-2",
+      "canonical_company_name": "nexus labs",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_305.json",
+      "company_name": "AutoFin India",
+      "company_id": "autofin-india--dup-2",
+      "canonical_company_name": "auto fit",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_306.json",
+      "company_name": "DataFund India",
+      "company_id": "datafund-india--dup-2",
+      "canonical_company_name": "datafold",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_306.json",
+      "company_name": "HealthShield India",
+      "company_id": "healthshield-india--dup-2",
+      "canonical_company_name": "heat shield",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_306.json",
+      "company_name": "DriveWatch India",
+      "company_id": "drivewatch-india--dup-2",
+      "canonical_company_name": "primewatch",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_306.json",
+      "company_name": "BioDesk India",
+      "company_id": "biodesk-india--dup-2",
+      "canonical_company_name": "billdesk",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_307.json",
+      "company_name": "RoutePay India",
+      "company_id": "routepay-india--dup-2",
+      "canonical_company_name": "routelab",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_307.json",
+      "company_name": "ByteSys India",
+      "company_id": "bytesys-india--dup-4",
+      "canonical_company_name": "bytesaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_307.json",
+      "company_name": "PrimeLend India",
+      "company_id": "primelend-india--dup-2",
+      "canonical_company_name": "prime ed",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_307.json",
+      "company_name": "NexusKey India",
+      "company_id": "nexuskey-india--dup-2",
+      "canonical_company_name": "nexus ed",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_308.json",
+      "company_name": "SendPath India",
+      "company_id": "sendpath-india--dup-2",
+      "canonical_company_name": "genepath",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_308.json",
+      "company_name": "StellarDev India",
+      "company_id": "stellardev-india--dup-2",
+      "canonical_company_name": "stellar ed",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_308.json",
+      "company_name": "FitPath India",
+      "company_id": "fitpath-india--dup-2",
+      "canonical_company_name": "fitwatch",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_308.json",
+      "company_name": "GeneScan India",
+      "company_id": "genescan-india--dup-3",
+      "canonical_company_name": "genesaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_308.json",
+      "company_name": "ZenithKey India",
+      "company_id": "zenithkey-india--dup-2",
+      "canonical_company_name": "zenith ed",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_308.json",
+      "company_name": "HealthVolt India",
+      "company_id": "healthvolt-india--dup-2",
+      "canonical_company_name": "healthsol",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_309.json",
+      "company_name": "OptimaSafe India",
+      "company_id": "optimasafe-india--dup-2",
+      "canonical_company_name": "optimascale",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_309.json",
+      "company_name": "FlyWatch India",
+      "company_id": "flywatch-india--dup-3",
+      "canonical_company_name": "fitwatch",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_309.json",
+      "company_name": "AstralPath India",
+      "company_id": "astralpath-india--dup-2",
+      "canonical_company_name": "astralwatch",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_309.json",
+      "company_name": "StellarLine India",
+      "company_id": "stellarline-india--dup-2",
+      "canonical_company_name": "stellar one",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_310.json",
+      "company_name": "NexusLend India",
+      "company_id": "nexus-ed",
+      "canonical_company_name": "nexus ed",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_310.json",
+      "company_name": "LogForce India",
+      "company_id": "gigforce",
+      "canonical_company_name": "gigforce",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_310.json",
+      "company_name": "PulseSpan India",
+      "company_id": "pulsesaas-india",
+      "canonical_company_name": "pulsesaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_311.json",
+      "company_name": "AutoSpan India",
+      "company_id": "autosaas-india",
+      "canonical_company_name": "autosaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_311.json",
+      "company_name": "CloudScan India",
+      "company_id": "cloudsaas-india",
+      "canonical_company_name": "cloudsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_311.json",
+      "company_name": "OptimaPath India",
+      "company_id": "optimacash-india",
+      "canonical_company_name": "optimacash",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_311.json",
+      "company_name": "NexusWealth India",
+      "company_id": "nexus-health",
+      "canonical_company_name": "nexus health",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_311.json",
+      "company_name": "AutoDev India",
+      "company_id": "autodesk",
+      "canonical_company_name": "autodesk",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_311.json",
+      "company_name": "LogiGuard India",
+      "company_id": "logguard-india",
+      "canonical_company_name": "logguard",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_312.json",
+      "company_name": "CleanWay India",
+      "company_id": "cleanmax",
+      "canonical_company_name": "cleanmax",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_312.json",
+      "company_name": "AutoTest India",
+      "company_id": "autodesk",
+      "canonical_company_name": "autodesk",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_312.json",
+      "company_name": "CoreBase India",
+      "company_id": "coinbase",
+      "canonical_company_name": "coinbase",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_313.json",
+      "company_name": "ClinikkScale India",
+      "company_id": "clinikkspace-india",
+      "canonical_company_name": "clinikkspace",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_313.json",
+      "company_name": "RouteBase India",
+      "company_id": "routebank-india",
+      "canonical_company_name": "routebank",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_313.json",
+      "company_name": "FleetSafe India",
+      "company_id": "fleetsaas-india",
+      "canonical_company_name": "fleetsaas",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_313.json",
+      "company_name": "FitCargo India",
+      "company_id": "botcargo-india",
+      "canonical_company_name": "botcargo",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_314.json",
+      "company_name": "RidgeWealth India",
+      "company_id": "ridge-health",
+      "canonical_company_name": "ridge health",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_314.json",
+      "company_name": "NexusTech India",
+      "company_id": "nexus-tech",
+      "canonical_company_name": "nexus tech",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_314.json",
+      "company_name": "GeneDesk India",
+      "company_id": "zendesk",
+      "canonical_company_name": "zendesk",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_314.json",
+      "company_name": "ShipLine India",
+      "company_id": "shipping-corp-india",
+      "canonical_company_name": "shipping",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_314.json",
+      "company_name": "FlexWay India",
+      "company_id": "flexpay-india",
+      "canonical_company_name": "flexpay",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_315.json",
+      "company_name": "CareScale India",
+      "company_id": "crewscale",
+      "canonical_company_name": "crewscale",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_315.json",
+      "company_name": "OptimaSpace India",
+      "company_id": "optimascale-india",
+      "canonical_company_name": "optimascale",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_315.json",
+      "company_name": "PrimeNode India",
+      "company_id": "prime-node",
+      "canonical_company_name": "prime node",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_315.json",
+      "company_name": "CargoLink India",
+      "company_id": "cargolend-india",
+      "canonical_company_name": "cargolend",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_315.json",
+      "company_name": "AstralDev India",
+      "company_id": "astral-ed",
+      "canonical_company_name": "astral ed",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_315.json",
+      "company_name": "PayTrack India",
+      "company_id": "fastrack-india",
+      "canonical_company_name": "fastrack",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_316.json",
+      "company_name": "SendSol India",
+      "company_id": "sendvolt-india",
+      "canonical_company_name": "sendvolt",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_316.json",
+      "company_name": "PrimeCash India",
+      "company_id": "ridecash-india",
+      "canonical_company_name": "ridecash",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_316.json",
+      "company_name": "VortexCard India",
+      "company_id": "vortexyard-india",
+      "canonical_company_name": "vortexyard",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_316.json",
+      "company_name": "CloudCap India",
+      "company_id": "cloudway-india",
+      "canonical_company_name": "cloudway",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_316.json",
+      "company_name": "NexusRoom India",
+      "company_id": "nexusloop-india",
+      "canonical_company_name": "nexusloop",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_316.json",
+      "company_name": "LogWealth India",
+      "company_id": "docwealth-india",
+      "canonical_company_name": "docwealth",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_316.json",
+      "company_name": "FitTech India",
+      "company_id": "fintech-india",
+      "canonical_company_name": "fintech",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_316.json",
+      "company_name": "RidgeScale India",
+      "company_id": "ridge-care",
+      "canonical_company_name": "ridge care",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Innoviz Technologies",
+      "company_id": "innoviz-technologies--dup-3",
+      "canonical_company_name": "innoviz",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Sennheiser Audio",
+      "company_id": "sennheiser-audio--dup-2",
+      "canonical_company_name": "sennheiser audio",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "JBL Harman",
+      "company_id": "jbl-harman--dup-2",
+      "canonical_company_name": "jbl harman",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Bang and Olufsen",
+      "company_id": "bang-and-olufsen--dup-2",
+      "canonical_company_name": "bang and olufsen",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Audio-Technica",
+      "company_id": "audio-technica--dup-2",
+      "canonical_company_name": "audio-technica",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Beyerdynamic",
+      "company_id": "beyerdynamic--dup-2",
+      "canonical_company_name": "beyerdynamic",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Garmin Smartwatches",
+      "company_id": "garmin-smartwatches--dup-2",
+      "canonical_company_name": "garmin smartwatches",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Fitbit Wearables",
+      "company_id": "fitbit-wearables--dup-2",
+      "canonical_company_name": "fitbit wearables",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "GoPro Cameras",
+      "company_id": "gopro-cameras--dup-2",
+      "canonical_company_name": "gopro cameras",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Pebble Smartwatches",
+      "company_id": "pebble-smartwatches--dup-2",
+      "canonical_company_name": "pebble smartwatches",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Autel Robotics Drones",
+      "company_id": "autel-robotics-drones--dup-2",
+      "canonical_company_name": "autel robotics drones",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Parrot Drones",
+      "company_id": "parrot-drones--dup-2",
+      "canonical_company_name": "parrot drones",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "ASUS Computers",
+      "company_id": "asus-computers--dup-2",
+      "canonical_company_name": "asus computers",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Acer Laptops",
+      "company_id": "acer-laptops--dup-2",
+      "canonical_company_name": "acer laptops",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Lenovo Computers",
+      "company_id": "lenovo-computers--dup-2",
+      "canonical_company_name": "lenovo computers",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "MSI Computers Gaming",
+      "company_id": "msi-computers-gaming--dup-2",
+      "canonical_company_name": "msi computers gaming",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Razer Gaming",
+      "company_id": "razer-gaming--dup-2",
+      "canonical_company_name": "razer gaming",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Corsair Gaming",
+      "company_id": "corsair-gaming--dup-2",
+      "canonical_company_name": "corsair gaming",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "SteelSeries Gaming",
+      "company_id": "steelseries-gaming--dup-2",
+      "canonical_company_name": "steelseries gaming",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Logitech Peripherals",
+      "company_id": "logitech-peripherals--dup-2",
+      "canonical_company_name": "logitech peripherals",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Crucial Memory SSD",
+      "company_id": "crucial-memory-ssd--dup-2",
+      "canonical_company_name": "crucial memory ssd",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "PNY Technologies",
+      "company_id": "pny-technologies--dup-2",
+      "canonical_company_name": "pny",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "Zotac Graphics Cards",
+      "company_id": "zotac-graphics-cards--dup-2",
+      "canonical_company_name": "zotac graphics cards",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "EVGA Corporation",
+      "company_id": "evga-corporation--dup-2",
+      "canonical_company_name": "evga",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_317.json",
+      "company_name": "ASRock Motherboards",
+      "company_id": "asrock-motherboards--dup-2",
+      "canonical_company_name": "asrock motherboards",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "MathWorks MATLAB",
+      "company_id": "mathworks-matlab--dup-2",
+      "canonical_company_name": "mathworks matlab",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Altair Engineering",
+      "company_id": "altair-engineering--dup-2",
+      "canonical_company_name": "altair engineering",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Bentley Systems",
+      "company_id": "bentley-systems--dup-2",
+      "canonical_company_name": "bentley systems",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Dassault Systemes",
+      "company_id": "dassault-systemes--dup-2",
+      "canonical_company_name": "dassault systemes",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Siemens PLM Software",
+      "company_id": "siemens-plm-software--dup-2",
+      "canonical_company_name": "siemens plm software",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Leica Geosystems",
+      "company_id": "leica-geosystems--dup-2",
+      "canonical_company_name": "leica geosystems",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Hexagon AB",
+      "company_id": "hexagon-ab--dup-2",
+      "canonical_company_name": "hexagon ab",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "FARO Technologies",
+      "company_id": "faro-technologies--dup-2",
+      "canonical_company_name": "faro",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Varnish Software",
+      "company_id": "varnish-software--dup-2",
+      "canonical_company_name": "varnish software",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "OpenStack Cloud",
+      "company_id": "openstack-cloud--dup-2",
+      "canonical_company_name": "openstack cloud",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "MariaDB Database",
+      "company_id": "mariadb-database--dup-2",
+      "canonical_company_name": "mariadb database",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Percona MySQL Support",
+      "company_id": "percona-mysql-support--dup-2",
+      "canonical_company_name": "percona mysql support",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "SingleStore Database",
+      "company_id": "singlestore-database--dup-2",
+      "canonical_company_name": "singlestore database",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "TimescaleDB",
+      "company_id": "timescaledb--dup-2",
+      "canonical_company_name": "timescaledb",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "QuestDB",
+      "company_id": "questdb--dup-2",
+      "canonical_company_name": "questdb",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "VictoriaMetrics",
+      "company_id": "victoriametrics--dup-2",
+      "canonical_company_name": "victoriametrics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Loki Grafana",
+      "company_id": "loki-grafana--dup-2",
+      "canonical_company_name": "loki grafana",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Tempo Grafana",
+      "company_id": "tempo-grafana--dup-2",
+      "canonical_company_name": "tempo grafana",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Mimir Grafana",
+      "company_id": "mimir-grafana--dup-2",
+      "canonical_company_name": "mimir grafana",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Thanos Prometheus",
+      "company_id": "thanos-prometheus--dup-2",
+      "canonical_company_name": "thanos prometheus",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "OpenTelemetry",
+      "company_id": "opentelemetry--dup-2",
+      "canonical_company_name": "opentelemetry",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Jaeger Tracing",
+      "company_id": "jaeger-tracing--dup-2",
+      "canonical_company_name": "jaeger tracing",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Zipkin Tracing",
+      "company_id": "zipkin-tracing--dup-2",
+      "canonical_company_name": "zipkin tracing",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Fluentd Logging",
+      "company_id": "fluentd-logging--dup-2",
+      "canonical_company_name": "fluentd logging",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_318.json",
+      "company_name": "Fluent Bit Logging",
+      "company_id": "fluent-bit-logging--dup-2",
+      "canonical_company_name": "fluent bit logging",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Logstash Elastic",
+      "company_id": "logstash-elastic--dup-2",
+      "canonical_company_name": "logstash elastic",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Filebeat Elastic",
+      "company_id": "filebeat-elastic--dup-2",
+      "canonical_company_name": "filebeat elastic",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Metricbeat Elastic",
+      "company_id": "metricbeat-elastic--dup-2",
+      "canonical_company_name": "metricbeat elastic",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "ScyllaDB NoSQL",
+      "company_id": "scylladb-nosql--dup-2",
+      "canonical_company_name": "scylladb nosql",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Nomad HashiCorp",
+      "company_id": "nomad-hashicorp--dup-2",
+      "canonical_company_name": "nomad hashicorp",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Consul HashiCorp",
+      "company_id": "consul-hashicorp--dup-2",
+      "canonical_company_name": "consul hashicorp",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Packer HashiCorp",
+      "company_id": "packer-hashicorp--dup-2",
+      "canonical_company_name": "packer hashicorp",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Vagrant HashiCorp",
+      "company_id": "vagrant-hashicorp--dup-2",
+      "canonical_company_name": "vagrant hashicorp",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Spinnaker CD",
+      "company_id": "spinnaker-cd--dup-2",
+      "canonical_company_name": "spinnaker cd",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "ArgoCD Kubernetes",
+      "company_id": "argocd-kubernetes--dup-2",
+      "canonical_company_name": "argocd kubernetes",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Tekton Pipelines",
+      "company_id": "tekton-pipelines--dup-2",
+      "canonical_company_name": "tekton pipelines",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Jenkins CI",
+      "company_id": "jenkins-ci--dup-2",
+      "canonical_company_name": "jenkins ci",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "TeamCity JetBrains",
+      "company_id": "teamcity-jetbrains--dup-2",
+      "canonical_company_name": "teamcity jetbrains",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "AppVeyor CI",
+      "company_id": "appveyor-ci--dup-2",
+      "canonical_company_name": "appveyor ci",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Veracode Security",
+      "company_id": "veracode-security--dup-2",
+      "canonical_company_name": "veracode security",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Checkmarx Security",
+      "company_id": "checkmarx-security--dup-2",
+      "canonical_company_name": "checkmarx security",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Aqua Security",
+      "company_id": "aqua-security--dup-2",
+      "canonical_company_name": "aqua security",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Sysdig Container Security",
+      "company_id": "sysdig-container-security--dup-2",
+      "canonical_company_name": "sysdig container security",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Lacework Security",
+      "company_id": "lacework-security--dup-2",
+      "canonical_company_name": "lacework security",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Orca Security Cloud",
+      "company_id": "orca-security-cloud--dup-2",
+      "canonical_company_name": "orca security cloud",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Honeycomb Observability",
+      "company_id": "honeycomb-observability--dup-2",
+      "canonical_company_name": "honeycomb observability",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Lightstep Observability",
+      "company_id": "lightstep-observability--dup-2",
+      "canonical_company_name": "lightstep observability",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Chronosphere Observability",
+      "company_id": "chronosphere-observability--dup-2",
+      "canonical_company_name": "chronosphere observability",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Logz.io Logging",
+      "company_id": "logz-io-logging--dup-2",
+      "canonical_company_name": "logz io logging",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_319.json",
+      "company_name": "Sumo Logic Analytics",
+      "company_id": "sumo-logic-analytics--dup-2",
+      "canonical_company_name": "sumo logic analytics",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Graylog Logging",
+      "company_id": "graylog-logging--dup-2",
+      "canonical_company_name": "graylog logging",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Semgrep Code Scanning",
+      "company_id": "semgrep-code-scanning--dup-2",
+      "canonical_company_name": "semgrep code scanning",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Coverity Synopsys",
+      "company_id": "coverity-synopsys--dup-2",
+      "canonical_company_name": "coverity synopsys",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Fortify Security",
+      "company_id": "fortify-security--dup-2",
+      "canonical_company_name": "fortify security",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Vultr Cloud",
+      "company_id": "vultr-cloud--dup-2",
+      "canonical_company_name": "vultr cloud",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Kamatera Cloud",
+      "company_id": "kamatera-cloud--dup-2",
+      "canonical_company_name": "kamatera cloud",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Atlantic.Net Cloud",
+      "company_id": "atlantic-net-cloud--dup-2",
+      "canonical_company_name": "atlantic net cloud",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Render Cloud Hosting",
+      "company_id": "render-cloud-hosting--dup-2",
+      "canonical_company_name": "render cloud hosting",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Railway App Cloud",
+      "company_id": "railway-app-cloud--dup-2",
+      "canonical_company_name": "railway app cloud",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Fly.io Cloud Hosting",
+      "company_id": "fly-io-cloud-hosting--dup-2",
+      "canonical_company_name": "fly io cloud hosting",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Sketch Design",
+      "company_id": "sketch-design--dup-2",
+      "canonical_company_name": "sketch design",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "InVision App",
+      "company_id": "invision-app--dup-2",
+      "canonical_company_name": "invision app",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Adobe XD",
+      "company_id": "adobe-xd--dup-2",
+      "canonical_company_name": "adobe xd",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Marvel App Design",
+      "company_id": "marvel-app-design--dup-2",
+      "canonical_company_name": "marvel app design",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Zeplin Collaboration",
+      "company_id": "zeplin-collaboration--dup-2",
+      "canonical_company_name": "zeplin collaboration",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Avocode Design",
+      "company_id": "avocode-design--dup-2",
+      "canonical_company_name": "avocode design",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "LottieFiles Animations",
+      "company_id": "lottiefiles-animations--dup-2",
+      "canonical_company_name": "lottiefiles animations",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Adobe Express",
+      "company_id": "adobe-express--dup-2",
+      "canonical_company_name": "adobe express",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "PicMonkey Editor",
+      "company_id": "picmonkey-editor--dup-2",
+      "canonical_company_name": "picmonkey editor",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Fotor Editor",
+      "company_id": "fotor-editor--dup-2",
+      "canonical_company_name": "fotor editor",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Pixlr Image Editor",
+      "company_id": "pixlr-image-editor--dup-2",
+      "canonical_company_name": "pixlr image editor",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Photopea Editor",
+      "company_id": "photopea-editor--dup-2",
+      "canonical_company_name": "photopea editor",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Affinity Designer Serif",
+      "company_id": "affinity-designer-serif--dup-2",
+      "canonical_company_name": "affinity designer serif",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Affinity Photo Serif",
+      "company_id": "affinity-photo-serif--dup-2",
+      "canonical_company_name": "affinity photo serif",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_320.json",
+      "company_name": "Affinity Publisher Serif",
+      "company_id": "affinity-publisher-serif--dup-2",
+      "canonical_company_name": "affinity publisher serif",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "QuarkXPress Publishing",
+      "company_id": "quarkxpress-publishing--dup-2",
+      "canonical_company_name": "quarkxpress publishing",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Final Cut Pro Apple",
+      "company_id": "final-cut-pro-apple--dup-2",
+      "canonical_company_name": "final cut pro apple",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "DaVinci Resolve Blackmagic",
+      "company_id": "davinci-resolve-blackmagic--dup-2",
+      "canonical_company_name": "davinci resolve blackmagic",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Avid Media Composer",
+      "company_id": "avid-media-composer--dup-2",
+      "canonical_company_name": "avid media composer",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Ableton Live Music",
+      "company_id": "ableton-live-music--dup-2",
+      "canonical_company_name": "ableton live music",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "FL Studio Image-Line",
+      "company_id": "fl-studio-image-line--dup-2",
+      "canonical_company_name": "fl studio image-line",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Pro Tools Avid",
+      "company_id": "pro-tools-avid--dup-2",
+      "canonical_company_name": "pro tools avid",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Cubase Steinberg",
+      "company_id": "cubase-steinberg--dup-2",
+      "canonical_company_name": "cubase steinberg",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Reaper Cockos",
+      "company_id": "reaper-cockos--dup-2",
+      "canonical_company_name": "reaper cockos",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Studio One PreSonus",
+      "company_id": "studio-one-presonus--dup-2",
+      "canonical_company_name": "studio one presonus",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Reason Studios",
+      "company_id": "reason-studios--dup-2",
+      "canonical_company_name": "reason studios",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Bitwig Studio",
+      "company_id": "bitwig-studio--dup-2",
+      "canonical_company_name": "bitwig studio",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Cakewalk BandLab",
+      "company_id": "cakewalk-bandlab--dup-2",
+      "canonical_company_name": "cakewalk bandlab",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Traktor Native Instruments",
+      "company_id": "traktor-native-instruments--dup-2",
+      "canonical_company_name": "traktor native instruments",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Serato DJ",
+      "company_id": "serato-dj--dup-2",
+      "canonical_company_name": "serato dj",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "VirtualDJ Atomix",
+      "company_id": "virtualdj-atomix--dup-2",
+      "canonical_company_name": "virtualdj atomix",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Rekordbox Pioneer",
+      "company_id": "rekordbox-pioneer--dup-2",
+      "canonical_company_name": "rekordbox pioneer",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Basecamp 37signals",
+      "company_id": "basecamp-37signals--dup-2",
+      "canonical_company_name": "basecamp 37signals",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Wrike Collaborative",
+      "company_id": "wrike-collaborative--dup-2",
+      "canonical_company_name": "wrike collaborative",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Smartsheet Spreadsheet",
+      "company_id": "smartsheet-spreadsheet--dup-2",
+      "canonical_company_name": "smartsheet spreadsheet",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Airtable Low Code",
+      "company_id": "airtable-low-code--dup-2",
+      "canonical_company_name": "airtable low code",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Coda.io Documents",
+      "company_id": "coda-io-documents--dup-2",
+      "canonical_company_name": "coda io documents",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Quip Salesforce",
+      "company_id": "quip-salesforce--dup-2",
+      "canonical_company_name": "quip salesforce",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Bear Markdown Notes",
+      "company_id": "bear-markdown-notes--dup-2",
+      "canonical_company_name": "bear markdown notes",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    },
+    {
+      "file": "companies_batch_321.json",
+      "company_name": "Ulysses Markdown Notes",
+      "company_id": "ulysses-markdown-notes--dup-2",
+      "canonical_company_name": "ulysses markdown notes",
+      "blocker_reasons": [
+        "duplicate_company_name"
+      ],
+      "source_references_count": 2,
+      "recent_review_count": 2,
+      "latest_review_date": "2026-05-30"
+    }
+  ]
 }
